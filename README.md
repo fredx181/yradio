@@ -24,7 +24,7 @@ chmod +x yradio
 ```  
 And run 'yradio' from yradio directory  
   
-Or: Download .zip  
-Extract and run 'yradio' from yradio directory  
+Or: Download ZIP  
+Extract and run 'yradio' from yradio-master directory  
   
 ![yradio](YRadio.png)  

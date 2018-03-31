@@ -19,6 +19,12 @@ if [ -z `which mplayer` ]; then
 exit 0
 fi
 
+if [ -z `which xdotool` ]; then
+	msg="  Package 'xdotool' is not installed, please install it. "
+	xmessage  "`echo -e $msg`" 
+#exit 0
+fi
+
 if [ -z `which amixer` ]; then
 	msg="  Could not find amixer, setting volume will not be possible. \n Please install 'alsa-utils' to make it work "
 	xmessage  "`echo -e $msg`" 

@@ -1,5 +1,7 @@
 # yradio
-Internet Radio Player
+Internet Radio Player  
+
+**Update:** v0.0.5, added volume control, by misko_2083  
 
 Much inspired by PMRP from misko_2083, see:  
 http://murga-linux.com/puppy/viewtopic.php?p=963382#963382  
@@ -33,4 +35,4 @@ And run 'yradio' from yradio directory
 **Or:**    Download ZIP  
 Extract and run 'yradio' from 'yradio-master' directory  
   
-![yradio](YRadio.png)  
+![yradio](yradio_v0.0.5.png)  

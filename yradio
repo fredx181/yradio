@@ -2,6 +2,7 @@
 
 # Yradio, radio player by fredx181
 # GUI based on: Frontend for find(1) Author: Victor Ananjevsky <ananasik@gmail.com>, 2015-2017
+# 2018-03-30, v0.0.5 added volume control by misko_2083
 
 # set directory to launch script from
 export LAUNCHDIR="$(dirname "$(readlink -f "$0")")"
@@ -16,6 +17,11 @@ if [ -z `which mplayer` ]; then
 	msg="  Package 'mplayer' is not installed, please install it. "
 	xmessage  "`echo -e $msg`" 
 exit 0
+fi
+
+if [ -z `which amixer` ]; then
+	msg="  Could not find amixer, setting volume will not be possible. \n Please install 'alsa-utils' to make it work "
+	xmessage  "`echo -e $msg`" 
 fi
 
 VERSION=`yad --version | awk '{ print $1 }'`
@@ -541,10 +547,68 @@ find "$LAUNCHDIR"/tmp/ ! -name 'nowurl' ! -name 'nowplay' -type f -exec rm -f '{
 #    echo "quit" >&4
     rm -f $fpipe
     rm -f $nppipe
+    rm -f $YAD_ALSA
 # Make playlist.Favorites the newest, so it comes always on top of categories
 touch "$LAUNCHDIR"/playlist/playlist.Favorites
 }
 export -f on_exit
+
+#export YAD_ALSA=$(mktemp -u --tmpdir YAD_ALSA.XXXXXXXX)
+export YAD_ALSA="/tmp/YAD_ALSA.$RANDOM"
+mkfifo "$YAD_ALSA"
+
+yad_alsa_audio(){
+
+ # set window class
+ YAD_CLASS="YAD_ALSA_AUDIO"
+
+ # Unmap the window if the script is relaunched
+
+   pids="$(xdotool search --class "$YAD_CLASS")"
+   wpid="$(xdotool getwindowfocus)"
+
+   for pid in $pids; do
+        # Compares window class pid with the pid of a window in focus
+        if [[ "$pid" == "$wpid" ]]; then
+           xdotool windowunmap $pid
+           exit 1
+        fi
+   done
+
+
+vol=$(amixer get Master | grep "\[on\]")
+vol=( $vol )
+# CURVOL=$(echo ${vol[4]} | sed 's/[][%]//g')
+# fredx181, check if pulseaudio is running, set CURVOL accordingly.
+[ $(pidof pulseaudio) ] && CURVOL=$(echo ${vol[4]} | sed 's/[][%]//g') || CURVOL=$(echo ${vol[3]} | sed 's/[][%]//g')
+
+eval $(xdotool getmouselocation --shell)
+
+X=$(($X-125))
+Y=$(($Y-100))
+
+yad --scale \
+    --print-partial \
+    --text=" Volume Control              " \
+    --min-value=0 --max-value=100 \
+    --image="$LAUNCHDIR/icons/volume.png" \
+    --borders="12" \
+    --class="$YAD_CLASS" \
+    --posy=$Y --posx=$X \
+    --no-buttons  \
+    --undecorated \
+    --close-on-unfocus \
+    --on-top \
+    --skip-taskbar \
+    --mouse \
+    --sticky \
+    --value="$CURVOL" 2> /dev/null | \
+while read VOL; do
+    amixer sset 'Master' "$VOL%"
+done
+}
+export -f  yad_alsa_audio
+
 
 trap on_exit EXIT
 
@@ -555,8 +619,8 @@ yad --plug="$fkey" --tabnum=2 --window-icon "audio-x-generic.png" --list --separ
 # Will load Favorites at start:
 load_list &
 
-yad --center --paned --key="$fkey" --button="!$LAUNCHDIR/icons/fav.png!Add or Remove Favorites":'bash -c "add_rem_fav %s"' --button="!$LAUNCHDIR/icons/save.png!Save search results to Category:bash -c save_search" --button="!$LAUNCHDIR/icons/pause_play.png!Pause or Play:bash -c pause_stream" --button="!$LAUNCHDIR/icons/stop.png!Stop:bash -c stop_stream" --button="!$LAUNCHDIR/icons/record.png!Rip Stream:bash -c rip_stream" --button="!$LAUNCHDIR/icons/gtk-help.png!Help:bash -c help_info" --button="!$LAUNCHDIR/icons/quit.png!Quit:1" --buttons-layout=center --width=780 --height=590 \
-    --title="YRadio v0.0.4" --window-icon="find" --orient=vert --splitter=120
+yad --center --paned --key="$fkey" --button="!$LAUNCHDIR/icons/fav.png!Add or Remove Favorites":'bash -c "add_rem_fav %s"' --button="!$LAUNCHDIR/icons/save.png!Save search results to Category:bash -c save_search" --button="!$LAUNCHDIR/icons/pause_play.png!Pause or Play:bash -c pause_stream" --button="!$LAUNCHDIR/icons/stop.png!Stop:bash -c stop_stream" --button="!$LAUNCHDIR/icons/record.png!Rip Stream:bash -c rip_stream"  --button="!$LAUNCHDIR/icons/volume.png!Volume Control:bash -c yad_alsa_audio" --button="!$LAUNCHDIR/icons/gtk-help.png!Help:bash -c help_info"  --button="!$LAUNCHDIR/icons/quit.png!Quit:1" --buttons-layout=center --width=780 --height=590 \
+    --title="YRadio v0.0.5" --window-icon="find" --orient=vert --splitter=120
 [ $? -ne 0 ] && stop_stream
 kill $pid_loop
 exit

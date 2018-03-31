@@ -30,9 +30,9 @@ Make 'yradio' bash script executable:
 ```  
 chmod +x yradio  
 ```  
-And run 'yradio' from yradio directory  
+And run 'yradio' from inside directory  
   
-**Or:**    Download ZIP  
+**Or:**    Download ZIP  https://github.com/fredx181/yradio/archive/master.zip  
 Extract and run 'yradio' from 'yradio-master' directory  
   
 ![yradio](yradio_v0.0.5.png)  

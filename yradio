@@ -1,8 +1,8 @@
 #! /bin/bash
 
-# Yradio, radio player by fredx181
+# Yradio, radio player by fredx181.
 # GUI based on: Frontend for find(1) Author: Victor Ananjevsky <ananasik@gmail.com>, 2015-2017
-# 2018-03-30, v0.0.5 added volume control by misko_2083
+# 2018-03-30, v0.0.5 added volume control by misko_2083.
 
 # set directory to launch script from
 export LAUNCHDIR="$(dirname "$(readlink -f "$0")")"

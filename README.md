@@ -9,6 +9,7 @@ Took as a base GUI concept for this from: Victor Ananjevsky's (yad author) "find
 https://sourceforge.net/p/yad-dialog/wiki/Frontend%20for%20find%2Bgrep%20commands/?limit=50  
 
 Depends on **yad** (version 0.35 or higher), **xdotool**, and **mplayer** installed.  
+**Update:** v0.0.5 depends on yad version 0.37 or higher.   
 
 Search option has access to large database from "RadioSure" (commercial M$ app) converted to use with this app.
 (need to click 'Update Index' first)    

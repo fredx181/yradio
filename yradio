@@ -205,7 +205,9 @@ echo -en "        \t\t\t*** Load category or do a search ***
  (there will be prompt for Yes/No)
 
  To remove a 'Category' go in  '"$LAUNCHDIR/playlist"' and delete 'playlist.<Name>'
- " | yad --title="Yradio-help" --text-info --margins=6 --wrap --fore=black --back="white" --fontname=Bold --height=350 --width=720 --button="gtk-close"
+
+ Notification icon in system-tray, left-click to show 'Now Playing', right-click for menu.
+ " | yad --title="Yradio-help" --text-info --margins=6 --wrap --fore=black --back="white" --fontname=Bold --height=390 --width=720 --button="gtk-close"
 }
 export -f help_info
 
@@ -405,7 +407,7 @@ echo "$DL_DIR"
 
 # Start GUI
 LFONT="<span size='medium' foreground='#C28300'><b>          *** StreamRipping ***</b></span>"
-choices=$(yad --window-icon=star --text "$LFONT \n This will rip the current playing or last selected stream (in case stopped) \n Ripping to separate tracks in selected directory \n <b>Note</b>: Not all stream types are supported, \n e.g. windows media player stream won't work \n Please set the directory for ripped tracks \n (inside will be automatically created folder named after radiostation)" --width 500 --title "Stream Ripping" --center \
+choices=$(yad --window-icon="$LAUNCHDIR/icons/record.png" --text "$LFONT \n This will rip the current playing or last selected stream (in case stopped) \n Ripping to separate tracks in selected directory \n <b>Note</b>: Not all stream types are supported, \n e.g. windows media player stream won't work \n Please set the directory for ripped tracks \n (inside will be automatically created folder named after radiostation)" --width 500 --title "Stream Ripping" --center \
 --form \
 --field=" Directory for stream rips:  :DIR" "$DL_DIR" \
 --button="Start:0" --button="gtk-cancel:1")
@@ -489,75 +491,67 @@ rm -f $stream $list
 }
 export -f rip_stream
 
+stream_info () {
+check_pid_mplayer
+if [ -n "$pidmplayer" ]; then
+(
+echo "URL :  $(cat $LAUNCHDIR/tmp/nowurl)"
+grep --line-buffered "^Name.*:\|^Genre.*\|^Website\|^Public\|^Bitrate" $LAUNCHDIR/tmp/mplayer-output
+) | yad --text-info --title "Stream Info" --height 200 --width 500 --margins 5 --button="gtk-close"
+else
+echo "No Stream Playing"  | yad --text-info --title "Stream Info" --window-icon "icons/audio-x-generic.png" --height 100 --width 200 --wrap --margins 5 --button="gtk-close"
+fi
+}
+export -f stream_info
+
 exec 3<> $fpipe
 exec 4<> $nppipe
+PIPE=/tmp/${0##*/}.$RANDOM
+mkfifo $PIPE
 
-### Now playing, cycle-read form ###
-#echo -e '\f' >> "$nppipe"
-LISTS=$(ls -t $LAUNCHDIR/playlist/playlist.*)
-export CATLIST=$(while read -r LIST; do echo "${LIST##*.}" | grep -v 'RadioSure' | tr '\n' '!'; done <<< "${LISTS}")
-echo "YRadio, no stream playing" > $LAUNCHDIR/tmp/metadata
-META=$(tail -n -1 $LAUNCHDIR/tmp/metadata 2> /dev/null | cut -c 1-130)
- 
-echo "$META" >&4
-echo "" >&4
-echo $CATLIST >&4
-echo "" >&4
-echo "bash -c update_index" >&4
-echo $load_cmd >&4
-
-while true; do 
-NEWMETA=$(tail -n -1 $LAUNCHDIR/tmp/metadata 2> /dev/null | cut -c 1-130)
-NEWNOWPLAY=$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)
-if [ "$NEWMETA" != "$META" -o "$NEWNOWPLAY" != "$NOWPLAY" ]; then
-   if [ "$NEWMETA" = "" ]; then
-   echo "-"  >&4
-   elif [ "$NEWMETA" = "Could not connect to stream" ]; then
-   echo "Could not connect to stream"  >&4
-   else
-   echo "$NEWMETA"  >&4
-   fi
-
-echo "" >&4
-echo "" >&4
-echo "" >&4
-echo "" >&4
-echo "" >&4
-sleep 5
-if [ "$NEWMETA" = "Stopped" ]; then
-    echo "" >&4
-else
-    echo "$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)" >&4
-fi
-echo "" >&4
-echo "" >&4
-echo "" >&4
-echo "" >&4
-echo "" >&4
-sleep 2 
-
-continue
-
-META=$NEWMETA
-NOWPLAY=$NEWNOWPLAY
-fi
-sleep 2
-done &
-pid_loop=$!  # for to kill at exit
+# attach a file descriptor to the file
+exec 5<> $PIPE
 
 # add handler to manage process shutdown
 function on_exit() {
 find "$LAUNCHDIR"/tmp/ ! -name 'nowurl' ! -name 'nowplay' -type f -exec rm -f '{}' \;
 #rm -f "$LAUNCHDIR"/tmp/*
-#    echo "quit" >&3
-#    echo "quit" >&4
+    echo "quit" >&3
+    echo "quit" >&4
+    echo "quit" >&5
     rm -f $fpipe
     rm -f $nppipe
     rm -f $YAD_ALSA
+    rm -f $PIPE
 # Make playlist.Favorites the newest, so it comes always on top of categories
 touch "$LAUNCHDIR"/playlist/playlist.Favorites
+
 }
 export -f on_exit
+
+trap on_exit EXIT
+
+quit_from_tray () {
+if [ -f $LAUNCHDIR/tmp/nowurl ]; then
+#killall mplayer
+check_pid_mplayer
+kill $(echo $pidmplayer) 2> /dev/null
+#[ "`pidof mplayer`" ] && killall mplayer
+fi
+find "$LAUNCHDIR"/tmp/ ! -name 'nowurl' ! -name 'nowplay' -type f -exec rm -f '{}' \;
+#rm -f "$LAUNCHDIR"/tmp/*
+    echo "quit" >&3
+    echo "quit" >&4
+    echo "quit" >&5
+    rm -f $fpipe
+    rm -f $nppipe
+    rm -f $YAD_ALSA
+    rm -f $PIPE
+pidyad="`ps -eo pid,cmd | grep -v grep | grep "yad --center --paned --key=$fkey" | awk '{ print $1 }'`"
+kill $pidyad 2> /dev/null
+kill $pid_loop 2> /dev/null
+}
+export -f quit_from_tray
 
 #export YAD_ALSA=$(mktemp -u --tmpdir YAD_ALSA.XXXXXXXX)
 export YAD_ALSA="/tmp/YAD_ALSA.$RANDOM"
@@ -616,19 +610,132 @@ done
 export -f  yad_alsa_audio
 
 
-trap on_exit EXIT
+# add handler for tray icon left click
+function on_click() {
+#set_gtkrc
+#export GTK2_RC_FILES="$HOME/.dogradio/tmp/gtkrc.yad"
+check_pid_mplayer
+if [ -n "$pidmplayer" -o -n "$(grep "Stopped\|Paused\|Could not connect to stream" $LAUNCHDIR/tmp/onclick 2> /dev/null)" ]; then
+	TITLE="$(cat $LAUNCHDIR/tmp/onclick 2> /dev/null)"
+    yad --on-top --geometry "400x70-10-35" --image-on-top --no-markup --image "$LAUNCHDIR/icons/internet_radio_48.png" --text "$TITLE  " --undecorated --no-buttons --skip-taskbar &
+sleep 5
+kill $!
+
+#else
+ #   yad --on-top --geometry "-10-35" --text "  <b>No Stream</b>  " --undecorated --no-buttons --skip-taskbar --timeout 5
+fi
+}
+export -f on_click
+
+# create the notification icon
+yad --notification --no-markup                  \
+    --listen                        \
+    --image="$LAUNCHDIR/icons/internetradio.png"              \
+    --text="Now Playing"   \
+    --command="bash -c on_click" 2> /dev/null <&5 &
+    
+ echo "menu:Stop Stream! bash -c stop_stream!$LAUNCHDIR/icons/stop.png| \
+Pause/Play! bash -c pause_stream!$LAUNCHDIR/icons/pause_play.png| \
+Stream Info! bash -c stream_info!$LAUNCHDIR/icons/edit.png| \
+Volume Control! bash -c yad_alsa_audio!$LAUNCHDIR/icons/volume.png| \
+Stream Ripping! bash -c  rip_stream!$LAUNCHDIR/icons/record.png| \
+Exit! bash -c quit_from_tray!$LAUNCHDIR/icons/quit.png " >&5
+
+### Now playing, cycle-read form ###
+#echo -e '\f' >> "$nppipe"
+LISTS=$(ls -t $LAUNCHDIR/playlist/playlist.*)
+export CATLIST=$(while read -r LIST; do echo "${LIST##*.}" | grep -v 'RadioSure' | tr '\n' '!'; done <<< "${LISTS}")
+echo "YRadio, no stream playing" > $LAUNCHDIR/tmp/metadata
+META=$(tail -n -1 $LAUNCHDIR/tmp/metadata 2> /dev/null | cut -c 1-130)
+ 
+echo "$META" >&4
+echo "" >&4
+echo $CATLIST >&4
+echo "" >&4
+echo "bash -c update_index" >&4
+echo $load_cmd >&4
+
+while true; do 
+NEWMETA=$(tail -n -1 $LAUNCHDIR/tmp/metadata 2> /dev/null | cut -c 1-130)
+NEWNOWPLAY=$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)
+if [ "$NEWMETA" != "$META" -o "$NEWNOWPLAY" != "$NOWPLAY" ]; then
+
+   if [ "$NEWMETA" = "" ]; then
+   echo "-"  >&4 
+   elif [ "$NEWMETA" = "Could not connect to stream" ]; then
+   echo "Could not connect to stream"  >&4
+   else
+   echo "$NEWMETA"  >&4
+   fi
+
+echo "" >&4
+echo "" >&4
+echo "" >&4
+echo "" >&4
+echo "" >&4
+sleep 5
+if [ "$NEWMETA" = "Stopped" ]; then
+    echo "" >&4
+else
+    echo "$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)" >&4
+fi
+
+echo "" >&4
+echo "" >&4
+echo "" >&4
+echo "" >&4
+echo "" >&4
+sleep 2 
+
+continue
+META=$NEWMETA
+NOWPLAY=$NEWNOWPLAY
+fi
+sleep 2
+done &
+pid_loop1=$!  # for to kill at exit
+
+# Notification, now playing
+while true; do 
+NEWMETA=$(tail -n -1 $LAUNCHDIR/tmp/metadata 2> /dev/null | cut -c 1-130)
+NEWNOWPLAY=$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)
+if [ "$NEWMETA" != "$META" -o "$NEWNOWPLAY" != "$NOWPLAY" ]; then
+
+   if [ "$NEWMETA" = "" ]; then
+
+   echo "-" > $LAUNCHDIR/tmp/onclick
+   elif [ "$NEWMETA" = "Could not connect to stream" ]; then
+   echo "Could not connect to stream"  > $LAUNCHDIR/tmp/onclick
+   else
+   echo "$NEWMETA"  > $LAUNCHDIR/tmp/onclick
+   fi
+if [ "$NEWMETA" = "Stopped" ]; then
+    echo "Stopped" > $LAUNCHDIR/tmp/onclick
+fi
+    echo "$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)" >> $LAUNCHDIR/tmp/onclick
+#NEWONCLICK="$(cat $LAUNCHDIR/tmp/onclick)"
+#if [ "$NEWONCLICK" != "$ONCLICK" ]; then
+on_click &
+#ONCLICK="$NEWONCLICK"
+#fi
+META=$NEWMETA
+NOWPLAY=$NEWNOWPLAY
+fi
+sleep 2
+done &
+pid_loop2=$!
 
 yad --plug="$fkey" --tabnum=1 --text="\t\t\t\tSelect category or do a search and click 'Load'" --form --align=right --columns=3 --cycle-read --field=": " --field="      Double click to play\t\t\t\t\t\t     <b>Search:</b>:lbl" --field=":CB" --field="" --field="Update Index:fbtn" --field="Load!gtk-add:fbtn" <&4 &
 
-yad --plug="$fkey" --tabnum=2 --window-icon "audio-x-generic.png" --list --separator="|" --no-markup --select-action='bash -c "sel_file %s"' --dclick-action='bash -c "play_url %s"' --hide-column 1 --search-column=2 --column URL --column Name --column Genre --expand-column=2 $RADIOLIST <&3 &
+yad --plug="$fkey" --tabnum=2 --list --separator="|" --no-markup --select-action='bash -c "sel_file %s"' --dclick-action='bash -c "play_url %s"' --hide-column 1 --search-column=2 --column URL --column Name --column Genre --expand-column=2 $RADIOLIST <&3 &
 
 # Will load Favorites at start:
 load_list &
 
 yad --center --paned --key="$fkey" --button="!$LAUNCHDIR/icons/fav.png!Add or Remove Favorites":'bash -c "add_rem_fav %s"' --button="!$LAUNCHDIR/icons/save.png!Save search results to Category:bash -c save_search" --button="!$LAUNCHDIR/icons/pause_play.png!Pause or Play:bash -c pause_stream" --button="!$LAUNCHDIR/icons/stop.png!Stop:bash -c stop_stream" --button="!$LAUNCHDIR/icons/record.png!Rip Stream:bash -c rip_stream"  --button="!$LAUNCHDIR/icons/volume.png!Volume Control:bash -c yad_alsa_audio" --button="!$LAUNCHDIR/icons/gtk-help.png!Help:bash -c help_info"  --button="!$LAUNCHDIR/icons/quit.png!Quit:1" --buttons-layout=center --width=780 --height=590 \
-    --title="YRadio v0.0.5" --window-icon="find" --orient=vert --splitter=120
+    --title="YRadio v0.0.6" --window-icon="$LAUNCHDIR/icons/internet_radio_48.png" --orient=vert --splitter=120
 [ $? -ne 0 ] && stop_stream
-kill $pid_loop
+kill $pid_loop1 $pid_loop2
 exit
 
 #exec 3>&-

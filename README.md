@@ -36,4 +36,4 @@ And run 'yradio' from inside directory
 **Or:**    Download ZIP  https://github.com/fredx181/yradio/archive/master.zip  
 Extract and run 'yradio' from 'yradio-master' directory  
   
-![yradio](yradio_v0.0.6.png)  
+![yradio](yradio-0.0.6.png)  

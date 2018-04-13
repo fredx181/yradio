@@ -549,7 +549,9 @@ find "$LAUNCHDIR"/tmp/ ! -name 'nowurl' ! -name 'nowplay' -type f -exec rm -f '{
     rm -f $PIPE
 pidyad="`ps -eo pid,cmd | grep -v grep | grep "yad --center --paned --key=$fkey" | awk '{ print $1 }'`"
 kill $pidyad 2> /dev/null
-kill $pid_loop 2> /dev/null
+pdyadplug=$(ps -eo pid,cmd | grep -v grep | grep "yad --plug=$fkey"  | awk '{ print $1 }')
+kill $pid_loop1 $pid_loop2 $pdyadplug 2> /dev/null
+
 }
 export -f quit_from_tray
 

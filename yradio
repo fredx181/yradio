@@ -3,10 +3,12 @@
 # Yradio, radio player by fredx181.
 # GUI based on: Frontend for find(1) Author: Victor Ananjevsky <ananasik@gmail.com>, 2015-2017
 # 2018-03-30, v0.0.5 added volume control by misko_2083.
+# 2018-07-18, fixes to prevent window proliferation by stemsee
 
 # set directory to launch script from
 export LAUNCHDIR="$(dirname "$(readlink -f "$0")")"
-
+[[ -f /tmp/yrad ]] && exit
+[[ ! -f /tmp/yrad ]] && touch /tmp/yrad
 if [ -z `which yad` ]; then
 	msg="  Package 'yad' is not installed, please install it. "
 	xmessage  "`echo -e $msg`" 
@@ -44,9 +46,9 @@ yad --text=" The version of yad installed is too old for to run this program,  \
 exit
 fi
 
-# create directories in case not exist
-mkdir "$LAUNCHDIR/tmp" 2> /dev/null
-mkdir "$LAUNCHDIR/playlist" 2> /dev/null
+# create directories in case not exist and copy to $HOME/.yradio
+mkdir -p "$HOME"/.yradio/tmp
+cp -a -u -v /usr/local/yradio/playlist "$HOME"/.yradio/
 
 export load_cmd='@bash -c "load_list %3 %4"'
 
@@ -59,57 +61,57 @@ mkfifo "$nppipe"
 fkey=$(($RANDOM * $$))
 
 # Make sure there's default 'Favorites' playlist (in case not exist)
-if ! grep -q "http://" "$LAUNCHDIR/playlist/playlist.Favorites"; then
+if ! grep -q "http://" "$HOME/.yradio/playlist/playlist.Favorites"; then
 echo 'http://113fm-edge1.cdnstream.com/1725_128|.113FM The Wave USA|Jazz
 http://www.radioparadise.com/musiclinks/rp_192.m3u|Radio Paradise USA|Eclectic
 http://icyrelay.181.fm/181-beatles_128k.mp3|fm1.co.il Beatles Israel|Rock
 http://orion.prostreaming.net:8288/stream|Aardvark Blues FM USA|Blues
 http://ycradio.stream.publicradio.org/relax.mp3|Your Classical Relax USA|Classical
-' > "$LAUNCHDIR/playlist/playlist.Favorites"
+' > "$HOME/.yradio/playlist/playlist.Favorites"
 fi
 
 check_pid_mplayer () {
-pidmplayer="`ps -eo pid,cmd | grep "$(cat $LAUNCHDIR/tmp/nowurl 2> /dev/null | sed 's/*.*//')" | grep 'mplayer' | grep -v "grep" | awk '{ print $1 }'`"
+pidmplayer="`ps -eo pid,cmd | grep "$(cat $HOME/.yradio/tmp/nowurl 2> /dev/null | sed 's/*.*//')" | grep 'mplayer' | grep -v "grep" | awk '{ print $1 }'`"
 }
 export -f check_pid_mplayer
 
 function play_url () {
 #echo -e '\f' > "$nppipe"
     echo -e "_\n\n\n\n\n" >> $nppipe
-if [ -f $LAUNCHDIR/tmp/nowurl ]; then
+if [ -f $HOME/.yradio/tmp/nowurl ]; then
 #killall mplayer
 check_pid_mplayer
 kill $pidmplayer 2> /dev/null
 #[ "`pidof mplayer`" ] && killall mplayer
-rm -f $LAUNCHDIR/tmp/mplayer-output
+rm -f $HOME/.yradio/tmp/mplayer-output
 fi
 sleep 0.5
 export URL="$1"
 NAME="$2"
 [ -z "$URL" ] && exit
-echo "$URL" > $LAUNCHDIR/tmp/nowurl
-#echo -n "${1}|${2}|${3}" > $LAUNCHDIR/tmp/nowurl
-[ -z "$NAME" ] && NAME=$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)
-echo "$NAME" > $LAUNCHDIR/tmp/nowplay
+echo "$URL" > $HOME/.yradio/tmp/nowurl
+#echo -n "${1}|${2}|${3}" > $HOME/.yradio/tmp/nowurl
+[ -z "$NAME" ] && NAME=$(cat $HOME/.yradio/tmp/nowplay 2> /dev/null)
+echo "$NAME" > $HOME/.yradio/tmp/nowplay
 mplaylist () {
-mplayer -quiet -cache 320 -cache-min 8 -playlist "$URL" 2> /dev/null | grep --line-buffered -v 'Cache fill' | tee $LAUNCHDIR/tmp/mplayer-output | grep --line-buffered "ICY" | while read a; do echo "$a" | awk -F " : |='|';" '/ICY Info/ {print $2}'; done | tee $LAUNCHDIR/tmp/metadata
+mplayer -quiet -cache 320 -cache-min 8 -playlist "$URL" 2> /dev/null | grep --line-buffered -v 'Cache fill' | tee $HOME/.yradio/tmp/mplayer-output | grep --line-buffered "ICY" | while read a; do echo "$a" | awk -F " : |='|';" '/ICY Info/ {print $2}'; done | tee $HOME/.yradio/tmp/metadata
 }
 export -f mplaylist
 
 mplay () {
-mplayer -quiet -cache 320 -cache-min 8 "$URL" 2> /dev/null | grep --line-buffered -v 'Cache fill' | tee $LAUNCHDIR/tmp/mplayer-output | grep --line-buffered "ICY" | while read a; do echo "$a" | awk -F " : |='|';" '/ICY Info/ {print $2}'; done | tee $LAUNCHDIR/tmp/metadata
+mplayer -quiet -cache 320 -cache-min 8 "$URL" 2> /dev/null | grep --line-buffered -v 'Cache fill' | tee $HOME/.yradio/tmp/mplayer-output | grep --line-buffered "ICY" | while read a; do echo "$a" | awk -F " : |='|';" '/ICY Info/ {print $2}'; done | tee $HOME/.yradio/tmp/metadata
 }
 export -f mplay
 
 # Check if 'Starting playback...' appears in output, wait number of seconds, then give up:
 TIMEOUT=08
 time_out () {
-IFPLAYLIST=$(grep 'Starting playback...' $LAUNCHDIR/tmp/mplayer-output 2> /dev/null)
-#NAME=$(grep --line-buffered "Name.*:\|ICY" $LAUNCHDIR/tmp/mplayer-output 2> /dev/null) 
+IFPLAYLIST=$(grep 'Starting playback...' $HOME/.yradio/tmp/mplayer-output 2> /dev/null)
+#NAME=$(grep --line-buffered "Name.*:\|ICY" $HOME/.yradio/tmp/mplayer-output 2> /dev/null) 
 while [ -z "$IFPLAYLIST" ]; do
 sleep 1
-IFPLAYLIST=$(grep 'Starting playback...' $LAUNCHDIR/tmp/mplayer-output 2> /dev/null)
-#NAME=$(grep --line-buffered "Name.*:\|ICY" $LAUNCHDIR/tmp/mplayer-output 2> /dev/null)
+IFPLAYLIST=$(grep 'Starting playback...' $HOME/.yradio/tmp/mplayer-output 2> /dev/null)
+#NAME=$(grep --line-buffered "Name.*:\|ICY" $HOME/.yradio/tmp/mplayer-output 2> /dev/null)
 if [ "$IFPLAYLIST" ]; then
 break
 fi
@@ -125,13 +127,13 @@ m3u|pls|asx|ram|wax|asp|pls?id=*)
 /bin/bash -c "mplaylist &"
 busybox timeout -t $TIMEOUT /bin/bash -c time_out
 
-#NAME=$(grep --line-buffered "Name.*:\|ICY" $LAUNCHDIR/tmp/mplayer-output 2> /dev/null)
-IFPLAYLIST=$(grep 'Starting playback...' $LAUNCHDIR/tmp/mplayer-output 2> /dev/null)
+#NAME=$(grep --line-buffered "Name.*:\|ICY" $HOME/.yradio/tmp/mplayer-output 2> /dev/null)
+IFPLAYLIST=$(grep 'Starting playback...' $HOME/.yradio/tmp/mplayer-output 2> /dev/null)
 if [ ! "$IFPLAYLIST" ]; then
 #yad --center --title "Could not connect" --text "    Failed to connect to stream...    " --timeout=1 --button="gtk-close"
 #echo -e "Could not connect to stream\n\n\n\n\n" >> $nppipe
-echo "Could not connect to stream" > $LAUNCHDIR/tmp/metadata
-#rm -f $LAUNCHDIR/tmp/nowplay
+echo "Could not connect to stream" > $HOME/.yradio/tmp/metadata
+#rm -f $HOME/.yradio/tmp/nowplay
 exit
 fi
 ;;
@@ -139,13 +141,13 @@ fi
 /bin/bash -c "mplay &"
 busybox timeout -t $TIMEOUT /bin/bash -c time_out
 
-#NAME=$(grep --line-buffered "Name.*:\|ICY" $LAUNCHDIR/tmp/mplayer-output 2> /dev/null)
-IFPLAYLIST=$(grep 'Starting playback...' $LAUNCHDIR/tmp/mplayer-output 2> /dev/null)
+#NAME=$(grep --line-buffered "Name.*:\|ICY" $HOME/.yradio/tmp/mplayer-output 2> /dev/null)
+IFPLAYLIST=$(grep 'Starting playback...' $HOME/.yradio/tmp/mplayer-output 2> /dev/null)
 if [ ! "$IFPLAYLIST" ]; then
 #yad --center --title "Could not connect" --text "    Failed to connect to stream...    " --timeout=1 --button="gtk-close"
 #echo -e "Could not connect to stream\n\n\n\n\n" >> $nppipe
-echo "Could not connect to stream" > $LAUNCHDIR/tmp/metadata
-#rm -f $LAUNCHDIR/tmp/nowplay
+echo "Could not connect to stream" > $HOME/.yradio/tmp/metadata
+#rm -f $HOME/.yradio/tmp/nowplay
 exit
 fi
 ;;
@@ -156,7 +158,7 @@ esac
 	exit 
 	;;
 	esac
-#rm -f $LAUNCHDIR/tmp/nowplay
+#rm -f $HOME/.yradio/tmp/nowplay
 
 }
 export -f play_url
@@ -164,24 +166,24 @@ export -f play_url
 pause_stream () {
 check_pid_mplayer
 if [ -n "$pidmplayer" ]; then
-echo "Paused" > $LAUNCHDIR/tmp/metadata
-#rm -f $LAUNCHDIR/tmp/metadata
-#rm -f $LAUNCHDIR/tmp/nowplay
+echo "Paused" > $HOME/.yradio/tmp/metadata
+#rm -f $HOME/.yradio/tmp/metadata
+#rm -f $HOME/.yradio/tmp/nowplay
 echo -e "No stream playing\n\n\n\n\n" >> $nppipe
 
 kill $(echo $pidmplayer) 2> /dev/null
 else
-play_url $(cat $LAUNCHDIR/tmp/nowurl 2> /dev/null)
+play_url $(cat $HOME/.yradio/tmp/nowurl 2> /dev/null)
 fi
 }
 export -f pause_stream
 
 stop_stream () {
-echo "Stopped" > $LAUNCHDIR/tmp/metadata
-#rm -f $LAUNCHDIR/tmp/metadata
-#rm -f $LAUNCHDIR/tmp/nowplay
+echo "Stopped" > $HOME/.yradio/tmp/metadata
+#rm -f $HOME/.yradio/tmp/metadata
+#rm -f $HOME/.yradio/tmp/nowplay
 echo -e "No stream playing\n\n\n\n\n" >> $nppipe
-if [ -f $LAUNCHDIR/tmp/nowurl ]; then
+if [ -f $HOME/.yradio/tmp/nowurl ]; then
 #killall mplayer
 check_pid_mplayer
 kill $pidmplayer 2> /dev/null
@@ -191,6 +193,8 @@ fi
 export -f stop_stream
 
 function help_info () {
+[[ -f /tmp/info ]] && exit
+[[ ! -f /tmp/info ]] && touch /tmp/info
 echo -en "        \t\t\t*** Load category or do a search ***
 
  To be able to use search, first time use of this program, the database needs to be created.
@@ -204,33 +208,33 @@ echo -en "        \t\t\t*** Load category or do a search ***
  Select an item from the Favorites list and click 'Favorites' to remove it.
  (there will be prompt for Yes/No)
 
- To remove a 'Category' go in  '"$LAUNCHDIR/playlist"' and delete 'playlist.<Name>'
+ To remove a 'Category' go in  '"$HOME/.yradio/playlist"' and delete 'playlist.<Name>'
+ " | yad --title="Yradio-help" --text-info --margins=6 --wrap --fore=black --back="white" --fontname=Bold --height=350 --width=720 --button="gtk-close"
+[[ -f /tmp/info ]] && rm -f /tmp/info
 
- Notification icon in system-tray, left-click to show 'Now Playing', right-click for menu.
- " | yad --title="Yradio-help" --text-info --margins=6 --wrap --fore=black --back="white" --fontname=Bold --height=390 --width=720 --button="gtk-close"
 }
 export -f help_info
 
 function update_index
 {
 (
-wget --tries=1 -O $LAUNCHDIR/playlist/radio_sure.zip http://www.radiosure.com/rsdbms/stations2.zip
+wget --tries=1 -O $HOME/.yradio/playlist/radio_sure.zip http://www.radiosure.com/rsdbms/stations2.zip
 [ $? -ne 0 ] && exit 1
-unzip -qo $LAUNCHDIR/playlist/radio_sure.zip -d $LAUNCHDIR/playlist/
-rm -f $LAUNCHDIR/playlist/radio_sure.zip
-NEWFILE=`ls $LAUNCHDIR/playlist/*.rsd`
-cat "$NEWFILE" | tr -s "\t" '|' > $LAUNCHDIR/playlist/radio_tmp3 
-awk -F'|' 'BEGIN{OFS="|";} {print $6,$1,$4,$3;}' $LAUNCHDIR/playlist/radio_tmp3 | sed 's/|/ /2' | sort | uniq | grep -i '^http://' > $LAUNCHDIR/playlist/playlist.RadioSure
-rm -f $LAUNCHDIR/playlist/radio_tmp3 "$NEWFILE"
+unzip -qo $HOME/.yradio/playlist/radio_sure.zip -d $HOME/.yradio/playlist/
+rm -f $HOME/.yradio/playlist/radio_sure.zip
+NEWFILE=`ls $HOME/.yradio/playlist/*.rsd`
+cat "$NEWFILE" | tr -s "\t" '|' > $HOME/.yradio/playlist/radio_tmp3 
+awk -F'|' 'BEGIN{OFS="|";} {print $6,$1,$4,$3;}' $HOME/.yradio/playlist/radio_tmp3 | sed 's/|/ /2' | sort | uniq | grep -i '^http://' > $HOME/.yradio/playlist/playlist.RadioSure
+rm -f $HOME/.yradio/playlist/radio_tmp3 "$NEWFILE"
 echo "Modifying for use with yradio...  Please wait..."
 while IFS= read -r line; do 
   cline="${line//[!\|]}"
 if [ "${#cline}" -ne 2 ]; then
-NUM=$(grep -n "$line" $LAUNCHDIR/playlist/playlist.RadioSure | cut -d : -f1)
-sed -i "${NUM}d" $LAUNCHDIR/playlist/playlist.RadioSure
+NUM=$(grep -n "$line" $HOME/.yradio/playlist/playlist.RadioSure | cut -d : -f1)
+sed -i "${NUM}d" $HOME/.yradio/playlist/playlist.RadioSure
 #echo "$line"
 fi
-done <$LAUNCHDIR/playlist/playlist.RadioSure
+done <$HOME/.yradio/playlist/playlist.RadioSure
 echo "---------------"
 echo "Done"
 ) 2>&1 | yad --text-info --window-icon "audio-x-generic.png" --title "Updating Index" --height 300 --width 500 --tail --margins 4 --button="gtk-close"
@@ -238,26 +242,28 @@ echo "Done"
 export -f update_index
 
 function save_search () {
-if [ ! -f $LAUNCHDIR/tmp/tmp_search_q ]; then
+[[ -f /tmp/ss ]] && exit
+[[ ! -f /tmp/ss ]] && touch /tmp/ss
+if [ ! -f $HOME/.yradio/tmp/tmp_search_q ]; then
 yad --center --borders 5 --width=500 --title "Save search" --text " Only for to save search results to a category list \n Please do a search and try again   " --timeout=5 --button="gtk-close"
 else 
-ENTRY_TEXT="$(cat $LAUNCHDIR/tmp/tmp_search_q | sed 's/ /_/g;s/\./_/g')"
-SRCH="$(cat $LAUNCHDIR/tmp/tmp_search_q)"
+ENTRY_TEXT="$(cat $HOME/.yradio/tmp/tmp_search_q | sed 's/ /_/g;s/\./_/g')"
+SRCH="$(cat $HOME/.yradio/tmp/tmp_search_q)"
 SAVE=$(yad --center --window-icon "audio-x-generic" --title "Save Search" --text " Please enter a name (without spaces and dots)  \n and it will be saved as: 'playlist.Name' " --entry --entry-text="$ENTRY_TEXT")
-[ $? -ne 0 ] && exit
+[ $? -ne 0 ] && rm -f /tmp/ss && exit 1
 SRCH1=$(echo "$SRCH" | sed -e 's/\( [[:punct:]] \)/ /g' | sed 's/ . / /g;s/ .$//g;s/^. //g')
 for i in $SRCH1; do
 export NEWSRCH="$NEWSRCH""(?=\|.*"$i")"
 done
 
-CHECK=$(grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | grep '[^[:print:]]')
+CHECK=$(grep -Pih "$NEWSRCH" $HOME/.yradio/playlist/playlist.RadioSure | grep '[^[:print:]]')
 if [[ -n "${CHECK}" ]]; then
-grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | tr -cd '[:print:]\t\r\n' | sed 's#[^[:print:]]##g' | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tee $LAUNCHDIR/playlist/playlist.$SAVE
+grep -Pih "$NEWSRCH" $HOME/.yradio/playlist/playlist.RadioSure | tr -cd '[:print:]\t\r\n' | sed 's#[^[:print:]]##g' | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tee $HOME/.yradio/playlist/playlist.$SAVE
 else
-grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tee $LAUNCHDIR/playlist/playlist.$SAVE
+grep -Pih "$NEWSRCH" $HOME/.yradio/playlist/playlist.RadioSure | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tee $HOME/.yradio/playlist/playlist.$SAVE
 fi
-# mv -f $LAUNCHDIR/tmp/tmp_search $LAUNCHDIR/playlist/playlist.$SAVE
-LISTS=$(ls -t $LAUNCHDIR/playlist/playlist.*)
+# mv -f $HOME/.yradio/tmp/tmp_search $HOME/.yradio/playlist/playlist.$SAVE
+LISTS=$(ls -t $HOME/.yradio/playlist/playlist.*)
 export CATLIST=$(while read -r LIST; do echo "${LIST##*.}" | grep -v 'RadioSure' | tr '\n' '!'; done <<< "${LISTS}")
 echo "" >> $nppipe
 echo "" >> $nppipe
@@ -265,45 +271,51 @@ echo "$CATLIST" >> $nppipe
 echo " " >> $nppipe
 echo "" >> $nppipe
 echo "" >> $nppipe
-touch "$LAUNCHDIR/playlist/playlist.Favorites"  # make it newest, always on top of Category lists
+touch "$HOME/.yradio/playlist/playlist.Favorites"  # make it newest, always on top of Category lists
 fi
+[[ -f /tmp/ss ]] && rm -f /tmp/ss
 }
 export -f save_search 
 
 function add_rem_fav
 {
-if [ -z "$(cat $LAUNCHDIR/tmp/sel-file 2> /dev/null)" ]; then
+[[ -f /tmp/fav ]] && exit
+[[ ! -f /tmp/fav ]] && touch /tmp/fav
+
+if [ -z "$(cat $HOME/.yradio/tmp/sel-file 2> /dev/null)" ]; then
 yad --center --borders 5 --title "Error" --text "      Nothing selected       " --button="gtk-close"
+[[ -f /tmp/fav ]] && rm -f /tmp/fav
 exit
 fi
-ST_NAME=$(awk -F'|' '{print $2}' $LAUNCHDIR/tmp/sel-file) 
-	if [ -n "$(tail -c 1 "$LAUNCHDIR/playlist/playlist.Favorites")" ]; then
-	echo "" >> "$LAUNCHDIR/playlist/playlist.Favorites"  # make sure last line has line-ending
+ST_NAME=$(awk -F'|' '{print $2}' $HOME/.yradio/tmp/sel-file) 
+	if [ -n "$(tail -c 1 "$HOME/.yradio/playlist/playlist.Favorites")" ]; then
+	echo "" >> "$HOME/.yradio/playlist/playlist.Favorites"  # make sure last line has line-ending
 	fi
-    if [ -f $LAUNCHDIR/tmp/tmp_search_q ]; then
+    if [ -f $HOME/.yradio/tmp/tmp_search_q ]; then
 yad --center --borders 5 --title "Add to Favorites" --no-markup --text " Add to Favorites ? \n $ST_NAME   \n (if yes, re-load 'Favorites' category to update the change)    " --button="gtk-yes:0" --button="gtk-no:1" --width=450
-[ $? -ne 0 ] && exit
-    cat $LAUNCHDIR/tmp/sel-file >> $LAUNCHDIR/playlist/playlist.Favorites
+[ $? -ne 0 ] && rm -f /tmp/fav && exit
+    cat $HOME/.yradio/tmp/sel-file >> $HOME/.yradio/playlist/playlist.Favorites
     else
-    _CAT="$(cat "$LAUNCHDIR"/tmp/tmp_cat)"
+    _CAT="$(cat "$HOME/.yradio"/tmp/tmp_cat)"
 if [ "$_CAT" != "Favorites" ]; then
 yad --center --borders 5 --title "Add to Favorites" --no-markup --text " Add to Favorites ? \n $ST_NAME   \n (if yes, re-load 'Favorites' category to update the change)   " --button="gtk-yes:0" --button="gtk-no:1" --width=450
-[ $? -ne 0 ] && exit
-    cat $LAUNCHDIR/tmp/sel-file >> $LAUNCHDIR/playlist/playlist.Favorites
+[ $? -ne 0 ] && rm -f /tmp/fav && exit
+    cat $HOME/.yradio/tmp/sel-file >> $HOME/.yradio/playlist/playlist.Favorites
 else
 yad --center --borders 5 --title "Remove from Favorites" --no-markup --text " Remove from Favorites ? \n $ST_NAME       " --button="gtk-yes:0" --button="gtk-no:1" --width=450
-[ $? -ne 0 ] && exit
-sed -i "/$ST_NAME/d" $LAUNCHDIR/playlist/playlist.Favorites
+[ $? -ne 0 ] && rm -f /tmp/fav && exit
+sed -i "/$ST_NAME/d" $HOME/.yradio/playlist/playlist.Favorites
 load_list &
 fi
     fi
+[[ -f /tmp/fav ]] && rm -f /tmp/fav
 }
 export -f add_rem_fav
 
 function sel_file
 {
-echo -n "${1}|${2}|${3}" > $LAUNCHDIR/tmp/sel-file    # mochimoppel, cheers :-) 
-#echo -en "$1\n$2\n$3" | tr '\n' '|' > $LAUNCHDIR/tmp/sel-file
+echo -n "${1}|${2}|${3}" > $HOME/.yradio/tmp/sel-file    # mochimoppel, cheers :-) 
+#echo -en "$1\n$2\n$3" | tr '\n' '|' > $HOME/.yradio/tmp/sel-file
 #    xdg-open "$1" &> /dev/null
 }
 export -f sel_file
@@ -311,21 +323,21 @@ export -f sel_file
 function load_list
 {
     echo "6:@disable@"
-rm -f $LAUNCHDIR/tmp/sel-file
+rm -f $HOME/.yradio/tmp/sel-file
 
 SRCH="$2"
 	if [[ -z "${SRCH// }" ]]; then
-rm -f $LAUNCHDIR/tmp/tmp_search_q
+rm -f $HOME/.yradio/tmp/tmp_search_q
 CAT=$1
 [ -z "$CAT" ] && CAT="Favorites"
-echo "$CAT" > $LAUNCHDIR/tmp/tmp_cat
+echo "$CAT" > $HOME/.yradio/tmp/tmp_cat
 export OLDIFS="$IFS"
 IFS=$'\n'
-CHECK=$(cat $LAUNCHDIR/playlist/playlist.$CAT | grep '[^[:print:]]')
+CHECK=$(cat $HOME/.yradio/playlist/playlist.$CAT | grep '[^[:print:]]')
 if [[ -n "${CHECK}" ]]; then
-RADIOLIST=$(cat $LAUNCHDIR/playlist/playlist.$CAT | tr -cd '[:print:]\t\r\n' | sed 's#|-#|_#g;s#- ##g' | tr '|' '\n')
+RADIOLIST=$(cat $HOME/.yradio/playlist/playlist.$CAT | tr -cd '[:print:]\t\r\n' | sed 's#|-#|_#g;s#- ##g' | tr '|' '\n')
 else
-RADIOLIST=$(cat $LAUNCHDIR/playlist/playlist.$CAT | sed 's#|-#|_#g;s#- ##g' | tr '|' '\n')
+RADIOLIST=$(cat $HOME/.yradio/playlist/playlist.$CAT | sed 's#|-#|_#g;s#- ##g' | tr '|' '\n')
 fi
 export OLDIFS="$IFS"
 IFS=$'\n'
@@ -338,21 +350,21 @@ IFS=$OLDIFS
     if [ "$(echo $SRCH | wc -c)" -lt 4 ]; then
 yad --center --borders 5 --title "Error" --text "  Search query should contain more than 2 characters  \n  Please try again         " --timeout=5 --button="gtk-close"
     else
-  if [ ! -f $LAUNCHDIR/playlist/playlist.RadioSure ]; then
+  if [ ! -f $HOME/.yradio/playlist/playlist.RadioSure ]; then
   yad --center --width=500 --borders 5 --title "Please update index" --text " Database index 'playlist.RadioSure' not found. \n Please click 'Update Index' first before using search option. " --button="gtk-close"
   else
-echo "$SRCH" > $LAUNCHDIR/tmp/tmp_search_q
+echo "$SRCH" > $HOME/.yradio/tmp/tmp_search_q
 SRCH1=$(echo "$SRCH" | sed -e 's/\( [[:punct:]] \)/ /g' | sed 's/ . / /g;s/ .$//g;s/^. //g')
 #echo "$SRCH1"
 for i in $SRCH1; do
 export NEWSRCH="$NEWSRCH""(?=\|.*"$i")"
 done
 
-CHECK=$(grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | grep '[^[:print:]]')
+CHECK=$(grep -Pih "$NEWSRCH" $HOME/.yradio/playlist/playlist.RadioSure | grep '[^[:print:]]')
 if [[ -n "${CHECK}" ]]; then
-RADIOLIST=$(grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | tr -cd '[:print:]\t\r\n' | sed 's#[^[:print:]]##g' | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tr '|' '\n')
+RADIOLIST=$(grep -Pih "$NEWSRCH" $HOME/.yradio/playlist/playlist.RadioSure | tr -cd '[:print:]\t\r\n' | sed 's#[^[:print:]]##g' | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tr '|' '\n')
 else
-RADIOLIST=$(grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tr '|' '\n')
+RADIOLIST=$(grep -Pih "$NEWSRCH" $HOME/.yradio/playlist/playlist.RadioSure | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tr '|' '\n')
 fi
   fi
     fi
@@ -368,13 +380,16 @@ IFS=$OLDIFS
 export -f load_list
 
 rip_stream () {
+[[ -f /tmp/rip ]] && exit
+[[ ! -f /tmp/rip ]] && touch /tmp/rip
 if [ -z "$(which streamripper)" ]; then
 yad --center --title="Streamripper not installed" --text=" Package 'streamripper' is not installed, \n please install it to be able to rip a radio stream." --button="gtk-close" --width=400
+[[ -f /tmp/rip ]] && rm -f /tmp/rip
 exit
 fi
 if [ "$#" -ne 1 ]
 then
-export URL=$(cat $LAUNCHDIR/tmp/nowurl)
+export URL=$(cat $HOME/.yradio/tmp/nowurl)
 else
 export URL=$1
 fi
@@ -384,6 +399,8 @@ if [ -n "$PIDRIP" ]; then
 # Already ripping from this url
 LFONT="<span size='medium' foreground='#C28300'><b>          *** StreamRipping ***</b></span>"
 yad --window-icon=star --text " $LFONT \n Streamripper is already ripping from: \n $URL \n It's possible however to rip at the same time from a different stream, \n Just play another stream and activate stream ripping again." --title "Stream Ripping" --width 550 --center --button="gtk-close:1"
+[[ -f /tmp/rip ]] && rm -f /tmp/rip
+
 exit
 fi
 
@@ -407,11 +424,11 @@ echo "$DL_DIR"
 
 # Start GUI
 LFONT="<span size='medium' foreground='#C28300'><b>          *** StreamRipping ***</b></span>"
-choices=$(yad --window-icon="$LAUNCHDIR/icons/record.png" --text "$LFONT \n This will rip the current playing or last selected stream (in case stopped) \n Ripping to separate tracks in selected directory \n <b>Note</b>: Not all stream types are supported, \n e.g. windows media player stream won't work \n Please set the directory for ripped tracks \n (inside will be automatically created folder named after radiostation)" --width 500 --title "Stream Ripping" --center \
+choices=$(yad --window-icon=star --text "$LFONT \n This will rip the current playing or last selected stream (in case stopped) \n Ripping to separate tracks in selected directory \n <b>Note</b>: Not all stream types are supported, \n e.g. windows media player stream won't work \n Please set the directory for ripped tracks \n (inside will be automatically created folder named after radiostation)" --width 500 --title "Stream Ripping" --center \
 --form \
 --field=" Directory for stream rips:  :DIR" "$DL_DIR" \
 --button="Start:0" --button="gtk-cancel:1")
-[ $? -ne 0 ] && exit
+[ $? -ne 0 ] && rm -f /tmp/rip && exit
 
 export DL_DIR=$(echo $choices | awk 'BEGIN {FS="|" } { print $1 }')
 
@@ -488,6 +505,7 @@ kill $PIDTAIL 2> /dev/null
 kill $STREAMPID 2> /dev/null
 #pkill streamripper 2> /dev/null
 rm -f $stream $list
+[[ -f /tmp/rip ]] && rm -f /tmp/rip
 }
 export -f rip_stream
 
@@ -495,8 +513,8 @@ stream_info () {
 check_pid_mplayer
 if [ -n "$pidmplayer" ]; then
 (
-echo "URL :  $(cat $LAUNCHDIR/tmp/nowurl)"
-grep --line-buffered "^Name.*:\|^Genre.*\|^Website\|^Public\|^Bitrate" $LAUNCHDIR/tmp/mplayer-output
+echo "URL :  $(cat $HOME/.yradio/tmp/nowurl)"
+grep --line-buffered "^Name.*:\|^Genre.*\|^Website\|^Public\|^Bitrate" $HOME/.yradio/tmp/mplayer-output
 ) | yad --text-info --title "Stream Info" --height 200 --width 500 --margins 5 --button="gtk-close"
 else
 echo "No Stream Playing"  | yad --text-info --title "Stream Info" --window-icon "icons/audio-x-generic.png" --height 100 --width 200 --wrap --margins 5 --button="gtk-close"
@@ -508,13 +526,12 @@ exec 3<> $fpipe
 exec 4<> $nppipe
 PIPE=/tmp/${0##*/}.$RANDOM
 mkfifo $PIPE
-
 # attach a file descriptor to the file
 exec 5<> $PIPE
 
 # add handler to manage process shutdown
 function on_exit() {
-find "$LAUNCHDIR"/tmp/ ! -name 'nowurl' ! -name 'nowplay' -type f -exec rm -f '{}' \;
+find "$HOME"/.yradio/tmp/ ! -name 'nowurl' ! -name 'nowplay' -type f -exec rm -f '{}' \;
 #rm -f "$LAUNCHDIR"/tmp/*
     echo "quit" >&3
     echo "quit" >&4
@@ -523,8 +540,13 @@ find "$LAUNCHDIR"/tmp/ ! -name 'nowurl' ! -name 'nowplay' -type f -exec rm -f '{
     rm -f $nppipe
     rm -f $YAD_ALSA
     rm -f $PIPE
+	[[ -f /tmp/yrad ]] && rm -f /tmp/yrad
+	[[ -f /tmp/info ]] && rm -f /tmp/info
+	[[ -f /tmp/audio ]] && rm -f /tmp/audio
+	[[ -f /tmp/ss ]] && rm -f /tmp/ss
+	[[ -f /tmp/fav ]] && rm -f /tmp/fav
 # Make playlist.Favorites the newest, so it comes always on top of categories
-touch "$LAUNCHDIR"/playlist/playlist.Favorites
+touch "$HOME"/.yradio/playlist/playlist.Favorites
 
 }
 export -f on_exit
@@ -532,13 +554,13 @@ export -f on_exit
 trap on_exit EXIT
 
 quit_from_tray () {
-if [ -f $LAUNCHDIR/tmp/nowurl ]; then
+if [ -f $HOME/.yradio/tmp/nowurl ]; then
 #killall mplayer
 check_pid_mplayer
 kill $(echo $pidmplayer) 2> /dev/null
 #[ "`pidof mplayer`" ] && killall mplayer
 fi
-find "$LAUNCHDIR"/tmp/ ! -name 'nowurl' ! -name 'nowplay' -type f -exec rm -f '{}' \;
+find "$HOME"/.yradio/tmp/ ! -name 'nowurl' ! -name 'nowplay' -type f -exec rm -f '{}' \;
 #rm -f "$LAUNCHDIR"/tmp/*
     echo "quit" >&3
     echo "quit" >&4
@@ -551,7 +573,6 @@ pidyad="`ps -eo pid,cmd | grep -v grep | grep "yad --center --paned --key=$fkey"
 kill $pidyad 2> /dev/null
 pdyadplug=$(ps -eo pid,cmd | grep -v grep | grep "yad --plug=$fkey"  | awk '{ print $1 }')
 kill $pid_loop1 $pid_loop2 $pdyadplug 2> /dev/null
-
 }
 export -f quit_from_tray
 
@@ -560,6 +581,8 @@ export YAD_ALSA="/tmp/YAD_ALSA.$RANDOM"
 mkfifo "$YAD_ALSA"
 
 yad_alsa_audio(){
+[[ -f /tmp/audio ]] && exit
+[[ ! -f /tmp/audio ]] && touch /tmp/audio
 
  # set window class
  YAD_CLASS="YAD_ALSA_AUDIO"
@@ -573,6 +596,7 @@ yad_alsa_audio(){
         # Compares window class pid with the pid of a window in focus
         if [[ "$pid" == "$wpid" ]]; then
            xdotool windowunmap $pid
+           [[ -f /tmp/audio ]] && rm -f /tmp/audio
            exit 1
         fi
    done
@@ -608,17 +632,16 @@ yad --scale \
 while read VOL; do
     amixer sset 'Master' "$VOL%"
 done
+[[ -f /tmp/audio ]] && rm -f /tmp/audio
 }
 export -f  yad_alsa_audio
 
-
 # add handler for tray icon left click
 function on_click() {
-#set_gtkrc
-#export GTK2_RC_FILES="$HOME/.dogradio/tmp/gtkrc.yad"
+
 check_pid_mplayer
-if [ -n "$pidmplayer" -o -n "$(grep "Stopped\|Paused\|Could not connect to stream" $LAUNCHDIR/tmp/onclick 2> /dev/null)" ]; then
-	TITLE="$(cat $LAUNCHDIR/tmp/onclick 2> /dev/null)"
+if [ -n "$pidmplayer" -o -n "$(grep "Stopped\|Paused\|Could not connect to stream" $HOME/.yradio/tmp/onclick 2> /dev/null)" ]; then
+	TITLE="$(cat $HOME/.yradio/tmp/onclick 2> /dev/null)"
     yad --on-top --geometry "400x70-10-35" --image-on-top --no-markup --image "$LAUNCHDIR/icons/internet_radio_48.png" --text "$TITLE  " --undecorated --no-buttons --skip-taskbar &
 sleep 5
 kill $!
@@ -645,10 +668,10 @@ Exit! bash -c quit_from_tray!$LAUNCHDIR/icons/quit.png " >&5
 
 ### Now playing, cycle-read form ###
 #echo -e '\f' >> "$nppipe"
-LISTS=$(ls -t $LAUNCHDIR/playlist/playlist.*)
+LISTS=$(ls -t $HOME/.yradio/playlist/playlist.*)
 export CATLIST=$(while read -r LIST; do echo "${LIST##*.}" | grep -v 'RadioSure' | tr '\n' '!'; done <<< "${LISTS}")
-echo "YRadio, no stream playing" > $LAUNCHDIR/tmp/metadata
-META=$(tail -n -1 $LAUNCHDIR/tmp/metadata 2> /dev/null | cut -c 1-130)
+echo "YRadio, no stream playing" > $HOME/.yradio/tmp/metadata
+META=$(tail -n -1 $HOME/.yradio/tmp/metadata 2> /dev/null | cut -c 1-130)
  
 echo "$META" >&4
 echo "" >&4
@@ -658,8 +681,8 @@ echo "bash -c update_index" >&4
 echo $load_cmd >&4
 
 while true; do 
-NEWMETA=$(tail -n -1 $LAUNCHDIR/tmp/metadata 2> /dev/null | cut -c 1-130)
-NEWNOWPLAY=$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)
+NEWMETA=$(tail -n -1 $HOME/.yradio/tmp/metadata 2> /dev/null | cut -c 1-130)
+NEWNOWPLAY=$(cat $HOME/.yradio/tmp/nowplay 2> /dev/null)
 if [ "$NEWMETA" != "$META" -o "$NEWNOWPLAY" != "$NOWPLAY" ]; then
 
    if [ "$NEWMETA" = "" ]; then
@@ -679,7 +702,7 @@ sleep 5
 if [ "$NEWMETA" = "Stopped" ]; then
     echo "" >&4
 else
-    echo "$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)" >&4
+    echo "$(cat $HOME/.yradio/tmp/nowplay 2> /dev/null)" >&4
 fi
 
 echo "" >&4
@@ -699,23 +722,23 @@ pid_loop1=$!  # for to kill at exit
 
 # Notification, now playing
 while true; do 
-NEWMETA=$(tail -n -1 $LAUNCHDIR/tmp/metadata 2> /dev/null | cut -c 1-130)
-NEWNOWPLAY=$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)
+NEWMETA=$(tail -n -1 $HOME/.yradio/tmp/metadata 2> /dev/null | cut -c 1-130)
+NEWNOWPLAY=$(cat $HOME/.yradio/tmp/nowplay 2> /dev/null)
 if [ "$NEWMETA" != "$META" -o "$NEWNOWPLAY" != "$NOWPLAY" ]; then
 
    if [ "$NEWMETA" = "" ]; then
 
-   echo "-" > $LAUNCHDIR/tmp/onclick
+   echo "-" > $HOME/.yradio/tmp/onclick
    elif [ "$NEWMETA" = "Could not connect to stream" ]; then
-   echo "Could not connect to stream"  > $LAUNCHDIR/tmp/onclick
+   echo "Could not connect to stream"  > $HOME/.yradio/tmp/onclick
    else
-   echo "$NEWMETA"  > $LAUNCHDIR/tmp/onclick
+   echo "$NEWMETA"  > $HOME/.yradio/tmp/onclick
    fi
 if [ "$NEWMETA" = "Stopped" ]; then
-    echo "Stopped" > $LAUNCHDIR/tmp/onclick
+    echo "Stopped" > $HOME/.yradio/tmp/onclick
 fi
-    echo "$(cat $LAUNCHDIR/tmp/nowplay 2> /dev/null)" >> $LAUNCHDIR/tmp/onclick
-#NEWONCLICK="$(cat $LAUNCHDIR/tmp/onclick)"
+    echo "$(cat $HOME/.yradio/tmp/nowplay 2> /dev/null)" >> $HOME/.yradio/tmp/onclick
+#NEWONCLICK="$(cat $HOME/.yradio/tmp/onclick)"
 #if [ "$NEWONCLICK" != "$ONCLICK" ]; then
 on_click &
 #ONCLICK="$NEWONCLICK"
@@ -727,18 +750,38 @@ sleep 2
 done &
 pid_loop2=$!
 
-yad --plug="$fkey" --tabnum=1 --text="\t\t\t\tSelect category or do a search and click 'Load'" --form --align=right --columns=3 --cycle-read --field=": " --field="      Double click to play\t\t\t\t\t\t     <b>Search:</b>:lbl" --field=":CB" --field="" --field="Update Index:fbtn" --field="Load!gtk-add:fbtn" <&4 &
+yad --plug="$fkey" --tabnum=1 \
+--text="\t\t\t\tSelect category or do a search and click 'Load'" \
+--form --align=right --columns=3 --cycle-read --field=": " \
+--field="      Double click to play\t\t\t\t\t\t     <b>Search:</b>:lbl" \
+--field=":CB" --field="" --field="Update Index:fbtn" \
+--field="Load!gtk-add:fbtn" <&4 &
 
-yad --plug="$fkey" --tabnum=2 --list --separator="|" --no-markup --select-action='bash -c "sel_file %s"' --dclick-action='bash -c "play_url %s"' --hide-column 1 --search-column=2 --column URL --column Name --column Genre --expand-column=2 $RADIOLIST <&3 &
+yad --plug="$fkey" --tabnum=2 \
+--window-icon "audio-x-generic.png" --list --separator="|" \
+--no-markup --select-action='bash -c "sel_file %s"' \
+--dclick-action='bash -c "play_url %s"' --hide-column 1 \
+--search-column=2 --column URL --column Name --column Genre \
+--expand-column=2 $RADIOLIST <&3 &
 
 # Will load Favorites at start:
 load_list &
 
-yad --center --paned --key="$fkey" --button="!$LAUNCHDIR/icons/fav.png!Add or Remove Favorites":'bash -c "add_rem_fav %s"' --button="!$LAUNCHDIR/icons/save.png!Save search results to Category:bash -c save_search" --button="!$LAUNCHDIR/icons/pause_play.png!Pause or Play:bash -c pause_stream" --button="!$LAUNCHDIR/icons/stop.png!Stop:bash -c stop_stream" --button="!$LAUNCHDIR/icons/record.png!Rip Stream:bash -c rip_stream"  --button="!$LAUNCHDIR/icons/volume.png!Volume Control:bash -c yad_alsa_audio" --button="!$LAUNCHDIR/icons/gtk-help.png!Help:bash -c help_info"  --button="!$LAUNCHDIR/icons/quit.png!Quit:1" --buttons-layout=center --width=780 --height=590 \
-    --title="YRadio v0.0.6" --window-icon="$LAUNCHDIR/icons/internet_radio_48.png" --orient=vert --splitter=120
+yad --center --paned --key="$fkey" \
+--button="!$LAUNCHDIR/icons/fav.png!Add or Remove Favorites":'bash -c "add_rem_fav %s"' \
+--button="!$LAUNCHDIR/icons/save.png!Save search results to Category:bash -c save_search" \
+--button="!$LAUNCHDIR/icons/pause_play.png!Pause or Play:bash -c pause_stream" \
+--button="!$LAUNCHDIR/icons/stop.png!Stop:bash -c stop_stream" \
+--button="!$LAUNCHDIR/icons/record.png!Rip Stream:bash -c rip_stream"  \
+--button="!$LAUNCHDIR/icons/volume.png!Volume Control:bash -c yad_alsa_audio" \
+--button="!$LAUNCHDIR/icons/gtk-help.png!Help:bash -c help_info"  \
+--button="!$LAUNCHDIR/icons/quit.png!Quit:1" --buttons-layout=center \
+--width=780 --height=590 \
+--title="YRadio v0.0.6" --window-icon="$LAUNCHDIR/icons/internet_radio_48.png" \
+--orient=vert --splitter=120
 [ $? -ne 0 ] && stop_stream
 kill $pid_loop1 $pid_loop2
+[[ -f /tmp/yrad ]] && rm -f /tmp/yrad
 exit
-
 #exec 3>&-
 #exec 4>&-

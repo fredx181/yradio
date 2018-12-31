@@ -1,19 +1,13 @@
 http://s2.stationplaylist.com:9120/listen.aac|101.3 FM Hedland Community Radio Australia|Community
 http://s4.viastreaming.net/8765/listen.asx|102.9 FM Hot Tomato (Queensland) Australia|Pop
-http://fastcast.gbcast.com.au:5289/stream|106.3 FM Australia|Variety
-http://listen.radionomy.com/1950sradio|1950s Radio Australia|50s/60s
-http://119.15.96.188/stream2.mp3|1ART 92.7 FM Canberra, ACT Australia|Variety
-http://icy.ihrcast.arn.com.au/au_006_icy|1CBR 106.3 FM Canberra, ACT Australia|Adult Contemporary
 http://198.74.51.37:9998/|1RPH 1125 AM Canberra, ACT Australia|Talk
 http://s2.viastreaming.net:6165/|1WAY 91.9 FM Canberra, ACT Australia|Christian-Contemporary
 http://eno.emit.com:8000/1xxr_live_64.aacp|1XXR 98.3 FM Canberra, ACT Australia|Community
-http://173.212.241.240:8000/;stream.mp3|2AAA 107.1 FM Wagga Wagga, NSW Australia|Community
 http://legacy.scahw.com.au/2aay_32|2AAY 104.9 FM Albury, NSW Australia|Hit Radio Rock/Top 40
 http://203.45.169.24:840/broadwave.mp3|2BACR 100.9 FM Bankstown, NSW Australia|Community
 http://2bay.amrapstream.com:8000/stream|2BAY 99.9 FM Byron Bay, NSW Australia|Community
 http://usa1-pn.mixstream.net:8086/;|2BBB 93.3 & 107.3 FM Bellingen, NSW Australia|Community
 http://legacy.scahw.com.au/2bdr_32|2BDR 105.7 FM Albury, NSW Australia|Rock
-http://abc.net.au/res/streaming/audio/aac/local_sydney.pls|2BL 702 AM ABC Sydney, NSW Australia|Talk-News
 http://streaming.braidwoodradio.com.au:88/broadwave.mp3?src=1&rate=1&ref=http%3A%2F%2Fwww.braidwoodradio.com.au%2F|2BRW 94.5 FM Braidwood, NSW Australia|Community
 http://live-radio02.mediahubaustralia.com/2DUBW/mp3/|2BY 657 AM ABC Western Plains, NSW Australia|Talk-News
 http://37.59.32.115/proxy/radio2ca?mp=/stream2ca.mp3|2CA Canberra Australia|50s/60s
@@ -25,73 +19,55 @@ http://legacy.scahw.com.au/2cfs_32|2CFS 106.3 FM Coffs Harbour, NSW Australia|Hi
 http://shoutcast.2gb.com/2ch|2CH 1170 AM Sydney, NSW Australia|Easy Listening
 http://abc.net.au/res/streaming/audio/mp3/local_canberra.pls|2CN 666 AM ABC Canberra, ACT Australia|Talk-News
 http://legacy.scahw.com.au/2csf_32|2CSF 105.5 FM Coffs Harbour, NSW Australia|Hit Radio Rock/Top 40
-http://174.36.232.227:8064/|2CUZ 106.5 FM Burke, NSW Australia|Community
 http://legacy.scahw.com.au/2day_32|2DAY 104.1 FM Sydney, NSW Australia|Hit Radio Rock/Top 40
 http://tcom-s1.tcom.net.au:8000/2dry|2DRY 107.7 FM Broken Hill, NSW Australia|Community
-http://fastcast.gbcast.com.au:5648/stream|2EC East Coast Radio Australia|Variety
 http://shoutcast.2gb.com/listen.pls?sid=1|2GB 873 AM Sydney Australia|Talk-News
 http://legacy.scahw.com.au/2ggo_32|2GGO 107.7 FM Gosford, NSW Australia|Adult Contemporary
-http://2glf.serverroom.us:8692/|2GLF 89.3 FM Liverpool, NSW Australia|Community
 http://live-radio01.mediahubaustralia.com/2TJW/aac/;|2JJJ 105.7 Sydney, NSW Australia|Variety
 http://legacy.scahw.com.au/2kko_32|2KKO 102.9 FM Newcastle, NSW Australia|Adult Contemporary
 http://s4.voscast.com:7648|2KM Radio2moro 1620 AM Sydney, NSW Australia|Public Radio
 http://stream2.cnmns.net/941-mp3|2LIV 94.1 FM Coniston, NSW Australia|Christian
 http://eno.emit.com:8000/2mbs_live_128.mp3|2MBS 102.5 FM Sydney, NSW Australia|Classical
 http://eno.emit.com:8000/2mbs-d_live_128.mp3|2MBS Digital Sydney, NSW Australia|Classical
-http://apww12.csumain.csu.edu.au:80/live/2mce.stream/playlist.m3u8|2MCE 92.3 FM Bathurst, NSW Australia|Community
 http://2mcr1003fm.serverroom.us:4588|2MCR 100.3 FM Campbelltown, NSW Australia|Community
 http://www.2mfm.org.au:8000/live|2MFM Muslim Community Radio 92.1 FM Sidney, NSW Australia|Community
 http://shaincast.caster.fm:22091/listen.mp3?authn1ece671e95d95731ca474b2491e1e21f|2MIA 95.1 FM Griffith, NSW Australia|Community
 http://legacy.scahw.com.au/2mmm_32|2MMM 104.9 FM Sydney, NSW Australia|Rock
 http://198.74.51.37:8265/|2MM Radio Australia|World/Folk
 http://abc.net.au/res/streaming/audio/aac/local_newcastle.pls|2NC 1233 AM ABC Newcastle, NSW Australia|Talk-News
-http://uk5.internet-radio.com:8101/|2NIM 102.3 FM Nimbin, NSW Australia|Community
-http://fastcast.gbcast.com.au:5559/stream|2NM AM981 Australia|Variety
-http://broadcaster1.newcastle.edu.au:8000/2NURFM-aacPlus|2NUR 103.7 FM Newcastle, NSW Australia|University
 http://s14.myradiostream.com:19092/;|2NVR 105.9 FM Bowraville, NSW Australia|Community
 http://s10.myradiostream.com:12134/;|2OCB 107.5 FM Orange, NSW Australia|Community
 http://icy.ihrcast.arn.com.au/au_010_icy|2ONE 96.1 FM Wentworth Falls, NSW Australia|Urban Contemporary
 http://legacy.scahw.com.au/2pqq_32|2PQQ 100.7 FM Port Macquarie, NSW Australia|Hit Radio Rock/Top 40
 http://streaming.novaentertainment.com.au/smooth953|2PTV smoothfm 95.3 FM Sydeny, NSW Australia|Easy Listening
-http://streaming.qbn967.com.au:8000/listen.pls|2QBN FM Australia|Community
-http://www.radio889.org.au/media/listen3.m3u|2RBR 88.9 FM Lismore, NSW Australia|Community
 http://eastsidestreamer.myradio.click:8000/stream|2RES Eastside 89.7 FM Sidney, NSW Australia|Jazz
-http://stream.scahw.com.au/live/2roc.stream/playlist.m3u8|2ROC 104.7 FM Camberra, ACT Australia|Hit Radio Rock/Top 40
 http://legacy.scahw.com.au/2rox_32|2ROX 102.3 FM Port Macquarie, NSW Australia|Hit Radio Rock/Top 40
 http://27.100.36.118:8000/stream/2/|2RPH 100.5 FM Newcastle, NSW Australia|Talk
 http://27.100.36.118:8000/stream/1/|2RPH 1224 AM Sydney, NSW Australia|Talk
-http://sc11.spacialnet.com/stream/1720/radioskidrow.mp3|2RSR 89.9 FM Sydney, NSW Australia|Community
 http://stream.2ser.com:8080/broadwave.mp3?src=1&kbps=128|2SER 107.3 FM Sydney, NSW Australia|Community
-http://s2.viastreaming.net:7100/;listen.pls|2SM 1269AM Sydney Australia|Talk
 http://61.69.112.50:88/broadwave.mp3?src=1&rate=1|2SNR Radio Five-O-Plus 93.3 FM Gosford, NSW Australia|Community
 http://192.95.39.65:5582/stream|2ST 999 AM Australia|Variety
 http://streaming.novaentertainment.com.au/nova969|2SYD 96.9 FM Sydney, NSW Australia|Hit Radio Rock/Top 40
 http://tunefm-stream.une.edu.au:8000/;|2UNE 106.9 FM Armidale, NSW Australia|University
 http://icecast.arn.com.au/1017.mp3|2UUS 101.7 WSFM Sydney Australia|Rock-Classic
-http://streaming.softcast.com.au:8004/;|2VTR 89.9 FM Hawkesbury, NSW Australia|Variety
 http://wma3.viastreaming.net/2web?MSWMExt=.asf|2WEB 585 AM Bourke, NSW Australia|Community
 http://icy.arn.com.au/au_007_icy|2WFM 106.5 FM Sydney, NSW Australia|Hit Radio Rock/Top 40
-http://i98fm.com.au/livestream|2WIN 98.1 FM Wollongong, NSW Australia|Hot Adult Contemporary
 http://198.74.51.37:9308/;|2WKT 107.1 FM Bowral, NSW Australia|Community
 http://streamer3.rightclickitservices.com:9760/;stream.mp3|2WOW 100.7 FM St Marys, NSW Australia|Community
 http://legacy.scahw.com.au/2xxx_32|2XXX 106.9 FM Newcastle, NSW Australia|Hits: New and Old
 http://war.str3am.com:7180/live.m3u|3ABN Radio Australia|Christian
 http://s23.myradiostream.com:13240|3APL 98.5 FM Bacchus Marsh, VIC Australia|Community
 http://shout01.stream.hostworks.com.au/3aw|3AW 693 AM Melbourne, VIC Australia|Talk
-http://fastcast.gbcast.com.au:5620/stream|3BA 102.3 FM Australia|Variety
 http://legacy.scahw.com.au/3bbo_32|3BBO 93.5 FM Bendigo, VIC Australia|Adult Contemporary
 http://legacy.scahw.com.au/3bdg_32|3BDG 91.9 FM Bendigo, VIC Australia|Hit Radio Rock/Top 40
 http://abc.ihrcast.arn.com.au/MIXX1063AAC_SC|3CCS 106.3 FM Colac, VIC Australia|Hits
-http://www.3cr.org.au/sites/default/files/3cr-community-radio-20kb.pls|3CR 855 AM Fitzroy, VIC Australia|Community
 http://playerservices.streamtheworld.com/pls/ACE_3CSAAC.pls|3CS 1134 AM Colac, VIC Australia|Talk
 http://streamer2.rightclickitservices.com:7210/;stream.d5g3|3CW Chinese Radio 1341 AM Australia|Variety
 http://legacy.scahw.com.au/3fox_32|3FOX 101.9 FM Melbourne, VIC Australia|Hit Radio Rock/Top 40
 http://streaming.powerserve.com.au:8000/rhemafm.m3u|3GGR 96.3 FM Geelong, VIC Australia|Christian
 http://abcradiolivehls-lh.akamaihd.net/i/localsale_1@326640/index_24_a-b.m3u8|3GLR 100.7 FM ABC Gippsland, VIC Australia|Talk-News
-http://103.4.18.140:9998|3GRR 104.7 FM Echuca, VIC Australia|Community
 http://playerservices.streamtheworld.com/pls/GOLD1242AAC.pls|3GV 1242 AM Traralgon, VIC Australia|Talk
 http://playerservices.streamtheworld.com/pls/ACE_3HAAAC.pls|3HA 981 AM Hamilton VIC Australia|Talk
-http://78.129.232.162/stream.mp3?ipport=78.129.232.162_23030|3HOT 106.7 FM Mildura, VIC Australia|Community
 http://audio.joy.org.au/proxy/joy949?mp=/live|3JOY 94.9 FM Melburne, VIC Australia|Electronica-Dance/DJ
 http://public-radio1.internode.on.net:8002/75|3KND 1503 AM Melbourne, VIC Australia|Community
 http://abc.net.au/res/streaming/audio/aac/local_melbourne.pls|3LO 774 AM ABC Melbourne, VIC Australia|Talk-News
@@ -108,7 +84,6 @@ http://s4.viastreaming.net:7750/listen.pls|3PFM Phoenix 106.7 FM Bendigo, VIC Au
 http://streaming.novaentertainment.com.au/smooth915|3PTV smoothfm 91.5 FM Melbourne, VIC Australia|Easy Listening
 http://streamer2.rightclickitservices.com:8008/;stream.mp3|3PVR 88.6 FM Melbourne, VIC Australia|Community
 http://s15.myradiostream.com:12846|3RIM 97.9 FM Melton, VIC Australia|Community
-http://legacy.scahw.com.au/3rmr_32|3RMR 97.9 FM Mildura, VIC Australia|Adult Contemporary
 http://smedia.hdxen.com:8000/listen.pls|3RPH 1179 AM Melbourne, VIC Australia|Talk
 http://majestic.wavestreamer.com:3777/1|3RPP 98.7 FM Mornington, VIC Australia|Community
 http://radio1.internode.on.net:8002/114|3RRR 102.7 FM Melbourne, VIC Australia|Community
@@ -118,16 +93,12 @@ http://playerservices.streamtheworld.com/pls/ACE_3SHAAC.pls|3SH 1332 AM Mallee, 
 http://abc.ihrcast.arn.com.au/MIXX1077AAC_SC|3SHI 107.7 FM Swan Hill, VIC Australia|Hits
 http://legacy.scahw.com.au/3srr_32|3SRR 95.3 FM Shepparton, VIC Australia|Adult Contemporary
 http://legacy.scahw.com.au/3sun_32|3SUN 96.9 FM Shepparton, VIC Australia|Hit Radio Rock/Top 40
-http://icecast.arn.com.au/1011.mp3|3TTT KISS 101.1 Australia|90s
 http://rsnshout.dyn.rsn.net.au:8000/rsn|3UZ 927 AM Melbourne, VIC Australia|Talk-Sports
 http://184.154.202.243:8049/|3VYV Yarra Valley FM 99.1 Woori Yallock, VIC Australia|Community
-http://120.151.226.109:88/broadwave.mp3?src=1|3WAY 103.7 FM Warrnambool, VIC Australia|Community
 http://tcom-s1.tcom.net.au:8000/3wbc|3WBC 94.1 FM Box Hill, VIC Australia|Community
 http://playerservices.streamtheworld.com/pls/ACE_3WMAAC.pls|3WM 1089 AM Horsham, VIC Australia|Talk
-http://s8.viastreaming.net:7050/;|3WMA 94.9 FM Castlemaine, VIC Australia|Variety
 http://stream.stereo974.com/listen.pls|3WRB 97.4 FM Melburne West, VIC Australia|Pop
 http://abc.ihrcast.arn.com.au/MIXX1013AAC_SC|3WWM 101.3 FM Horsham, VIC Australia|Hits
-http://www.greekmediagroup.com/listen.asx|3XY Radio Hellas 1422AM Melbourne Greek Radio Australia|World/Folk
 http://s7.viastreaming.net:8305/|4AAA 98.9 FM Brisbane, QLD Australia|Community
 http://abc.net.au/res/streaming/audio/mp3/local_coast_fm.pls|4ABCRR 91.7 FM ABC Gold Coast, QLD Australia|Talk-News
 http://legacy.scahw.com.au/4amm_32|4AMM 97.9 FM Atherton, QLD Australia|Hit Radio Rock/Top 40
@@ -136,21 +107,15 @@ http://legacy.scahw.com.au/4bbb_32|4BBB 105.3 FM Brisbane, QLD Australia|Hit Rad
 http://shoutcast.4bc.com.au/4bc|4BC 1116 AM Brisbane, QLD Australia|Talk-News
 http://165.228.147.198:88/broadwave.mp3?src=1&rate=1&ref=http%3A%2F%2Fwww.coralcoastradio.net.au%2F|4BCR 94.7 FM Bundaberg South, QLD Australia|Community
 http://icecast.arn.com.au/973.mp3|4BFM 97.3 FM Brisbane, QLD Australia|70s/80s
-http://streaming.mytalk.com.au/4bh|4BH 882 AM Brisbane, QLD Australia|Easy Listening
 http://streaming.brisbaneyouthradio.com.au:8080/;|4BI 1197 AM Brisbane, QLD Australia|Community
 http://streaming.novaentertainment.com.au/nova1069|4BNE 106.9 FM Brisbane, QLD Australia|Hit Radio Rock/Top 40
-http://fastcast.gbcast.com.au:5497/stream|4BU classic hits 1332 am Australia|Hits
-http://fastcast.gbcast.com.au:5092/stream|4CA 846 AM Australia|Hits
 http://stream2.cnmns.net/juice1073|4CAB 107.3 FM Southport, QLD Australia|Community
 http://s3.viastreaming.net:8930/;|4CBL 101 FM Logan Village, QLD Australia|Community
 http://legacy.scahw.com.au/4cee_32|4CEE 101.9 FM Maryborough, QLD Australia|Hit Radio Rock/Top 40
-http://198.74.51.37:9984/;|4CIM 98.7 FM Cairns, QLD Australia|Community
 http://stream.4crb.com:8000/stream/1/|4CRB 84.9 FM Gold Coast, QLD Australia|Easy Listening
-http://wm5.spacialnet.com/crowfm|4CSB Crow FM 90.7 Wondai, QLD Australia|Community
 http://stream.4eb.org.au:8000/listen.pls|4EB 98.1 FM Brisbane, QLD Australia|Community
 http://stream.4eb.org.au:8100/;stream.mp3|4EB Global WebStream, Brisbane Australia|World/Folk
 http://legacy.scahw.com.au/4gld_32|4GLD 92.5 FM Gold Coast, QLD Australia|Adult Contemporary
-http://38.96.148.134:7906/|4GOD 92.9 FM Toowoomba, QLD Australia|Christian-Contemporary
 http://legacy.scahw.com.au/4gr_32|4GR 864 AM Toowoomba, QLD Australia|Adult Contemporary
 http://legacy.scahw.com.au/4hot_32|4HOT 103.5 FM Cairns, QLD Australia|Hit Radio Rock/Top 40
 http://s4.viastreaming.net:8765/;|4HTB 102.9 FM Gold Coast, QLD Australia|Adult Contemporary
@@ -160,51 +125,37 @@ http://legacy.scahw.com.au/4mbb_32|4MBB 103.5 FM Maryborough, QLD Australia|Hit 
 http://s9.viastreaming.net:9620/;stream.mp3|4MBS 103.7 FM Brisbane, QLD Australia|Classical
 http://stream.radiometro.com.au:8888|4MET Radio Metro 105.7 FM Gold Coast, QLD Australia|Dance/DJ
 http://legacy.scahw.com.au/4mic_32|4MIC 102.5 FM Mount Isa, QLD Australia|Hit Radio Rock/Top 40
-http://fastcast.gbcast.com.au:5274/stream|4MK 1026 AM Australia|Hits
 http://legacy.scahw.com.au/4mky_32|4MKY 100.3 FM Mackay, QLD Australia|Hit Radio Rock/Top 40
 http://legacy.scahw.com.au:80/4mmm_32|4MMM 104.5 FM Brisbane, QLD Australia|Rock
 http://69.175.94.98:8008/stream|4MUR 105.9 FM Mackay, QLD Australia|Community
-http://206.190.136.141:7347/Live|4NAG 91.3 FM Yeppoon, QLD Australia|Community
 http://s7.viastreaming.net:8855/|4NPR 91.9 FM Cairns, QLD Australia|Community
 http://live-radio02.mediahubaustralia.com/4CRNW/mp3/|4QCC 106.7 FM ABC Far North, QLD Australia|Talk-News
 http://live-radio02.mediahubaustralia.com/4LONW/mp3/|4QL 540 AM ABC Western Queensland, QLD Australia|Talk-News
 http://live-radio02.mediahubaustralia.com/4LRW/mp3/;|4QR 612 AM ABC Brisbane, QLD Australia|Talk-News
 http://live-radio02.mediahubaustralia.com/4TOOW/mp3/|4QS  747 AM ABC Southern Queensland, QLD Australia|Talk-News
 http://legacy.scahw.com.au/4ram_32|4RAM 103.1 FM Townsville, QLD Australia|Hit Radio Rock/Top 40
-http://210.7.48.48:8830/RockFM.aac|4RFM 96.9 FM Moranbah, QLD Australia|Community
 http://legacy.scahw.com.au/4rgc_32|4RGC 99.5 FM Cairns, QLD Australia|Hit Radio Rock/Top 40
 http://legacy.scahw.com.au/4rgd_32|4RGD 100.7 FM Toowoomba, QLD Australia|Hit Radio Rock/Top 40
 http://legacy.scahw.com.au/4rgk_32|4RGK 101.5 FM Rockhampton, QLD Australia|Hit Radio Rock/Top 40
 http://legacy.scahw.com.au/4rgm_32|4RGM 98.7 FM Mackay, QLD Australia|Hit Radio Rock/Top 40
 http://legacy.scahw.com.au/4rok_32|4ROK 107.9 FM Rockhampton, QLD Australia|Hit Radio Rock/Top 40
 http://s10.myradiostream.com:15800/;|4RPH 1296 AM Brisbane, QLD Australia|Talk
-http://stream.4rr.com.au:8000/4rr|4RR 105.7 FM Charleville, QLD Australia|Community
 http://legacy.scahw.com.au/4sea_32|4SEA Sea FM 90.9 Gold Coast, QLD Australia|Variety
 http://s9.viastreaming.net:9495|4SEE Sea FM Sunshine Coast 91.9 Nambour, QLD Australia|Hit Radio Rock/Top 40
 http://s9.viastreaming.net:9505|4SSS 92.7 FM Nambour, QLD Australia|Hot Adult Contemporary
 http://legacy.scahw.com.au/4too_32|4TOO 102.3 FM Townsville, QLD Australia|Adult Contemporary
-http://101.178.249.86:7000/TripleTFM|4TTT Triple T 103.9 FM Townsville, QLD Australia|Community
-http://sx.desertcrystal.com/live32plus|4WBR 105.1 FM Hervey Bay, QLD Australia|Christian
 http://eclipse.wavestreamer.com:2033/Live|4WHO 99.7 FM Yarraman, QLD Australia|Community
 http://stream.4zzzfm.org.au:789/|4ZZZ 102.2 Brisbane, QLD Australia|Community
 http://streaming.novaentertainment.com.au/fiveaa|5AA 1395 AM Adelaide Australia|Talk
 http://icy.arn.com.au/au_003_icy|5ADD 102.3 FM Adelaide, SA Australia|Hot Adult Contemporary
 http://streaming.novaentertainment.com.au/nova919|5ADL 91.9 FM Adelaide, SA Australia|Hit Radio Rock/Top 40
-http://abc.net.au/res/streaming/audio/mp3/local_adelaide.pls|5AN 891 AM ABC Adelaide, SA Australia|Talk-News
 http://live-radio02.mediahubaustralia.com/5PIRW/mp3/|5CK 639 AM ABC North and West, SA Australia|Talk-News
-http://www.coastfm.com.au:4032/broadwavehigh.mp3?src=1|5CST 88.7 FM Adelaide, SA Australia|Community
-http://player.arn.com.au/alternate/cruise1323.asx|5DN 1323 AM Adelaide, SA Australia|Easy Listening
-http://www.fresh927.com.au/streams/liveMP3hq.m3u|5FBI 92.7 FM Adelaide, SA Australia|Community
 http://streamer1.dpwlabs.com/5mbs-128-mp3|5MBS 99.9 FM Adelaide, SA Australia|Classical
 http://legacy.scahw.com.au/5mmm_32|5MMM 104.7 FM Adelaide, SA Australia|Rock
-http://fastcast.gbcast.com.au:5044/stream|5MU 1125 AM Australia|Adult Contemporary
-http://fastcast.gbcast.com.au:5650/stream|5RM classic hits 801 AM Australia|Hits
-http://stream.dpwlabs.com/5VAR-64-mp3|5RPH 1197 AM Adelaide, SA Australia|Talk
 http://5rti.igateway.com.au:8000|5RTI Radio Italiana 531 AM Adelaide, SA Australia|Community
 http://legacy.scahw.com.au/5se_32|5SE 963 AM Mount Gambier, SA Australia|Adult Contemporary
 http://legacy.scahw.com.au/5sef_32|5SEF 96.1 FM Mount Gambier, SA Australia|Hit Radio Rock/Top 40
 http://legacy.scahw.com.au/5ssa_32|5SSA hit107 Adelaide, SA Australia|Hot Adult Contemporary
-http://eno.emit.com:8000/5uv_live_128.aacp|5UV 101.5 FM Adelaide, SA Australia|Variety
 http://stream.wowfm.org:8000/wowfm1005|5WOW 100.5 FM Semaphore, SA Australia|Community
 http://173.255.143.170:8015/;stream.mp3|5YYY 107.7 FM Whyalla Norrie, SA Australia|Community
 http://legacy.scahw.com.au/6aay_32|6AAY 106.5 FM Albany, WA Australia|Hit Radio Rock/Top 40
@@ -213,10 +164,8 @@ http://s2.stationplaylist.com:7032/listen.aac|6AUG 97.1 FM Augusta, WA Australia
 http://live-radio02.mediahubaustralia.com/6BRMW/mp3/|6BE 675 AM ABC Kimberley, WA Australia|Talk-News
 http://live-radio02.mediahubaustralia.com/6BUNW/mp3/|6BS 684 AM ABC South West, WA Australia|Talk-News
 http://legacy.scahw.com.au/6bun_32|6BUN 95.7 FM Bunbury, WA Australia|Hit Radio Rock/Top 40
-http://203.59.129.151:8000/live|6CCR 107.9 FM Fremantle, WA Australia|Community
 http://198.143.129.179/stream|6EBA 95.3 FM Perth, WA Australia|Community
 http://live-radio02.mediahubaustralia.com/6KLGW/mp3/|6GF 648 AM ABC Goldfields, WA Australia|Talk-News
-http://74.50.111.37/listern.pls|6HFM 107.3 FM Gosnells, WA Australia|Community
 http://legacy.scahw.com.au/6kar_32|6KAR 97.9 FM Kalgoorlie, WA Australia|Hit Radio Rock/Top 40
 http://legacy.scahw.com.au/6kg_32|6KG 981 AM Kalgoorlie, WA Australia|Adult Contemporary
 http://live-radio02.mediahubaustralia.com/6KARW/mp3/|6KP 702 AM ABC North West, Karratha, WA Australia|Talk-News
@@ -226,14 +175,10 @@ http://east.coastdev.net/6mm-mp3|6MM 1116 AM Mandurah, WA Australia|Oldies
 http://mega6.fast-serv.com:8038/;|6MX 1611 AM Albany, WA Australia|70s/80s
 http://legacy.scahw.com.au/6na_32|6NA 918 AM Narrogin, WA Australia|Adult Contemporary
 http://legacy.scahw.com.au/6nam_32|6NAM 96.5 FM Northam, WA Australia|Hit Radio Rock/Top 40
-http://58.162.154.79:80/NoongarRadio|6NME 100.9 FM Pert, WA Australia|Community
 http://streaming.noongarradio.com/listen.pls|6NME Urban Perth, WA Australia|Urban Contemporary
 http://icy.ihrcast.arn.com.au/au_012_icy|6NOW 96.1 FM Perth, WA Australia|Rock-Pop
 http://192.99.17.12:6192/stream|6NR 100.1 FM Perth, WA Australia|Community
-http://streaming.novaentertainment.com.au/nova937|6PER 93.7 FM Perth, WA Australia|Hit Radio Rock/Top 40
 http://legacy.scahw.com.au/6ppm_32|6PPM 92.9 FM Perth, WA Australia|Hit Radio Rock/Top 40
-http://frn.ihrcast.arn.com.au/6pr|6PR 882 AM Perth, WA Australia|Talk
-http://50.7.76.251:9564/;stream.mp3|6PRK 98.1 FM Halls Creek, WA Australia|Community
 http://119.252.89.92:8000/rtrfm_64.mp3|6RTR 92.1 FM Perth, WA Australia|Community
 http://legacy.scahw.com.au/6se_32|6SE 747 AM Esperance, WA Australia|Adult Contemporary
 http://legacy.scahw.com.au/6sea_32|6SEA 102.3 FM Esperance, WA Australia|Hit Radio Rock/Top 40
@@ -242,36 +187,24 @@ http://ice8.securenetsystems.net/897FM?|6TCR 89.7 FM Wanneroo, WA Australia|Comm
 http://legacy.scahw.com.au/6tz_32|6TZ 963 AM Bunbury, WA Australia|Adult Contemporary
 http://legacy.scahw.com.au/6va_32|6VA 783 AM Albany, WA Australia|Adult Contemporary
 http://abc.net.au/res/streaming/audio/mp3/local_perth.pls|6WF 720 AM ABC Perth, WA Australia|Talk-News
-http://s20.myradiostream.com:12938/;?1448391509309.mp3|6WR 693 AM Kununurra, WA Australia|Community
-http://203.59.219.189:8001/listen|6YCR 101.3 FM York, WA Australia|Community
-http://streaming.the80s.com.au:8022/|77.4 FM THE 80s Australia|70s/80s
+http://203.59.96.229:8001/listen|6YCR 101.3 FM York, WA Australia|Community
 http://7edg.amrapstream.com:8000/stream|7EDG 99.3 FM Hobart, TAS Australia|Community
 http://stream2.cnmns.net/106five|7HFC 106.5FM  Hobart, TAS Australia|Christian-Contemporary
-http://fastcast.gbcast.com.au:5091/stream|7HHO 101.7 FM Hobart, TAS Australia|Adult Contemporary
-http://7mid.dnsalias.net:8000/971fm|7MID 97.1 FM Oatlands, TAS Australia|Community
 http://live-radio02.mediahubaustralia.com/7LAUW/mp3/|7NT 91.7 FM ABC Northern Tasmania, NT Australia|Talk-News
 http://165.228.181.146:88/broadwave.mp3?src=1&rate=1|7RPH Online, TAS Australia|Talk
-http://203.45.159.151:88/broadwave.m3u?src=1&rate=1|7THE 96.1 FM Hobart, TAS Australia|Eclectic
 http://legacy.scahw.com.au:80/7ttt_32|7TTT 100.9 FM Hobart, TAS Australia|Hit Radio Rock/Top 40
-http://fastcast.gbcast.com.au:5654/stream|7XS West Coast Radio Australia|Hits
 http://legacy.scahw.com.au/7xxx_32|7XXX 107.3 FM Hobart, TAS Australia|Adult Contemporary
-http://abc.net.au/res/streaming/audio/aac/local_hobart.pls|7ZR 936 AM ABC Hobart, TAS Australia|Talk-News
 http://s21.myradiostream.com:13656/;listen.mp3|88 FM Big Country Radio Australia|Country
-http://fastcast.gbcast.com.au:5630/stream|89.3 LAFM Australia|Variety
 http://live-radio02.mediahubaustralia.com/8ALIW/mp3/|8AL 783 AM ABC Alice Springs, NT Australia|Talk-News
 http://live-radio02.mediahubaustralia.com/8LRW/mp3/|8DDD 105.7 FM ABC Darwin, NT Australia|Talk-News
 http://211.26.121.186:88/broadwavehigh.mp3|8GGG Darwin's 97 Seven, NT Australia|Adult Contemporary
 http://198.74.51.37:9972/;|8KIN 100.5 FM Alice Springs, NT Australia|Community
-http://streaming.territoryfm.com:8000/TerritoryFM.m3u|8TFM 104.1 FM Darwin, NT Australia|Hits
 http://www.radiobondifm.com/listen.m3u|91.1 FM Radio Bondi FM Australia|Eclectic
 http://stream2.cnmns.net/96five-mp3|96.5 Family Radio Australia Australia|Variety
 http://streamer3.rightclickitservices.com:8899|96.5 Inner FM Melbourne Australia|Community
-http://fastcast.gbcast.com.au:5007/stream|96.5 Wave FM Australia|70s/80s
-http://icecast.arn.com.au/973.mp3|97.3 Coast FM Australia|Hits: New and Old
 http://stream2.cnmns.net/sfmtest|98.5 Sonshine Christmas Extra Australia|Seasonal-Christmas
 http://stream2.cnmns.net/sfmdig|98.5 Sonshine Digital Australia|Christian-Contemporary
 http://stream2.cnmns.net/sfm-mp3|98.5 Sonshine FM Australia|Christian-Contemporary
-http://174.36.232.226:8123/stream|99.9 FM SWR FM Australia|Community
 http://naxos.cdnstream.com/1285_128|A-0 60's Radio Australia|50s/60s
 http://naxos.cdnstream.com/1286_128|A-0 70's Radio Australia|70s/80s
 http://naxos.cdnstream.com/1287_128|A-0 80's Radio Australia|70s/80s
@@ -289,7 +222,6 @@ http://abc.net.au/res/streaming/audio/mp3/abc_country.pls|ABC Country Australia|
 http://live-radio02.mediahubaustralia.com/DJDW/mp3/;|ABC Double J NSW Australia|Rock-Pop
 http://live-radio02.mediahubaustralia.com/XTDW/mp3/;|ABC Extra Australia|Variety
 http://live-radio02.mediahubaustralia.com/GSDW/mp3/;|ABC Grandstand Australia|Talk-Sports
-http://abc.net.au/res/streaming/audio/aac/abc_jazz.pls|ABC Jazz Australia|Jazz
 http://abc.net.au/res/streaming/audio/mp3/news_radio.pls|ABC News Radio Australia|Talk-News
 http://live-radio01.mediahubaustralia.com/RAPW/mp3|ABC Radio Australia (English Service) Australia|Talk-Public Radio
 http://live-radio01.mediahubaustralia.com/RAAW/mp3|ABC Radio Australia (Multi-language Service) Australia|Talk-Public Radio
@@ -307,22 +239,13 @@ http://live-radio01.mediahubaustralia.com/5TJW/mp3|ABC Triple J SA Australia|Roc
 http://live-radio02.mediahubaustralia.com/UNEW/mp3/|ABC Triple J Unearthed Australia|Independent
 http://live-radio01.mediahubaustralia.com/6TJW/mp3|ABC Triple J WA Australia|Rock-Alternative
 http://live-radio01.mediahubaustralia.com/IT2W/mp3|A-League Live Australia|Talk-Sports
-http://alive905.com.au/stream-mp3.m3u|Alive fm 90.5 Australia|Community
 http://streamer.radio.co/s6a349b3a2/listen|AndrewHaug.com Australia|Rock-Heavy Metal
-http://174.37.16.73:1456/Live|Bay & Basin 92.7 FM Australia|Community
-http://listen.radionomy.com/berafnk.m3u|berafnk Australia|Funk
-http://myradiostream.com/bigcountryradio|Big Country Radio 87.6 FM (Queensland) Australia|Country
 http://streaming.radio.co/sfd68ddd77/listen|Bondi Radio Australia|Eclectic
 http://stream.scahw.com.au/live/buddha_128.stream/playlist.m3u8|Buddha Radio Australia|Electronica-Chillout
 http://198.74.51.37:9950/;|CAAMA 2 Youth Radio Australia|Community
-http://relay.broadcastify.com:80/903512690|Cairns Police Australia|Talk
 http://icy.ihrcast.arn.com.au/au_021_icy|Chemist Warehouse Remix Australia|Hot Adult Contemporary
 http://50.7.96.210:8618/;stream.mp3|Cherry Radio Giải Trí Channel (Entertainment) Australia|Asian
-http://174.37.252.208:8500/;stream.mp3|Cherry Radio Trữ Tình Channel (Romantic) Australia|Asian
-http://fastcast.gbcast.com.au:5645/stream|Chilli 90.1fm Australia|Hit Radio Rock/Top 40
 http://s2.stationplaylist.com:9400/listen.aac|City Park Radio 103.7FM Australia|Community
-http://www.clubbersradio.com/listen-mp3.pls|ClubbersRadio.com Australia|Dance/DJ
-http://87.117.197.33/stream.mp3?ipport=87.117.197.33_8361|Coast 88.9 FM Circular Head, 106.1 FM Burnie-Wynyard, 104.7 FM Davonport, Tas. Australia|Community
 http://coles.streaming.novaentertainment.com.au/nsw_act|Coles Radio NSW and ACT Australia|Adult Contemporary
 http://coles.streaming.novaentertainment.com.au/qld|Coles Radio QLD Australia|Adult Contemporary
 http://coles.streaming.novaentertainment.com.au/sa_nt|Coles Radio SA and NT Australia|Adult Contemporary
@@ -334,42 +257,25 @@ http://stream.radiolarrakia.org:8000/darwinfm|Darwin FM 91.5 Australia|Dance/DJ
 http://stream.radio.co/sb6caff5a1/listen|Digisoul Australia|Soul/R&B
 http://87.117.197.33:25352/listen.pls?sid=1|djerdan Australia|Americana
 http://s3.viastreaming.net:8502/|Energy FM Australia Australia|Public Radio
-http://soho.wavestreamer.com:9866/;stream/1/|Energy Groove Radio Australia Australia|Pop
+http://173.192.105.231:9866/listen.pls?sid=1|Energy Groove Australia|top-40
 http://50.7.96.210:8269/stream|Epic Rock Radio Australia|Rock-Heavy Metal
-http://198.178.123.23:7216/;|Fair Dinkum Country Australia|Country
+http://176.31.248.14:12134/listen.pls?sid=1|FM107.5 Orange Australia|adult-contemporary
+http://103.230.159.78:80/F364k.m3u|Format 3 XRN Australia The Songs You Know But Different|dance
 http://stream.scahw.com.au/live/3fox_128.stream/playlist.m3u8|Fox Hit 101.9 Australia|Hits
-http://206.190.136.141:4783/Live|Fusion FM 87.8 FM Australia|Pop
-http://37.59.16.44:8000/galaxiasgreekradio|GALAXIAS GREEK RADIO Lakemba NSW Australia|World/Folk
-http://listen.radionomy.com/gayhitsandcamptunes.m3u|Gay Hits & Camp Tunes Australia|Hits: New and Old
-http://relay.broadcastify.com:80/149429157|Gippsland Police Australia|Talk
 http://s20.myradiostream.com:12530/;|GK International Australia|Variety
-http://player.arn.com.au/alternate/gold1043.m3u|Gold 104.3 FM Melbourne, Australia Australia|Rock-Classic
 http://1.ice1.firststreaming.com:8000/gndr_fm.mp3|Golden Days Radio Australia|Oldies
-http://s9.voscast.com:7216|Golden Years Radio Australia|Oldies
-http://stream.scahw.com.au/live/4gld.stream/playlist.m3u8|Gold FM 92.5 Australia|Variety
-http://58.179.8.52:9080/broadwave.m3u|Greek Radio 1683 AM Sydney Australia|World/Folk
 http://s2.stationplaylist.com:9490/listen.aac|Harvey Community Radio 96.5 fm Australia|Community
-http://37.59.16.44:8000/hellenicradioperthwa|Hellenic Radio Perth Australia|Variety
 http://stream.scahw.com.au/live/4bbb_128.stream/playlist.m3u8|Hit 105 Australia|Hits
-http://stream.scahw.com.au/live/5ssa_128.stream/playlist.m3u8|Hit 107 Australia|Hits
 http://stream.scahw.com.au/live/6ppm_128.stream/playlist.m3u8|Hit 92.9 Australia|Hits
-http://fastcast.gbcast.com.au:5496/stream|Hitz 93.9 FM Australia|Hit Radio Rock/Top 40
-http://87.117.197.33:25352/listen.pls?sid=1|HOLOPHRASIS DJERDAN Australia|Folk
-http://fastcast.gbcast.com.au:5516/stream|Hot 100 FM Australia|Hits
 http://mrnshout.stream.hostworks.com.au:80/hotcountry|Hot Country 92.3 FM Australia|Country
 http://icy.ihrcast.arn.com.au/au_013_icy|iHeart Australia Asia Pop 40 Asia’s Home Grown Chart Show w/ Dom Lau Australia|Asian
 http://icy.ihrcast.arn.com.au/au_019_icy|iHeart AustraliaElf Radio The North Pole's #1 Hit Music Station Australia|Seasonal-Christmas
 http://icy.ihrcast.arn.com.au/iHrGuz01.aac|iHeart Australia Guzman Y Gomez Guac ‘n’ Roll Australia|Mexican
-http://icy.ihrcast.arn.com.au/au_029_icy|iHeart Australia iHeartRadio Countdown AUS The Weeks Hottest Tracks on iHeartRadio Australia|Hits
 http://icy.ihrcast.arn.com.au/au_025_icy|iHeart Australia iHeartRadio Dance Devoted To All Things Dance Australia|Dance/DJ
 http://icy.ihrcast.arn.com.au/au_030_icy|iHeart Australia iHeartRadio Old Skool From Back in the Day Australia|Oldies
-http://abc.ihrcast.arn.com.au/iHRalist|iHeart Australia Kyle & Jackie O's Alist The Biggest Stars and the Hottest Music Australia|Hit Radio Rock/Top 40
 http://ihrhlsweb.arn.com.au/au_017/playlist.m3u8|iHeart Australia Noise11 -Artists making the headlines this week. Australia|Dance/DJ
 http://icy.ihrcast.arn.com.au/au_026_icy|iHeart Australia Planet Oz The Greatest Aussie Music with Gordie Australia|World/Folk
 http://icy.ihrcast.arn.com.au/au_028_icy|iHeart Australia Sydney Gay Lesbian Mardi Gras Uniting to Create Equality Australia|Dance/DJ
-http://player.arn.com.au/iheart/Syd_DAB_6.pls|iHeart Australia The 80s iHeartRadio Australia|70s/80s
-http://pls-ihrhls.akamaized.net/au_020/playlist.m3u8|iHeart Australia The 90s iHeartRadio Australia|90s
-http://ihrhlsweb.arn.com.au/aishls1/playlist.m3u8|iHeart Australia The Lounge The Lounge Enjoy the Music Australia|Dance/DJ
 http://stream.hopemedia.com.au/inspire-mp3|Inspire Digital Australia|Christian-Contemporary
 http://islam2day.tv:4000|Islam2Day CH.2-Quaran Translation Australia|Islamic
 http://islam2day.tv:8000|Islam2Day CH.4-Islamic Songs Australia|Islamic
@@ -377,38 +283,21 @@ http://andromeda.shoutca.st:8634/stream|ItaliaFm Musica Italiana 1 Australia|Var
 http://nebula.shoutca.st:9273/stream|ItaliaFm Musica Italiana 2 Australia|Pop
 http://qld.kinderling.com.au:8008/stream/1/|Kinderling Kids Radio Australia|Children
 http://streamer2.rightclickitservices.com:8905/;stream.mp3|Kinglake Ranges Radio Australia|Talk-Comedy
-http://www.kissfm.com.au/kissfm_mp3.asx|Kiss FM 87.6 FM (Victoria) Australia|Dance/DJ
-http://streaming.novaentertainment.com.au/koffee|Koffee Australia|Electronica-Chillout
-http://stream.scahw.com.au/live/2kko_128.stream/playlist.m3u8|KOFM 102.9 Australia|Variety
-http://fastcast.gbcast.com.au:5157/stream|K-rock 95.5 Australia|Rock
 http://lcradio.education.tas.gov.au:8000|LCFM (Launceston College Tasmania) Australia|College/University
 http://192.231.203.146:8002/21|Life FM 107.9 Spirit of the City Australia|Christian-Contemporary
-http://icy.ihrcast.arn.com.au/LRRADIO|Little Rockers Radio Australia|Children
-http://d.liveatc.net/ypph_dep|liveatc.net YPPH Departure Australia|Talk
-http://d.liveatc.net/ypph_twr|liveatc.net YPPH Tower Australia|Talk
 http://184.154.90.186:8118|Magic 87.8 FM Australia|Easy Listening
 http://s9.viastreaming.net:7040/;stream.mp3|MBS Light Digital Australia|Classical
-http://listen.radionomy.com/melbournebouncebangers|Melbourne Bounce Bangers Australia|Dance/DJ
-http://listen.radionomy.com/micksdenradio70s|Micksden Online Radio Australia|70s/80s
-http://fastcast.gbcast.com.au:5517/stream|Mix 104.9 Darwin Australia|Hot Adult Contemporary
-http://s6.voscast.com:9528|Mix90s Australia|90s
-http://streaming.radionomy.com/Mixxbossescom-Radio|MIXXBOSSES Australia|Rap/Hip Hop
-http://listen.radionomy.com/mixxbossesradioworldwide.m3u|Mixxbosses Radio Worldwide Australia|Rap/Hip Hop
-http://stream.scahw.com.au/live/loveland_128.stream/playlist.m3u8|More Givememore Australia|70s/80s
-http://listen.radionomy.com/my-generation-fm|MYGENERATIONFM Australia|70s/80s
-http://listen.shoutcast.com/nepalisancharradioaustralia|Nepali Sanchar Radio Australia Australia|Community
 http://lin2.san.fast-serv.com:6014/stream|NetFM Australia|Variety
-http://relay.broadcastify.com:80/686027412|NSW Police Australia|Talk
 http://stream.scahw.com.au/live/2xxx_128.stream/playlist.m3u8|NXFM 106.9 Australia|Pop
 http://streaming.radio.co:80/s53f27469e/listen|Oz Urban Radio Australia|Urban Contemporary
 http://198.74.51.37:9976/;|PAKAM Radio Australia|Community
 http://198.199.113.134:9058/|PartyMusic.fm Australia|Dance/DJ
 http://198.199.113.134:8076|partymusic.fm CLUB Australia|Electronica-Dance/DJ
 http://streamer2.rightclickitservices.com:7200/|Perth Chinese Radio 104.9 Australia|Community
-http://206.190.144.154:8084/|PlasticAge Radio Australia Australia|Electronica
+http://sc3.mystreamserver.com:8084/listen.pls?sid=1|PlasticAge Radio Australia|chill
 http://s6.voscast.com:8012|Portuguesradio Australia|Variety
-http://fastcast.gbcast.com.au:5093/stream|Power 94.9 FM Australia|Hit Radio Rock/Top 40
 http://puradsifm.net:9994/|Puradsi FM Australia|Asian
+http://192.96.205.59:8490/listen.pls|RADIO 2000 DAB SYDNEY AUSTRALIA|world
 http://s7.viastreaming.net:8500/;|Radio 2000 FM 98.5 Australia|Talk
 http://radiobluitalia.net:8051/stream?type=http&nocache=31|Radio Blu Italia Australia|Variety
 http://s24.myradiostream.com:6816/;|Radio ENA Adelaide Greek Radio Australia|Community
@@ -416,68 +305,34 @@ http://stream2.cnmns.net/fresh-mp3|Radio Fresh 103.2 Australia|Christian-Contemp
 http://stream2.cnmns.net/hope-mp3|Radio Hope 103.2 Australia|Christian-Contemporary
 http://stream2.cnmns.net/inspire-mp3|Radio Inspire Digital Australia|Christian-Contemporary
 http://streamer3.rightclickitservices.com:8006/;stream.mp3|Radio KLFM Australia Australia|Talk-Comedy
-http://37.187.90.121:3892/radiolarrakia|Radio Larrakia 94.5 FM Australia|Community
+http://stream.radiolarrakia.org:8000/radiolarrakia|Radio Larrakia 94.5 FM Australia|Community
 http://s7.viastreaming.net:8265|Radio Light Digital FM Australia|Seasonal-Christmas
 http://s7.viastreaming.net:8760|Radio Light FM 89.9 Australia|Seasonal-Christmas
 http://198.74.51.37:9968/|Radio MAMA Carnarvon 102.9 FM Australia|Community
 http://198.74.51.37:8135/|Radio MAMA Geraldton 100.5 FM Australia|Community
 http://s18.myradiostream.com:4476|Radio Melodia Adelaide Greek Radio Australia|Pop
-http://radio.monash.edu:8002/hq.m3u|Radio Monash Australia|University
 http://streaming.radio.co/s01f9e0c50/listen|Radio Neshat Australia|Hit Radio Rock/Top 40
 http://streaming.radio.co/s4e3571e40/listen|Radio Neshat music Australia|Variety
-http://rsnshout.dyn.rsn.net.au:8000/rsn|Radio Sport 927 Australia Australia|Talk-Sports
-http://players.fluidstream.net/vivaitaliaaustralia.pls|Radio Viva Italia Australia|Hits: New and Old
 http://stream.rawfm.com.au:8000/|RAW FM Australia|Dance/DJ
 http://178.32.136.9:9024/stream|RDA Australia|Community
+http://50.7.99.155:12167/listen.pls?sid=1|Rock Australia Radio|christian
 http://streaming.radiostreamlive.com/radioitalianmusic_devices|RSL Radio Italian Music Sydney Australia|Pop
-http://streamer2.rightclickitservices.com:9015/;stream.mp3|Rythmos1656AM Australia|Folk
-http://shoutcast.sbs.com.au/SBS_DAB8|SBS Arabic24 Australia|Talk-News
-http://shoutcast.sbs.com.au/SBSChill|SBS Chill Australia|Electronica-Chillout
-http://shoutcast.sbs.com.au/SBSPopAsia|SBS PopAsia Australia|Pop
-http://shoutcast.sbs.com.au/SBS_DAB7|SBS PopDesi Australia|Bollywood
-http://shoutcast.sbs.com.au/SBSRadioOne|SBS Radio 1 (R1) Australia|Variety
-http://shoutcast.sbs.com.au/SBSRadioTwo|SBS Radio 2 (R2) Australia|Variety
-http://shoutcast.sbs.com.au/SBS_SBS3|SBS Radio 3 (R3) Australia|Variety
-http://shoutcast.sbs.com.au/SBS_SBS6|SBS Radio 4 (R4) Australia|All News
 http://groove.wavestreamer.com:5890/;|Seymour FM 103.9 Australia|Community
 http://110.143.21.104:88/broadwave.mp3?|Smart FM Australia Australia|Talk
 http://streaming.novaentertainment.com.au/smoothadelaide|smoothfm Adelaide Australia|Easy Listening
-http://streaming.novaentertainment.com.au/smoothbrisbane|smoothfm Brisbane Australia|Easy Listening
-http://streaming.novaentertainment.com.au/smoothperth|smoothfm Perth Australia|Easy Listening
 http://www.southernfm.com.au/listen.pls|Southern FM Australia|Talk-Comedy
 http://live-radio01.mediahubaustralia.com/IT3W/mp3|Special ABC Radio Stream 3 Australia|Seasonal
 http://live-radio01.mediahubaustralia.com/IT1W/mp3|Special ABC Radio Stream Australia|Seasonal
-http://stream.scahw.com.au/live/stardust_128.stream/playlist.m3u8|Stardust Radio Australia|Oldies
-http://5066.cloudrad.io/live|Station X Australia Australia|Hits
 http://www.sub.fm/listen.pls|Sub FM Australia|Electronica
-http://198.74.51.37:7104|Sunshine Coast Australia Australia|Oldies
-http://relay.broadcastify.com:80/557846947|Sunshine Coast Police SE Queensland Australia|Talk
 http://surfsidern.zapto.org:2123/;|Surf FM 87.6 Australia|Rock-Pop
 http://s4.onweb.gr:8430/|Symban World Radio 2369AM Australia|World/Folk
 http://128.199.77.168:8000/stream907|SYN 90.7 FM Australia|Community
-http://128.199.77.168:8000/stream|SYN Nation Australia|Community
-http://media.on.net/radio/128.m3u|Tank FM 103.1 Australia|Pop
 http://206.190.133.196:7044/thayagam128K|Thayagam Tamil Radio Australia|Variety
 http://abc.ihrcast.arn.com.au/iHRfaction|The Faction Radio Australia|Rock-Heavy Metal
-http://stream.scahw.com.au/live/rangedig_128.stream/playlist.m3u8|The Range Australia|Country
 http://s7.viastreaming.net:8880/|TLC 100.3 FM Yamba, NSW Australia|Community
 http://stream.radio.co/se08920b12/listen|Totally Awesome Eighties Australia|70s/80s
-http://listen.radionomy.com/totallyradio00s.m3u|Totally Radio 00's Australia|Hits
-http://listen.radionomy.com/totallyradio60-s.m3u|Totally Radio 60's Australia|Oldies
-http://listen.radionomy.com/totallyradio70-s.m3u|Totally Radio 70's Australia|Oldies
-http://listen.radionomy.com/totallyradio80-s.m3u|Totally Radio 80's Australia|70s/80s
-http://streaming.radionomy.com/TotallyRadio90s?lang=en-US&appName=iTunes.m3u|Totally Radio 90's Australia|90s
-http://listen.radionomy.com/totallyradiochristmas.m3u|Totally Radio Christmas Australia|Adult Standards / Nostalgia
-http://listen.radionomy.com/totallyradioeasy.m3u|Totally Radio Easy Australia|Easy Listening
-http://listen.radionomy.com/totallyradiothehits.m3u|Totally Radio Hits Australia|Hits
 http://playerservices.streamtheworld.com/pls/TRFMAAC.pls|TRFM 99.5 FM Mount Tassie, VIC Australia|Hit Radio Rock/Top 40
 http://stream.radiojar.com/u0vqg19kb|TunnFM Rock Australia|Rock
-http://streamer2.rightclickitservices.com:8905/;stream.mp3|UGFM  Australia Australia|Community
 http://ic2253.c1031.fast-serv.com:80/stream|VAC Radio 1656 AM Australia|Community
-http://listen.radionomy.com/vbera.m3u|vbera Australia|Blues
-http://listen.radionomy.com/vberra.m3u|vberra Australia|Island-Reggae
-http://s2.voscast.com:12206/;|Velvet Deluxe Australia|Adult Standards / Nostalgia
 http://206.190.136.212:9341/Live|Vintage FM Australia Australia|Oldies
 http://tx.sharp-stream.com/icecast.php?i=ucbau.mp3|Vision Christian Radio Australia|Christian-Contemporary
-http://s3.viastreaming.net:7050/listen.pls|WMA FM Australia|Talk-Comedy
-http://110.143.52.112:8998/broadwave.mp3?src=1&rate=1&ref=http%3A%2F%2Fwww.ards.com.au%2F|Yolnu Radio Australia|Community

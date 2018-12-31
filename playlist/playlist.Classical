@@ -1,9 +1,7 @@
-http://listen.radionomy.com/1000hitsclassicalmusic.m3u|1000 HITS Classical USA|Classical
-http://ic4.101.ru:8000/p709457?|101.ru Classics New Russian Federation|Classical
-http://ic4.101.ru:8000/p760932?|101.ru Paradise radio Russian Federation|Classical
-http://ic7.101.ru:8000/c16_4?|101.ru Pop Classic Russian Federation|Classical
 http://ic7.101.ru:8000/c7_1?|101.ru Spivakov Classic Russian Federation|Classical
+http://113fm-edge1.cdnstream.com/1815_128|.113FM Watercolors USA|Jazz-Classical
 http://relay3.181.fm:8020/|181.fm Classical Guitar USA|Classical
+http://icyrelay.181.fm/181-classicaljazz_128k.mp3|181.fm Classical Jazz USA|Jazz-Classical
 http://icyrelay.181.fm/181-classical_128k.mp3|181.fm Classical Music USA|Classical
 http://sc17.1.fm:8045|1.FM Otto's Baroque Music Switzerland|Classical
 http://sc1c-sjc.1.fm:8047|1.FM Otto's Classical Music Switzerland|Classical
@@ -11,13 +9,13 @@ http://eno.emit.com:8000/2mbs_live_128.mp3|2MBS 102.5 FM Sydney, NSW Australia|C
 http://eno.emit.com:8000/2mbs-d_live_128.mp3|2MBS Digital Sydney, NSW Australia|Classical
 http://eno.emit.com:8000/3mbs_live_64.aacp|3MBS 103.5 FM Melbourne, VIC Australia|Classical
 http://s9.viastreaming.net:9620/;stream.mp3|4MBS 103.7 FM Brisbane, QLD Australia|Classical
+http://199.167.150.105:8394/listen.pls?sid=1|585858|classical
 http://streamer1.dpwlabs.com/5mbs-128-mp3|5MBS 99.9 FM Adelaide, SA Australia|Classical
 http://aahclassicalradio.com:10001/stream?website|AahClassicalRadio Bach United Kingdom|Classical
 http://aahradio.com:10002/stream?web|AahClassicalRadio Baroque United Kingdom|Classical
 http://aahradio.com:10003/stream?web|AahClassicalRadio Beethoven United Kingdom|Classical
 http://aahradio.com:10004/stream?web|AahClassicalRadio Cello United Kingdom|Classical
 http://classical.aahradio.com:10005/stream?rs|AahClassicalRadio Handel United Kingdom|Classical
-http://aahradio.com:10006/stream?web|AahClassicalRadio Harp United Kingdom|Classical
 http://aahclassicalradio.com:10000/stream?website|AahClassicalRadio Solo Piano United Kingdom|Classical
 http://aahradio.com:10007/stream?web|AahClassicalRadio Violin United Kingdom|Classical
 http://listen.abacus.fm/beethoven1.m3u|Abacus.FM Beethoven United Kingdom|Classical
@@ -30,54 +28,51 @@ http://live-radio01.mediahubaustralia.com/4FMW/mp3|ABC Classic FM QLD Australia|
 http://live-radio01.mediahubaustralia.com/5FMW/mp3|ABC Classic FM SA Australia|Classical
 http://live-radio01.mediahubaustralia.com/3FMW/mp3|ABC Classic FM VIC Australia|Classical
 http://live-radio01.mediahubaustralia.com/6FMW/mp3|ABC Classic FM WA Australia|Classical
-http://listen.radionomy.com/abc-piano|ABC Piano Radio France|Classical
 http://provisioning.streamtheworld.com/asx/ADCFMAAC.asx|Abu Dhabi Classic FM 91.6/87.9 Mhz United Arab Emirates|Classical
-http://listen.radionomy.com/aclassicfm-web.m3u|A CLASSIC FM WEB Radio (LVDA) France|Classical
+http://209.9.229.202:80/listen.pls|Adagio.FM Timeless Classical Music from Medieval to Modern with Chat & Automated Requests|classic-rock
 http://lo.adagio.fm:80|Adagio FM USA|Classical
-http://streaming.radionomy.com/AdagioRadio?lang=en-US&appName=iTunes.m3u|Adagio Radio Spain|Classical
-http://listen.radionomy.com/adjclassical.m3u|ADJ Classical Canada|Classical
-http://listen.radionomy.com/air-classique.m3u|Air Classique France|Classical
-http://hestia2.cdnstream.com:80/1234_128|AirlessRadio The Classics USA|Classical
 http://airraagam-lh.akamaihd.net/i/airraagam_1@507820/master.m3u8|AIR Raagam India|Classical
 http://golive.onestreaming.com/akousmyclassic|Akous My Classic Greece|Classical
-http://listen.radionomy.com/all-piano-radio.m3u|All Piano Radio France|Classical
 http://allzic06.ice.infomaniak.ch/allzic06.mp3|Allzic Classic France|Classical
 http://allzic47.ice.infomaniak.ch/allzic47.mp3|Allzic Classic Piano France|Classical
 http://allzic48.ice.infomaniak.ch/allzic48.mp3|ALLZIC CLASSIC VIOLON France|Classical
-http://streaming.radiolinksmedia.com:8484/|Amadeus FM 104.9 Cultura Musical Argentina|Classical
-http://listen.radionomy.com/amadeus-friends-classicalradio.m3u|Amadeus & Friends Italy|Classical
-http://listen.radionomy.com/ambiance-classique|Ambiance Classique Radio France|Classical
-http://50.7.173.162:8010/listen.pls|Audiophile Baroque (Web) Greece|Classical
-http://50.7.173.162:8012/listen.pls|Audiophile Classical (Web) Greece|Classical
-http://listen.radionomy.com/bach-radio|Bach Radio USA|Classical
-http://listen.radionomy.com/Barock-Music.m3u|Barock Music Belgium|Classical
+http://162.210.196.140:9844/listen.pls|Alteradajimenezmundo|classical
+http://149.56.234.138:8041/listen.pls|# Alto www.materrassefm.com|classical
+http://5.152.208.98:8058/listen.pls|Ancient FM www.ancientfm.com|classical
+http://192.99.4.210:3690/listen.pls?sid=1|"A?oranza Maya"  Tu Radio, Estilo Propio!|classical
+http://stream.apolloradio.de/APOLLO/mp3.m3u|Apollo Radio (Chemnitz) Germany|Jazz-Classical
+http://37.187.196.74:8888/listen.pls?sid=1|Arabesk Melodi FM |classical
+http://200.58.106.247:8714/listen.pls|Armonia FM|classical
+http://8.38.78.173:8093/listen.pls?sid=1|Audiophile Classical|chamber
+http://200.58.106.247:8540/listen.pls|Aura Radio 9510|classical
+http://streaming.radionomy.com/Barock-Music?lang=en-US&appName=iTunes.m3u|Barock Music Belgium|Classical
 http://sc.brtk.net:8006/|Bayrak Klasik 88.4 Cyprus|Classical
-http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/llnw/bbc_radio_three.m3u8|BBC Radio 3 United Kingdom|Classical
-http://tunein.digitalproserver.com/beethovenbb.aac|Beethoven 96.5 FM Santiago Chile|Classical
+http://151.80.97.38:8246/listen.pls?sid=1|BCRFM Stream|classical
 http://streaming.radionomy.com/Beethoven-Radio?lang=en-US&appName=iTunes.m3u|Beethoven Radio USA|Classical
-http://audiolive.rbc.cn:1935/live/fm986/96K/tzwj_video.m3u8|Beijing Radio Classical music 98.6 FM China|Classical
-http://pri.cdn.bg:2003/fls/BINAR-Classic.stream/playlist.m3u8|Binar Classic Bulgaria|Classical
+http://173.208.177.90:15160/listen.pls?sid=1|Bhairahawa Musical FM 98.4MHz|classical
 http://sc6.shoutcaststreaming.us:8016|Blue Heron Radio.FM USA|Classical
+http://us1.internet-radio.com:8025/listen.pls|BMCN MUSIC|classical
 http://peridot.streamguys.com:7010/bblive-sgplayer|Boston Baroque Radio USA|Classical
+http://51.255.235.165:5316/listen.pls?sid=1|Bowen Radio Iwo|classical
 http://streams.br.de/br-klassik_2.m3u|BR Klassik Germany|Classical
 http://109.123.116.202:7001/stream2|Bru Zane Classical Radio Italy|Classical
 http://video.tvr.by:8000/culture|BTRC Channel Culture Belarus|Classical
 http://streams.calmradio.com:10528|Calm Radio Antonin Dvorak Canada|Classical
 http://streams.calmradio.com:8928|Calm Radio Antonio Vivaldi Canada|Classical
 http://streams.calmradio.com:8528|Calm Radio Arcangelo Corelli Canada|Classical
-http://184.173.142.117:6828/stream|Calm Radio Bach Canada|Classical
+http://proxy.calmradio.com:6828/stream|Calm Radio Bach Canada|Classical
 http://streams.calmradio.com:3328|Calm Radio Baroque Canada|Classical
 http://streams.calmradio.com:12828|Calm Radio Baryton Canada|Classical
 http://streams.calmradio.com:6928|Calm Radio Beethoven Canada|Classical
-http://184.173.142.117:7128/stream|Calm Radio Brahms Canada|Classical
+http://proxy.calmradio.com:7128/stream|Calm Radio Brahms Canada|Classical
 http://streams.calmradio.com:9028|Calm Radio Cantatas Canada|Classical
-http://184.173.142.117:4628/stream|Calm Radio Cello Canada|Classical
-http://184.173.142.117:7528/stream|Calm Radio Chamber Music Canada|Classical
+http://proxy.calmradio.com:4628/stream|Calm Radio Cello Canada|Classical
+http://proxy.calmradio.com:7528/stream|Calm Radio Chamber Music Canada|Classical
 http://streams.calmradio.com:7628|Calm Radio Chopin Canada|Classical
 http://streams.calmradio.com:2928|Calm Radio Chorale Canada|Classical
 http://streams.calmradio.com:18828|Calm Radio Classical Christmas Canada|Seasonal-Christmas
 http://streams.calmradio.com:2728|Calm Radio Classical Guitar Canada|Classical
-http://184.173.142.117:2828/stream|Calm Radio Classical Mix Canada|Classical
+http://proxy.calmradio.com:2828/stream|Calm Radio Classical Mix Canada|Classical
 http://streams.calmradio.com:30928|Calm Radio Classical Piano Canada|Classical
 http://streams.calmradio.com:10228|Calm Radio Claude Debussy Canada|Classical
 http://streams.calmradio.com:15028|Calm Radio Claudio Monteverdi Canada|Classical
@@ -91,20 +86,20 @@ http://proxy.calmradio.com:12428|Calm Radio Felix Mendelssohn Canada|Classical
 http://streams.calmradio.com:4828|Calm Radio Flute Canada|Classical
 http://streams.calmradio.com:12228|Calm Radio Francis Poulenc Canada|Classical
 http://proxy.calmradio.com:14828|Calm Radio Francois Couperin Canada|Classical
-http://184.173.142.117:9128/stream|Calm Radio Franz Liszt Canada|Classical
+http://proxy.calmradio.com:9128/stream|Calm Radio Franz Liszt Canada|Classical
 http://proxy.calmradio.com:11128|Calm Radio Frederick Delius Canada|Classical
 http://proxy.calmradio.com:19128|Calm Radio Gabriel Faure Canada|Classical
-http://184.173.142.117:8428/stream|Calm Radio George Frideric Handel Canada|Classical
-http://184.173.142.117:8828/stream|Calm Radio Georg Phillip Teleman Canada|Classical
+http://proxy.calmradio.com:8428/stream|Calm Radio George Frideric Handel Canada|Classical
+http://proxy.calmradio.com:8828/stream|Calm Radio Georg Phillip Teleman Canada|Classical
 http://proxy.calmradio.com:14128|Calm Radio Gioachino Rossini Canada|Classical
-http://184.173.142.117:9428/stream|Calm Radio Girolamo Frescobaldi Canada|Classical
-http://184.173.142.117:4328/stream|Calm Radio Harp Canada|Classical
+http://proxy.calmradio.com:9428/stream|Calm Radio Girolamo Frescobaldi Canada|Classical
+http://proxy.calmradio.com:4328/stream|Calm Radio Harp Canada|Classical
 http://proxy.calmradio.com:12628|Calm Radio Harpsichord Canada|Classical
-http://184.173.142.117:7228/stream|Calm Radio Haydn Canada|Classical
+http://proxy.calmradio.com:7228/stream|Calm Radio Haydn Canada|Classical
 http://proxy.calmradio.com:14428|Calm Radio High Baroque Canada|Classical
-http://184.173.142.117:8628/stream|Calm Radio Igor Stravinsky Canada|Classical
+http://proxy.calmradio.com:8628/stream|Calm Radio Igor Stravinsky Canada|Classical
 http://proxy.calmradio.com:14928|Calm Radio Jean-Phillipe Rameau Canada|Classical
-http://184.173.142.117:8328/stream|Calm Radio Johann Strauss II Canada|Classical
+http://proxy.calmradio.com:8328/stream|Calm Radio Johann Strauss II Canada|Classical
 http://proxy.calmradio.com:14528|Calm Radio Late Baroque Canada|Classical
 http://proxy.calmradio.com:16728|Calm Radio Lieder and Songs Canada|Classical
 http://proxy.calmradio.com:16028|Calm Radio Luigi Boccherini Canada|Classical
@@ -116,15 +111,15 @@ http://streams.calmradio.com:7328|Calm Radio Mozart Canada|Classical
 http://proxy.calmradio.com:16828|Calm Radio Oratorios Canada|Classical
 http://proxy.calmradio.com:12928|Calm Radio Organ Canada|Classical
 http://proxy.calmradio.com:11328|Calm Radio Purcell Canada|Classical
-http://184.173.142.117:8728/stream|Calm Radio Pyotr Tchaikovsky Canada|Classical
+http://proxy.calmradio.com:8728/stream|Calm Radio Pyotr Tchaikovsky Canada|Classical
 http://proxy.calmradio.com:10328|Calm Radio Ravel Canada|Classical
 http://proxy.calmradio.com:19328|Calm Radio Richard Strauss Canada|Classical
 http://streams.calmradio.com:12328|Calm Radio Satie Canada|Classical
-http://184.173.142.117:8228/stream|Calm Radio Schubert Canada|Classical
-http://184.173.142.117:8128/stream|Calm Radio Schumann Canada|Classical
+http://proxy.calmradio.com:8228/stream|Calm Radio Schubert Canada|Classical
+http://proxy.calmradio.com:8128/stream|Calm Radio Schumann Canada|Classical
 http://proxy.calmradio.com:16928|Calm Radio Sergei Prokofiev Canada|Classical
 http://streams.calmradio.com:9228|Calm Radio Sergei Rachmaninoff Canada|Classical
-http://184.173.142.117:15928/stream|Calm Radio Sibelius Canada|Classical
+http://proxy.calmradio.com:15928/stream|Calm Radio Sibelius Canada|Classical
 http://streams.calmradio.com:2628|Calm Radio Solo Guitar Canada|Classical
 http://streams.calmradio.com:1228|Calm Radio Solo Piano Canada|Classical
 http://streams.calmradio.com/api/29/128/stream/;|Calm Radio Solo Piano & Guitar Canada|Classical
@@ -132,60 +127,50 @@ http://streams.calmradio.com:1028|Calm Radio Symphony Canada|Classical
 http://proxy.calmradio.com:15828|Calm Radio Trumpet Canada|Classical
 http://proxy.calmradio.com:13928|Calm Radio Vienna Philharmonic Canada|Classical
 http://streams.calmradio.com:10128|Calm Radio Viola da Gamba Canada|Classical
-http://184.173.142.117:4528/stream|Calm Radio Violin Canada|Classical
+http://proxy.calmradio.com:4528/stream|Calm Radio Violin Canada|Classical
 http://proxy.calmradio.com:11228|Calm Radio Yo-Yo Ma Canada|Classical
-http://184.154.45.106:8247//live|CANCÚN RADIO Mexico|Classical
 http://cbc_r2_hfx.akacast.akamaistream.net/7/917/451661/v1/rc.akacast.akamaistream.net/cbc_r2_hfx|CBC Radio 2 Atlantic (Halifax) Canada|Classical
 http://cbc_r2_wpg.akacast.akamaistream.net/7/233/451661/v1/rc.akacast.akamaistream.net/cbc_r2_wpg|CBC Radio 2 Central (Winnipeg) Canada|Classical
-http://cbc_r2_tor.akacast.akamaistream.net/7/364/451661/v1/rc.akacast.akamaistream.net/cbc_r2_tor|CBC Radio 2 Eastern (Toronto) Canada|Classical
-http://92.122.127.7:80/7/50/451661/v1/rc.akacast.akamaistream.net/cbc_r2_iet|CBC Radio 2 Intl Eastern Canada|Classical
-http://92.122.127.14:80/7/669/451661/v1/rc.akacast.akamaistream.net/cbc_r2_ipt|CBC Radio 2 Intl Pacific Canada|Classical
 http://cbc_r2_edm.akacast.akamaistream.net/7/40/451661/v1/rc.akacast.akamaistream.net/cbc_r2_edm|CBC Radio 2 Mountain (Edmonton) Canada|Classical
 http://cbc_r2_vcr.akacast.akamaistream.net/7/773/451661/v1/rc.akacast.akamaistream.net/cbc_r2_vcr|CBC Radio 2 Pacific (Vancouver) Canada|Classical
 http://catclassica.ccma.audioemotion.stream.flumotion.com/ccma/catclassica.mp3|CCMA Catalunya Clàssica Spain|Classical
 http://catmusica.ccma.audioemotion.stream.flumotion.com/ccma/catmusica.mp3|CCMA Catalunya Música Spain|Classical
-http://d1pqwktrrc385d.cloudfront.net/radios/clasica.m3u8|CDR Clásica Costa Rica|Classical
 http://choralstream1.publicradio.org/choral.m3u|Choral Music from Classical MPR USA|Classical
 http://ice31.securenetsystems.net/CLASSICL?type=.mp3|Christmas FM Classical Ireland|Seasonal-Christmas
 http://chromaradio.com:8008/listen.pls|Chroma Classical (Web) Greece|Classical
+http://chromaradio.com:8028/listen.pls|Chroma Classic Jazz (Web) Greece|Jazz-Classical
 http://chromaradio.com:8032/listen.pls|Chroma Piano Greece|Classical
-http://buecrplb01.cienradios.com.ar/1019_Amadeus_32000.aac|Cienradios Amadeus Argentina|Classical
-http://buecrplb01.cienradios.com.ar/821_Bach_32000.aac|Cienradios Bach Argentina|Classical
-http://buecrplb01.cienradios.com.ar/748_Beethoven_32000.aac|Cienradios Beethoven Argentina|Classical
-http://buecrplb01.cienradios.com.ar/1043_Chopin_32000.aac|Cienradios Chopin Argentina|Classical
-http://buecrplb01.cienradios.com.ar/642_Clasica_32000.aac|Cienradios Clasica Argentina|Classical
-http://buecrplb01.cienradios.com.ar/1002_Clasica_Para_Meditar_32000.aac|Cienradios Clasica Para Meditar Argentina|Classical
-http://buecrplb01.cienradios.com.ar/720_Mozart_32000.aac|Cienradios Mozart Argentina|Classical
-http://buecrplb01.cienradios.com.ar/1179_Mundo_Clasico_32000.aac|Cienradios Mundo Clasico Argentina|Classical
-http://buecrplb01.cienradios.com.ar/1001_Piano_Classic_32000.aac|Cienradios Piano Classic Argentina|Classical
+http://s2.stationplaylist.com:9400/listen.aac.m3u|City Park Radio|classical
 http://daemondef.ic.llnwd.net/stream/daemondef_ddmp3_74|CKCL 107.1 FM Winnipeg, MB Canada|Classical
-http://listen.radionomy.com/classic1max.m3u|Classic1Max France|Classical
 http://france16.coollabel-productions.com:8280/;stream.nsv|Classica France|Classical
+http://46.4.33.73:5152/listen.pls||classical
 http://tuner.classical102.com:80|CLASSICAL 102 The First Class In Music Germany|Classical
 http://178.33.232.106:8500/stream|Classical 1 United Kingdom|Classical
+http://50.7.99.163:11543/listen.pls?sid=1|Classical For The Ages Radio|chamber
+http://149.255.59.3:8029/listen.pls?sid=1|Classical Gold|baroque
 http://playerservices.streamtheworld.com/api/livestream-redirect/KUSCMP128.mp3|Classical KUSC USA|Classical
-http://streaming.radio.co/s518e9174f/listen|ClassicAll Radio United Kingdom|Classical
-http://smoke.wavestreamer.com:3394/Live|Classical New England Christmas USA|Classical
-http://listen.radionomy.com/classical-radio|Classical Radio USA|Classical
-http://46.4.82.243:8080|Classical Radio (Web) Greece|Classical
+http://192.99.35.215:5338/listen.pls?sid=1|Classical Oasis|classical
+http://192.99.35.93:6224/listen.pls?sid=1|Classical Oasis Radio|blues
+http://149.255.59.164:8184/listen.pls?sid=1|Classical Radio GB aacPlus|classical
+http://149.255.59.164:8182/listen.pls?sid=1|Classical Radio GB|classical
+http://66.209.79.122:8002/listen.pls?sid=1|Classical Vegas|classical
 http://streaming.radionomy.com/classicalways?&lang=en-US&appName=website|ClassicalWays France|Classical
+http://38.100.128.106:8000/listen.pls?sid=1|Classical WETA 90.9 FM Washington D.C.|classical
+http://184.95.47.178:9602/listen.pls|Classic America|classical
 http://radio.classicaviva.com/wp/Radu-webradio/WebRadioClassicaviva.pls|ClassicaViva Web Radio Italy|Classical
 http://live.btvradio.bg/classic-fm.mp3|Classic FM Bulgaria|Classical
 http://classicfm.ice.infomaniak.ch/classic-fm.aac|Classic FM France|Classical
-http://www.classicfm.nl/player/classicfm.asx|Classic FM Netherlands Netherlands|Classical
 http://ice-sov.musicradio.com:80/ClassicFMMP3|Classic FM United Kingdom|Classical
-http://icecast8.play.cz/classic128.mp3|Classic Praha 98.7 FM Czech Republic|Classical
-http://stream.radioclassic.fi:8080/classic|Classic radio Finland|Classical
-http://classiquefm.ice.infomaniak.ch/classiquefm.mp3|Classique FM Réunion Reunion|Classical
+http://222.122.178.186:4990/listen.pls|Classic Odyssey 24-hours|classical
 http://classixradio.ice.infomaniak.ch/classixradio-high.mp3|Classix Radio Switzerland|Classical
 http://sl-2396.cdnstream.com/1485_128?cb=599566.m4a|CleansingMusic Classically USA|Classical
-http://rtmpcnr004.cnr.cn/live/dszs/playlist.m3u8?|CNR 4 Golden Radio China|Classical
+http://5.133.182.164:22835/listen.pls|Club Radio|classical
 http://streams.greenhost.nl:8080/barok|Concertzender Barok Netherlands|Classical
 http://streams.greenhost.nl:8080/gehoordestilte|Concertzender De Gehoorde Stilte Netherlands|Classical
-http://streams.greenhost.nl:8080/dmm|Concertzender Dutch Music Media Netherlands|Classical
 http://streams.greenhost.nl:8080/gaudeamus|Concertzender Gaudeamus Netherlands|Classical
 http://streams.greenhost.nl:8080/bach|Concertzender Geen dag zonder Bach Netherlands|Classical
 http://streams.greenhost.nl:8080/gregoriaans|Concertzender Gregoriaans Netherlands|Classical
+http://streams.greenhost.nl:8080/jazznotjazz|Concertzender Jazznotjazz Netherlands|Jazz-Classical
 http://streams.greenhost.nl:8080/klassiek|Concertzender Klassieke Muziek Netherlands|Classical
 http://streams.greenhost.nl:8080/novembermusic|Concertzender November music Netherlands|Classical
 http://streams.greenhost.nl:8080/orientexpress|Concertzender Oriënt Express Netherlands|Classical
@@ -193,60 +178,59 @@ http://streams.greenhost.nl:8080/oudemuziek|Concertzender Oude Muziek Netherland
 http://streams.greenhost.nl:8080/raakvlakken|Concertzender Raakvlakken Netherlands|Classical
 http://streams.greenhost.nl:8080/vredenburg|Concertzender Utrecht Miziekstad Netherlands|Classical
 http://audio-mp3.ibiblio.org:8000/concierto|Concierto from WDAV Classical Public Radio USA|Classical
-http://69.64.58.8:8041/live|CRBS Clásica Colombia|Classical
 http://95.173.162.185:9100/stream|CRI Turk Klasik China|Classical
 http://radio.cesnet.cz/cgi-bin/cro-d-dur-256-ogg.pls|ČRo D-dur Czech Republic|Classical
 http://radio.cesnet.cz/cgi-bin/cro3-256-ogg.pls|ČRo Vltava Czech Republic|Classical
-http://midiaserver.tvcultura.com.br:8003/|Cultura 103.3 FM Sao Paulo Brazil|Classical
 http://108.160.144.91:9090/;|CX6 Radio Clásica  (SODRE) AM 650 Uruguay|Classical
 http://94.177.184.174:8000/stream|Cyberspazio Radio Italy|Classical
+http://ice55.securenetsystems.net/DASH5?|Dash Radio Ratpack USA|Jazz-Classical
 http://orion.shoutca.st:8978/stream|Digital Impulse Classical USA|Classical
-http://46.20.7.121:80/|Dijibox Klasik Muzik Turkey|Classical
 http://live-icy.gss.dr.dk:8000/A/A04H.mp3|DR P2 Klassisk Denmark|Classical
-http://icecast.eradioportal.com:8000/febc_dzfe|DZFE 98.7 Master's Touch Philippines|Classical
-http://listen.radionomy.com/ensemblistradio.m3u|Ensemblist Radio USA|Classical
+http://78.129.190.50:28567/listen.pls|El Club Buena Onda|classical
+http://78.129.175.157:22847/listen.pls|el_profe|classical
 http://icecast.err.ee/klassikaraadio.mp3.m3u|ERR Klassikaraadio Estonia|Classical
-http://46.101.243.245:8000/falloutfm6.ogg|Fallout 4 Classical Radio USA|Classical
+http://192.99.247.236:8010/listen.pls?sid=1|ESOTERICA.FM CLASSICAL MUSIC|classical
+http://200.58.106.247:8258/listen.pls?sid=1|expresiones del bicentenario|classical
+http://176.31.118.194:10064/listen.pls?sid=1|family99.5|classical
+http://edge.iono.fm/xice/fmr_live_high.mp3|Fine Music Radio 101.3 South Africa|Jazz-Classical
+http://200.58.101.247:8170/listen.pls?sid=1|FM CERRITO|classical
+http://107.182.231.73:7052/listen.pls?sid=1|FMconcert Online|classical
+http://78.129.187.57:34648/listen.pls|FM JUNTOS|classical
+http://200.58.106.247:8126/listen.pls?sid=1|FM Libertad 98.1|classical
+http://198.143.132.154:9430/listen.pls|FM POWER TOTAL|classical
+http://78.129.232.162:15746/listen.pls|fmradiolibre90.5|classical
+http://jazz-wr01.ice.infomaniak.ch/jazz-wr01-128.mp3|France Classic Jazz France|Jazz-Classical
 http://direct.francemusique.fr/live/francemusiqueeasyclassique-hifi.mp3|France Musique Classique easy France|Classical
 http://direct.francemusique.fr/live/francemusiqueclassiqueplus-hifi.mp3|France Musique Classique plus France|Classical
 http://direct.francemusique.fr/live/francemusiqueconcertsradiofrance-hifi.mp3|France Musique Concerts Radio France France|Classical
 http://direct.francemusique.fr/live/francemusiquelevenementielle-hifi.mp3|France Musique événementielle France|Classical
 http://direct.francemusique.fr/live/francemusique-hifi.aac|France Musique France|Classical
 http://direct.francemusique.fr/live/francemusiquelacontemporaine-hifi.mp3|France Musique La Contemporaine France|Classical
-http://listen.radionomy.com/galaxyclassical|Galaxy 105 Classical Malta|Classical
-http://radio.city.kg:8000/Melodia-radio.mp3.m3u|Gorod FM Classic Kyrgyzstan|Classical
-http://173.244.215.163:8310|GotRadio Classical Voices USA|Classical
-http://173.244.215.162:8510|GotRadio Concert Hall USA|Classical
+http://213.202.241.199:8748/listen.pls?sid=1|Franciscus Radio|classical
+http://85.214.82.94:8030/listen.pls?sid=1|GOODINA RADIO FM|classical
 http://173.244.215.162:8020|GotRadio Guitar Genius USA|Classical
-http://live.radio2.ge:8000/live|GPB Radio 2 Georgia|Classical
-http://184.154.145.114:8002/stream|HelloDhaka : Bengali Classical Bangladesh|Variety
-http://flv.ccdntech.com/live/_definst_//vod51_Live/ch03/playlist.m3u8|HiNet hichannel CH03 Taiwan|Classical
-http://flv.ccdntech.com/live/_definst_//vod51_Live/ch04/playlist.m3u8|HiNet hichannel CH04 Taiwan|Classical
-http://82.94.166.107:8088/listen.pls|Hi Online Radio Classical Netherlands|Classical
-http://87.98.229.193:8032|Ibídem Radio Spain|Classical
-http://92.122.127.15:80/7/481/177425/v1/rc.akacast.akamaistream.net/SP01RADIO|Ici Musique Muse Canada|Classical
-http://media.enet.cu/radiomusicalnacional|ICRT Radio CMBF Musical Nacional 99.1 FM 590 AM Cuba|Classical
+http://51.255.235.165:5376/listen.pls?sid=1|HOSANNA STEREO|classical
+http://192.100.195.109:8083/listen.pls|(((Ibero Leon Radio -)))|classical
 http://imer-edge1.cdnstream.com/1501_64|IMER Opus 94 Mexico|Classical
-http://m.mediastream.pe/av_filarmonia/livestream/playlist.m3u8|IRTP Radio Cultural Filarmonía 102.7 FM Peru|Classical
+http://176.31.107.8:8204/listen.pls?sid=1|Italy Classical Radio|baroque
+http://160.75.86.29:8084/listen.pls|ITU Radio Classical|classical
 http://160.75.86.29:8097/|İTÜ Radyosu Klasik Turkey|Classical
+http://jazz-wr17.ice.infomaniak.ch/jazz-wr17-128.mp3|Jazz Radio.fr Jazz & Classique France|Classical
+http://jzr-piano.ice.infomaniak.ch/jzr-piano.mp3|Jazz Radio.fr Piano Jazz France|Jazz-Classical
+http://provisioning.streamtheworld.com/asx/JOY_JAZZAAC.asx|JOY JAZZ Turkey|Jazz-Classical
 http://198.27.88.38:7002/;|JPC Radio Clásica Colombia|Classical
-http://radiocast-rr-d.vidnt.com:8000/ipbc_IPBCClassicLA|Kan Israel Classic Israel|Classical
-http://radiocast-rr-d.vidnt.com:8000/ipbc_IPBCkolhamusicaLAM|Kan Israel Ha Musica 97.2 /91.3 FM Israel|Classical
+http://198.245.50.150:8020/listen.pls?sid=1|Just playing Haydn|classical
 http://icecast.csumb.edu:8000/livehd2high|KAZU-HD2 90.3 FM Pacific Grove, CA USA|Classical
 http://66.193.105.16:8000/stream|KBSU 90.3 FM Boise, ID USA|Classical
-http://listen.radionomy.com/k-classicradio.m3u|K Classicsradio Netherlands|Classical
 http://centova.icyshout.com/cento/tunein.php/kcmeorg/playlist.ram|KCME 88.7 FM Colorado Springs, CO USA|Classical
 http://66.209.79.122:8002/;|KCNV 89.7 FM  Las Vegas, NV USA|Classical
 http://provisioning.streamtheworld.com/pls/KDFCFMAAC.pls|KDFC 90.3 FM San Francisco, CA USA|Classical
 http://playerservices.streamtheworld.com/pls/KDFCFMAAC.pls|KDFG 103.9 FM Seaside, CA USA|Classical
-http://streams.classic99.com/classic99.m3u|KFUO 99.1 FM St. Louis, MO USA|Classical
+http://91.121.202.224:9798/listen.pls?sid=1|KEYITRADIO|classical
 http://www.radiokansas.org/hd1.m3u|KHCC 90.1 HD2 Hutchinson, KS USA|Classical
-http://stream.abacast.net/playlist/king-kingclassicalchristmaschannelaac-ibc3.m3u|KING 98.1 FM Seattle, WA Classical Christmas Channel USA|Seasonal-Christmas
-http://stream.abacast.net/playlist/king-kingaac-96.m3u|KING 98.1 FM Seattle, WA Classical USA|Classical
 http://stream.abacast.net/playlist/king-kingsecondinversionaac-96.m3u|KING 98.1 FM Seattle, WA  Second Inversion USA|Classical
-http://stream.abacast.net/playlist/king-kingsymfavsaac-96.m3u|KING 98.1 FM Seattle, WA The KING FM Seattle Symphony Channel USA|Classical
-http://stream.abacast.net/playlist/king-kingevergreenaac-96.m3u|KING 98.1 HD2 Seattle, WA Evergreen channel USA|Classical
 http://198.105.216.204:8164/stream?1488392045214.mp3|KISS Classical Canada|Classical
+http://198.105.216.204:8164/listen.pls?sid=1|KISS Classical|chill
 http://stream.abacast.net/playlist/rgv-kjjffmaac-64.m3u|KJJF 88.9 FM Harlingen, TX USA|Classical
 http://stream.klassikradio.de/barock/mp3-192/radiosure/|Klassik Radio Barock Germany|Classical
 http://stream.klassikradio.de/live/mp3-128/radiosure/|Klassik Radio Germany|Classical
@@ -262,17 +246,14 @@ http://stream.klassikradio.de/verdi/mp3-192/radiosure/|Klassik Radio Pure Verdi 
 http://stream.klassikradio.de/tillbroenner/mp3-192/radiosure/|Klassik Radio Till Brönner Germany|Classical
 http://online.klasszikradio.hu/klasszik.mp3|Klasszik Rádió 92.1 Hungary|Classical
 http://peridot.streamguys.com:5980/KMFA-mp3|KMFA 89.5 FM Austin, TX USA|Classical
-http://AM98.5Mhz.net/listen.asx|KMStudio Classical Radio Korea, South|Classical
 http://provisioning.streamtheworld.com/pls/KNAUFM_128.pls|KNAU 88.7 FM Flagstaff, AZ USA|Classical
 http://66.209.79.122:8002/listen.pls|KNCV 89.7 FM Las Vegas, NV USA|Classical
 http://kpbs-classical.streamguys1.com/kpbs-classical|KPBS 89.5 HD2San Diego, CA Classical San Diego USA|Classical
 http://allclassical-ice.streamguys.com/ac96k|KQAC 89.9 FM Portland, OR USA|Classical
-http://dygwebradios.radyotvonline.com:80/dyg/kclassic.stream/playlist.m3u8|KRAL CLASSIC Turkey|Classical
 http://streams.nwpr.org:8000/NWPRCLASSICAL|KRFA 91.7 FM Moscow, ID USA|Classical
 http://edge-audio-02-gos1.sharp-stream.com/ksje.mp3?device=website|KSJE 90.9 FM Farmington, NM USA|Classical
 http://cms.stream.publicradio.org/cms.mp3|KSJN 99.5 FM Paul, MN USA|Classical
 http://news-stream.iowapublicradio.org/News.mp3|KSUI 91.7 FM Iowa City, IA USA|Classical
-http://playerservices.streamtheworld.com/pls/KSURAMAAC.pls|KSUR 1260 AM Beverly Hills, CA USA|Classical
 http://kuaciii.streamon.fm:8000/KUACIII-32k-m.mp3?starttime=1430254102|KUAC3 89.9-3 Fairbanks, AK USA|Classical
 http://playerservices.streamtheworld.com/pls/KUARFM.pls|KUAR 90.5 FM Little Rock, AR USA|Classical
 http://streaming.azpm.org/kuat192.mp3.m3u|KUAT 90.5 FM Tucson, AZ USA|Classical
@@ -280,64 +261,61 @@ http://hpm.streamguys1.com/classical-aac|KUHF 91.7 FM HD2 Houston, TX USA|Classi
 http://stream.laut.fm/kulturkanal|Kulturkanal Germany|Classical
 http://uprxstreamer.usu.edu:8002/|KUSU 91.5 FM HD2 Logan, UT USA|Classical
 http://www.cpr.org/listen/live_classical_mp3.pls|KVOD 90.1 FM Denver, CO USA|Classical
-http://playerservices.streamtheworld.com/pls/KVPRFMAAC.pls|KVPR 89.3 FM Fresno, CA USA|Classical
 http://75.150.43.46:8000/stream1|KWAX 91.1 FM Eugene, OR USA|Classical
+http://75.150.43.46:8000/listen.pls?sid=1|KWAX|classical
 http://75.102.43.196:80/kwmu3|KWMU 90.7 HD3 St. Louis, MO USA|Classical
 http://provisioning.streamtheworld.com/pls/KWTUFM.pls|KWTU 88.7 FM Tulsa, OK USA|Classical
 http://www.capradio.org/stream/kxpr96.asx|KXPR 88.9 FM Sacramento, CA USA|Classical
 http://stream.laclassica.be:8023/stream|La Classica Belgium|Classical
+http://78.129.224.13:33109/listen.pls|LA CONSENTIDA DE YAUTEPEC OAXACA|classical
+http://178.32.140.82:9690/listen.pls?sid=1|La Fenice Channel|classical
 http://178.32.140.82:9690/stream|La Fenice Channel Italy|Classical
+http://198.50.156.92:8087/listen.pls?sid=1|La Ke Buena Del Norte|classical
+http://192.187.112.50:8146/listen.pls?sid=1|la ley|classical
+http://78.129.224.15:25947/listen.pls|la mas deportiva|classical
+http://200.58.106.247:8748/listen.pls|La Radio que Anuncia a Cristo|classical
+http://188.40.135.197:8642/listen.pls?sid=1|Laser Hot Hits International Listen Again|classical
 http://lr3mp0.latvijasradio.lv:8004/listen.pls|Latvijas Radio 3 Klasika Latvia|Classical
-http://listen.radionomy.com/lbnwr-world-latin-classique.m3u|LBNWR_World_Latin_Classique Canada|Classical
+http://192.99.8.192:2848/listen.pls?sid=1|LA VOZ POR EXCELENCIA|classical
 http://radio.linnrecords.com/cast/tunein.php/linnclassical/playlist.pls|Linn Classical United Kingdom|Classical
-http://LOVEGALAXIES.inlive.co.kr/listen.pls|Love Galaxies Korea, South|Classical
 http://lrt-klasika.data.lt:80/lrt_klasika/radio/playlist.m3u8|LRT Klasika Lithuania|Classical
-http://live.m2stream.fr/m2classic-128.mp3|M2 CLASSIC France|Classical
-http://streaming.radionomy.com/made-in-classic?lang=en-US&appName=iTunes.m3u|Made in Classic France|Classical
-http://50.22.223.16:8426/listen.pls|Mandjou radio Switzerland|Classical
+http://200.58.106.247:8360/listen.pls|LT17|classical
+http://198.143.132.154:9516/listen.pls|LUMINARES|classical
+http://199.189.86.69:8218/listen.pls|Manantial 89.5 FM: by Dominican Internet Group|classical
+http://192.99.170.8:5556/listen.pls?sid=1|maxysfm|classical
 http://s9.viastreaming.net:7040/;stream.mp3|MBS Light Digital Australia|Classical
 http://edge.music-choice-ac-chaina1.top.comcast.net/AudioChannels/Ch-017/chunklist.m3u8|MC Classical Masterpieces USA|Classical
-http://edge.music-choice-ac-chaina1.top.comcast.net/AudioChannels/Ch-008/chunklist.m3u8|MC Light Classica USA|Classical
 http://avw.mdr.de/streams/284350-0_mp3_high.m3u|MDR Klassik Germany|Classical
 http://avw.mdr.de/streams/284311-0_mp3_high.m3u|MDR Kultur Classic in Concert Germany|Classical
 http://avw.mdr.de/streams/284310-0_mp3_high.m3u|MDR Kultur Das Radio Germany|Classical
-http://r3.ondio.in:8220/listen.pls|media station Thailand|Classical
 http://192.99.34.205:8476/stream|Miled Music Enrique Batiz Mexico|Classical
 http://192.99.34.205:8126/stream|Miled Music Musica Clasica Mexico|Classical
-http://choral.stream.publicradio.org/choral.mp3|Minnesota public Radio Classical MPR Choral USA|Classical
-http://streaming64.radionomy.com/JamendoLounge?lang=en-US&appName=iTunes.m3u|Mozartiana Spain|Classical
-http://listen.radionomy.com/mozart|Mozart Radio USA|Classical
+http://78.129.224.17:30036/listen.pls|Morya Station|classical
 http://stream002.radio.hu/mr3.mp3|MR3 Bartók Rádió Hungary|Classical
 http://62.149.196.16:8010/stream|MRG.fm ClassicalRadio Club USA|Classical
-http://yp.shoutcast.com/sbin/tunein-station.m3u?id=732805|Müpasymphony Hungary|Classical
-http://200.27.116.179:8002|Musicoop 96.5 FM Osorno Chile|Classical
+http://37.59.37.6:15992/listen.pls?sid=1|My Radio Stream|classical
+http://78.129.190.50:32720/listen.pls|NADOM RADIO|classical
 http://naxidigital128.kbcnet.rs:8030/listen.pls|Naxi Classic Radio Serbia|Classical
 http://www.ndr.de/resources/metadaten/audio/m3u/ndrloop2.m3u|NDR Kultur Belcanto Germany|Classical
 http://www.ndr.de/resources/metadaten/audio/m3u/ndrkultur.m3u|NDR Kultur Germany|Classical
+http://51.255.235.165:5224/listen.pls?sid=1|Neo-Classical by Spectrum FM|classical
 http://www.netiraadio.ee:8000/klassika|Netiraadio Klassika Estonia|Classical
-http://netradiock2fm-i.akamaihd.net/hls/live/263850/1-fm/1-fm-01.m3u8|NHKFM Nagoya(Japan area only) Japan|Classical
-http://netradiobk2fm-i.akamaihd.net/hls/live/263848/1-fm/1-fm-01.m3u8|NHKFM Osaka(Japan area only) Japan|Classical
-http://netradioakfm-i.akamaihd.net/hls/live/263846/1-fm/1-fm-01.m3u8|NHKFM Tokyo(Japan area only) Japan|Classical
 http://78.159.239.19:8000/classic|Nostalgie Perm Classic Russian Federation|Classical
 http://icecast.omroep.nl/radio4-eigentijds-mp3|NPO Radio 4 Concerten Netherlands|Classical
 http://icecast.omroep.nl/radio4-bb-mp3|NPO Radio 4 Netherlands|Classical
 http://lyd.nrk.no/nrk_radio_klassisk_mp3_h|NRK Klassisk Norway|Classical
-http://live.icecast.kpnstreaming.nl/omropfryslanlive-koperkanaal.mp3|Omrop Fryslân Koperkanaal Netherlands|Classical
-http://gr-relay-lb.gaduradio.pl/67|OPEN.FM Muzyka klasyczna Poland|Classical
-http://www.organlive.com/organlive.pls|Organlive.com USA|Classical
 http://radio.organroxx.com:8000/freestream.mp3|Organroxx Radio Belgium|Classical
-http://listen.radionomy.com/orgel.m3u|Orgelradio.eu (Geoblocked USA) Belgium|Classical
-http://rakuten.streamguys1.com/ottava1_b|Ottava Japan|Classical
+http://78.129.234.163:20556/listen.pls|Palmira FM 89.1|classical
+http://87.117.201.159:8000/listen.pls|PlayFm.Gr|classical
 http://stream85.polskieradio.pl/live/rytm.sdp/playlist.m3u8|Polskie Radio Chopin Poland|Classical
 http://mp3.polskieradio.pl:8022/|Polskie Radio Konkurs chopinowski Poland|Classical
 http://play.organlive.com:7002/128/|Positively Baroque USA|Classical
-http://sc.powergroup.com.tr/PowerClassic/mpeg/128/home|Powerturk Power Classic Turkey|Classical
-http://servidor26.crossdigital.com.br:8000/princesafmrs|Princesa FM 101.9 Brazil|Classical
-http://playerservices.streamtheworld.com/asx/RADIO_HJCKAAC.asx|Prisa HJCK El Mundo En Bogotá Colombia|Classical
-http://streaming02.zfast.co.uk:2199/tunein/classicradio.pls|Pumpkin FM Old Time Radio Network CLASSICAL RADIO GB USA|Old Time Radio
-http://209.95.50.189:8036/;|Pure Classic Ireland Ireland|Classical
+http://200.58.106.247:8572/listen.pls|ra02001094|classical
+http://198.178.123.20:8860/listen.pls?sid=1|Radiio illusion89.7 fm|classical
+http://37.187.57.33:8066/listen.pls?sid=1|Radio1 CLASSIC|classical
 http://www.radio1.gr/live/classic.ram|Radio1 CLASSIC (Rhodes) Greece|Classical
 http://str0.creacast.com/accent4|Radio Accent 4 FM 96.6 France|Classical
+http://78.129.175.157:23823/listen.pls?sid=1|Radio Alternativa 92.7 FM|classical
 http://5.152.208.98:8058/;|Radio Ancient FM USA|Classical
 http://213.185.182.230:8000|Radio Arnold Schönberg Center Austria|Classical
 http://air.radioart.com/fAmbient.mp3|Radio Art Ambient Greece|Classical
@@ -357,10 +335,10 @@ http://air.radioart.com/fDidgeridoo.mp3|Radio Art Didgeridoo Greece|Classical
 http://air.radioart.com/fDreamscapes.mp3|Radio Art Dreamscapes Greece|Classical
 http://air.radioart.com/fFor_inspiration.mp3?dlid=|Radio Art For Inspiration Greece|Classical
 http://live.radioart.com:80/fFor_study.mp3?|Radio Art For Study Greece|Classical
-http://air.radioart.com/fFor_work.mp3?dlid=|Radio Art For Work Greece|Classical
 http://air.radioart.com/fChopin.mp3?dlid=|Radio Art Frederic Chopin Greece|Classical
 http://air.radioart.com/fGuitar.mp3?dlid=|Radio Art Guitar Greece|Classical
 http://air.radioart.com/fHealing.mp3|Radio Art Healing Greece|Classical
+http://air.radioart.com/fJazz_piano.mp3?dlid=|Radio Art Jazz piano Greece|Jazz-Classical
 http://air.radioart.com/fJust_classical.mp3|Radio Art Just Classical Greece|Classical
 http://air.radioart.com/fLullaby.mp3|Radio Art Lullaby Greece|Classical
 http://air.radioart.com/fMantras.mp3|Radio Art Mantras Greece|Classical
@@ -368,13 +346,11 @@ http://air.radioart.com/fMozart.mp3?dlid=|Radio Art Mozart Greece|Classical
 http://air.radioart.com/fMusic_for_moms.mp3?dlid=|Radio Art Music for moms Greece|Classical
 http://air.radioart.com/fNature.mp3|Radio Art Nature Greece|Classical
 http://air.radioart.com/fNew_age.mp3|Radio Art New Age Greece|Classical
-http://air.radioart.com/fPiano.mp3?dlid=|Radio Art Piano (Classical) Greece|Classical
 http://air.radioart.com/fPiano_and_guitar.mp3?dlid=|Radio Art Piano & guitar Greece|Classical
 http://air.radioart.com/fPositivity.mp3?dlid=|Radio Art Positivity Greece|Classical
 http://air.radioart.com/fReiki.mp3|Radio Art Reiki Greece|Classical
 http://live.radioart.com/fEric_satie.mp3|Radio Art Satie Greece|Classical
 http://air.radioart.com/fSchumann.mp3?dlid=|Radio Art Schumann Greece|Classical
-http://50.22.212.205:8138/;|Radio Arts Indonesia USA|Classical
 http://air.radioart.com/fSolo_piano.mp3?dlid=|Radio Art Solo Piano Greece|Classical
 http://air.radioart.com/fStress_relief.mp3?dlid=|Radio Art Stress Relief Greece|Classical
 http://air.radioart.com/fTokyo.mp3?dlid=|Radio Art Tokyo Greece|Classical
@@ -382,30 +358,33 @@ http://air.radioart.com/fVivaldi.mp3?dlid=|Radio Art Vivaldi Greece|Classical
 http://air.radioart.com/fVocal_chillout.mp3|Radio Art Vocal Chillout Greece|Classical
 http://air.radioart.com/fVocal_new_age.mp3|Radio Art Vocal New Age Greece|Classical
 http://air.radioart.com/fWisdom.mp3|Radio Art Wisdom Greece|Classical
-http://listen.radionomy.com/barock-music|Radio Barock music Russian Federation|Classical
-http://bluelake.ncats.net:8002/;stream/1|Radio Blue lake USA|Classical
-http://streaming.radionomy.com/MclennonRadio?lang=en-US&appName=iTunes.m3u|Radio Boccherini Spain|Classical
-http://www.breslav.co.il/radio/listen/listen.asx|Radio Breslav ISRAEL Israel|Classical
+http://78.129.187.73:22234/listen.pls|radiobanovici|classical
+http://streaming.radiobolivarianavirtual.com:7630/listen.pls?sid=1|RadioBolivarianaVirtual FM|classical
+http://213.8.198.101:5598/listen.pls?sid=1|Radio Breslav Kol HaNachal|classical
 http://79.120.77.11:9055/|Radio Caprice  Classical Crossover Russian Federation|Classical
 http://79.120.39.202:9069|Radio Caprice Classical Piano Russian Federation|Classical
 http://79.120.77.11:9019/|Radio Caprice Classical Russian Federation|Classical
+http://79.120.39.202:9085|Radio Caprice Cool Jazz Russian Federation|Jazz-Classical
+http://79.111.14.76:9095/|Radio Caprice Free Jazz Russian Federation|Jazz-Classical
+http://79.111.14.76:9047|Radio Caprice Hard Bop Russian Federation|Jazz-Classical
+http://79.111.14.76:9085|Radio Caprice Mainstream jazz Russian Federation|Jazz-Classical
 http://79.120.39.202:9053|Radio Caprice Mass /Chorus/ Cantata Russian Federation|Classical
 http://79.120.39.202:9099|Radio Caprice Modern Classical Russian Federation|Classical
-http://79.111.119.111:9033/|Radio Caprice Neo Classical Metal Russian Federation|Rock-Heavy Metal
 http://79.111.119.111:9033/|Radio Caprice Neoclassical Metal Russian Federation|Rock-Heavy Metal
 http://79.120.39.202:9101/|Radio Caprice Neoclassical Russian Federation|Classical
 http://79.120.77.11:9051/|Radio Caprice Organ Russian Federation|Classical
+http://79.111.119.111:9059/|Radio Caprice Piano Jazz Russian Federation|Jazz-Classical
 http://79.120.77.11:9009/|Radio Caprice Piano Russian Federation|Classical
-http://79.120.77.11:9019/|Radio Caprice Symphonic Russian Federation|Classical
 http://79.111.14.76:9079|Radio Caprice Symphony Russian Federation|Classical
-http://streaming-dc.mundoclasicaupa.com:8021/radioclasica|Radio Clásica 103.3 FM El Salvador|Classical
+http://200.58.101.247:8080/listen.pls?sid=1|Radio Centenario 87.9 MHZ General Alvear Mza.|classical
+http://uk6.internet-radio.com:8144/listen.pls|Radio Cherwell Hospital Radio in Oxford|classical
+http://142.4.201.73:8962/listen.pls?sid=1|RADIO CLASICA DIGITAL|classical
 http://37.251.146.169:7200/stream|Radio Clasic Beethoven Romania|Classical
 http://37.251.146.169:8300/;stream.mp3|Radio Clasic Mozart Romania|Classical
 http://37.251.146.169:8000/stream/;|Radio Clasic Romania Romania|Classical
 http://37.251.146.169:8100/stream|Radio Clasic Strauss Romania|Classical
 http://37.251.146.169:7300/stream|Radio Clasic Tchaikovscky Romania|Classical
 http://radio.gruppoeditorialebresciana.it/radioclassica|Radio Classica Bresciana Italy|Classical
-http://str30.creacast.com:80/class_radioclassica|Radio Classica Italy|Classical
 http://jfm1.hostingradio.ru:14536/rcstream.mp3|Radio Classic FM 100.9 Russian Federation|Classical
 http://auth.ne.fm/mp3/classic|Radio Classic FM Almaty 102.7 Kazakhstan|Classical
 http://cfm.jazzandclassic.ru:14536/gcstream.mp3|Radio Classic FM Classic Gold Russian Federation|Classical
@@ -413,89 +392,91 @@ http://cfm.jazzandclassic.ru:14536/cvstream.mp3|Radio Classic FM Classic Vocals 
 http://cfm.jazzandclassic.ru:14536/ecstream.mp3|Radio Classic FM Essential Classic Russian Federation|Classical
 http://cfm.jazzandclassic.ru:14536/pcstream.mp3|Radio Classic FM Poesia Classic Russian Federation|Classical
 http://radioclassic.net:8000/live128.m3u|Radio classic Ukraine|Classical
-http://www.mundodoradio.com.br:8000|Rádio Classic Web Brazil|Classical
 http://broadcast.infomaniak.net:80/radioclassique-high.mp3|Radio Classique France|Classical
-http://listen.radionomy.com/classique-xix.m3u|Radio Classique XIX France|Classical
-http://streaming.radiolinksmedia.com:8686/|Radio Cultura FM 97.9 Argentina|Classical
-http://hyades.shoutca.st:8211/stream|Radio Delhi Malayalam India|Classical
+http://192.95.39.65:5165/stream.mp3|Radio Cultura FM 97.9 Argentina|Classical
+http://198.178.123.5:10296/listen.pls?sid=1|Radio Demiami Fm|classical
+http://216.55.141.189:8617/listen.pls|Radio Dhangadhi|classical
+http://185.105.4.53:3000/listen.pls?sid=1|Radio Domeldo Live|classical
+http://185.105.4.53:3006/listen.pls?sid=1|Radio Domeldo Movie|classical
+http://199.167.150.105:8714/listen.pls?sid=1|Radio EL Shaddai 90.3Mhz Tafi Viejo|classical
 http://mozart.usm.cl:8000/|Radioemisora UTFSM 99.7 FM Valparaíso Chile|Classical
-http://69.30.217.222:8116/|Radio fraternidade Canal 5 Brazil|Classical
-http://listen.radionomy.com/gnosis-tv.m3u|Radio Gnosis tv Argentina|Classical
+http://78.129.224.13:5863/listen.pls|RADIO FARO CULTURAL|classical
+http://50.7.71.219:7171/listen.pls?sid=1|radiofreearts.net|classical
+http://78.129.224.11:39869/listen.pls|RADIO GAYA CLASSICAL MUSIC ROYALTY FREE|classical
+http://144.217.76.188:8248/listen.pls?sid=1|Radio Globo Italia|classical
 http://cast4.audiostream.com.br:8007/app|Rádio Guaíba Classica Brazil|Classical
-http://streaming.radionomy.com/RadioCaroline-international?lang=en-US&appName=iTunes.m3u|Radio Haydn Spain|Classical
-http://live128.radiostephansdom.at:8000/live128|radio klassik Stephansdom Austria|Classical
+http://198.178.123.2:9912/listen.pls?sid=1|Radio Illusion 89.7 Fm Stereo|classical
+http://142.4.216.91:8142/listen.pls|Radio IUS|classical
+http://cfm.jazzandclassic.ru:14534/ijstream.mp3|Radio Jazz FM Classic Jazz Russian Federation|Jazz-Classical
+http://cfm.jazzandclassic.ru:14534/jlstream.mp3|Radio Jazz FM Jazz Legends Russian Federation|Jazz-Classical
+http://176.9.59.144:8022/stream|Radio Klasična Muzika USA|Classical
 http://onair.100fmlive.dk:80/klassisk_live.mp3|Radio Klassisk Denmark|Classical
+http://95.154.202.117:17364/listen.pls|RADIO LIBERTAD|classical
 http://air.radiolla.com/ilma192k.m3u|Radiolla Ilma Ukraine|Classical
-http://188.165.192.5:8384/stream2|Radio Mach 5 Classica Sinfonica e Operistica Italy|Classical
+http://78.129.163.82:37903/listen.pls|Radio Magica|classical
 http://38.99.146.102:8000/shaer.mp3|Radio Mahoor Classical Literature USA|Classical
+http://200.58.106.247:8686/listen.pls|Radio Manantial|classical
 http://onair22.streaming.xdevel.com:7598/;stream.mp3|Radio Marconi Due Musica Classica Italy|Classical
 http://radio.mariinsky.ru/stream|Radio Mariinsky FM Russian Federation|Classical
-http://radioslivres.radiobras.gov.br:8080/mecfm.mp3|Rádio MEC FM Brazil|Classical
-http://listen.radionomy.com/radio-mozart.m3u|Radio Mozart France|Classical
+http://62.210.24.124:8751/listen.pls?sid=1|radio MBC|classical
+http://199.195.194.140:8156/listen.pls?sid=1|RADIO MODA|classical
+http://radiolive.trm.md:8000/RM-muzical-256.m3u|Radio Moldova Muzical Moldova|Jazz-Classical
 http://icecast.infini.fr:8000/neptune|Radio Neptune France|Classical
 http://radionz-ice.streamguys.com/concert.mp3|Radio New Zealand Concert New Zealand|Classical
+http://5.135.158.214:8252/listen.pls?sid=1|Radio NoordZij|classical
 http://playerservices.streamtheworld.com/api/livestream-redirect/CLASSICFM.mp3|Radio Nu op Classic FM Netherlands|Classical
 http://music.myradio.ua:8000/Classica128.mp3|Radio obozrevatel Classical Ukraine|Classical
-http://s1.hostedbox.com/cast/tunein.php/radioopt/playlist.pls|Radio Optima FM De Parral Chile|Classical
-http://icecast.orpheus.cdnvideo.ru/orpheus_192|Radio Orpheus 99.2 FM Russian Federation|Classical
-http://s1.slotex.pl:7376/|Radio RDN Muzyka Mistrzow Poland|Classical
+http://200.58.106.247:8362/listen.pls|Radio Oid Rock 90.3|classical
+http://78.129.224.11:26601/listen.pls|radiopalmira|classical
+http://178.33.251.97:8250/listen.pls?sid=1|Radio Plus|classical
+http://95.211.113.141:8934/listen.pls|Radio Raphael|classical
+http://78.129.190.50:36373/listen.pls|Radio Restitucion|classical
 http://streams.radioriel.org:8070/stream|Radio Riel Fantasy Faire USA|Classical
+http://91.121.1.157:21598/listen.pls?sid=1|Radio RingkÃ¯Â¿Â½bing SHOU|classical
 http://stream2.srr.ro:8022/|Radio România Muzical Romania|Classical
 http://142.4.217.133:9371|Radio Saiuz Classic Italy|Classical
-http://listen.radionomy.com/radio-sanfurgo|Radio Sanfurgo Chile|Classical
-http://37.58.75.163:8822|Radio Semnoz France|Classical
-http://streaming.itaf.be:8000/radiospes|Radio Spes 105.0 FM Belgium|Classical
+http://192.99.18.164:9558/listen.pls?sid=1|RADIO SANFURGO|classical
+http://78.129.175.157:19128/listen.pls|RADIO STAR|classical
 http://www.radiosuisseclassique.ch/live/mp3.m3u|Radio Suisse Classique Switzerland|Classical
+http://78.129.163.82:24830/listen.pls|Radio SunCity|classical
 http://www.radiosvizzeraclassica.ch/live/mp3.m3u|Radio Svizzera Classica Switzerland|Classical
+http://78.129.224.13:19118/listen.pls|Radio Swara Koncotani|classical
 http://www.radioswissclassic.ch/live/mp3.m3u|Radio Swiss Classic Switzerland|Classical
-http://streaming.radionomy.com/1000ClassicalHits?lang=en-US&appName=iTunes.m3u|Radio.thinkbug 1000 Classical Hits USA|Classical
-http://streaming.radionomy.com/ABC-Symphony?lang=en-US&appName=iTunes.m3u|Radio.thinkbug ABCSYMPHOY USA|Classical
-http://listen.radionomy.com/AllBeethovenonWideRadius/;|Radio.thinkbug All Beethovenon USA|Classical
-http://streaming.radionomy.com/AMADEUS-FRIENDS-ClassicalRadio?lang=en-US&appName=iTunes.m3u|Radio.thinkbug Amadeus Friends Classical USA|Classical
-http://streaming.radionomy.com/Ambiance-classique?lang=en-US&appName=iTunes.m3u|Radio.thinkbug AmbianceClassique USA|Classical
-http://listen.radionomy.com/Azur-CLASSIQUE/;|Radio.thinkbug AzurClassique (Geoblocked USA) USA|Classical
-http://streaming.radionomy.com/Radio-Bach?lang=en-US&appName=iTunes.m3u|Radio.thinkbug BachClaasical USA|Classical
-http://streaming.radionomy.com/Barock-Music?lang=en-US&appName=iTunes.m3u|Radio.thinkbug Barockmusic USA|Classical
-http://streaming.radionomy.com/Beethoven-Radio?lang=en-US&appName=iTunes.m3u|Radio.thinkbug BeethovenClassical USA|Classical
-http://streaming.radionomy.com/Radio-Chopin?lang=en-US&appName=iTunes.m3u|Radio.thinkbug ChopinClassical USA|Classical
+http://us4.internet-radio.com:8235/listen.pls|Radio Tesla|classical
+http://zafemradio.com:9984/listen.pls|Radio T Ginen|classical
 http://streaming.radionomy.com/A-back-taste-of-HQ-Sound-Classic?lang=en-US&appName=iTunes.m3u|Radio.thinkbug  Classic USA|Classical
-http://74.86.0.227:9994/;|Radio.thinkbug CORTV USA|Classical
-http://listen.radionomy.com/Eighth-Note/;|Radio.thinkbug Eighth Note USA|Classical
-http://149.202.214.27:8888/radiotiranaklasik1|Radio Tirana Klasik 101.2 FM Albania|Classical
-http://www.radiounam.unam.mx:8006|Radio UNAM Música Mexicana Mexico|Classical
+http://195.154.133.107:8282/listen.pls?sid=1|Radio Viva Cali|classical
+http://195.154.133.107:8258/listen.pls?sid=1|Radio Viva Ipiales 1220 am|classical
 http://vprclassical.streamguys.net/vprclassical128.mp3|Radio VPR Classical USA|Classical
+http://5.39.82.157:8020/listen.pls?sid=1|Radio You & Me Love Romantic Soft Relax Cagliari Adult Contemporary Classical -Slow|romantic
 http://zetcla-01.cdn.eurozet.pl:8412/|Radio ZET Classic Poland|Classical
 http://37.247.98.8/stream/32/|Radyohome Homeklasik Turkey|Classical
-http://109.169.59.107:8038/|Ragam Radio India|Classical
 http://icestreaming.rai.it/5.mp3|Rai Radio Classica Italy|Classical
 http://klassik-high.rautemusik.fm|RauteMusik.FM Klassik Germany|Classical
 http://solopiano-high.rautemusik.fm|RauteMusik.FM Solo Piano Instrumental Germany|Classical
 http://www.kulturradio.de/live.pls|RBB Kulturradio Germany|Classical
-http://live1.rcnmundo.com/rcnclasica.mp3|RCN Clásica Colombia|Classical
-http://s1.slotex.pl:7376/;|RDN Muzyka Mistrzow Poland|Classical
 http://radiocast.rtp.pt/antena280a.mp3|RDP Antena 2 Portugal|Classical
 http://rs3.stream24.org:8220/;|Recorder-Radio Germany|Classical
+http://91.121.139.194:8157/listen.pls?sid=1|Riddim Dubstep Keep the Underground Alive!|classical
+http://200.58.106.247:8084/listen.pls?sid=1|Rivadavia en Contacto|classical
 http://www.rmfon.pl/n/rmfchopin.pls|RMF CHOPIN Poland|Classical
 http://www.rmfon.pl/n/rmfclassic.pls|RMF Classic Poland|Classical
 http://www.rmfon.pl/n/klasyczna.pls|RMF MUZYKA KLASYCZNA Poland|Classical
-http://195.55.74.221/rtve/radioclasica.mp3|RNE Radio Clásica Spain|Classical
 http://rnv.lorini.net:29020/RNVCLASICA?|RNV Clásico Venezuela|Classical
 http://stream.iradio.fi:8000/klasu-hi.mp3|Rondo Classic Klasu Finland|Classical
 http://stream.iradio.fi:8000/klasupro-hi.mp3|Rondo Classic Klasu Pro Finland|Classical
 http://rondo.iradio.fi:8000/viva-hi.mp3|Rondo Classic Viva Classica Finland|Classical
 http://rrr.sz.xlcdn.com/?account=RCOLiveWebradio&file=mp3-192&type=live&service=icecast&port=8000&output=pls|Royal Concertgebouw Orchestra Amsterdam Radio Netherlands|Classical
 http://streaming.radiostreamlive.com/radiosymphony_devices|RSL Radio Symphony USA|Classical
-http://mediacorp.rastream.com/924fm?|RS Symphony 924 Singapore|Classical
 http://radios.rtbf.be/musiq3-128.mp3|Rtbf.be musiq3 Belgium|Classical
 http://icecast2.rte.ie/lyric|RTÉ lyric fm Ireland|Classical
-http://rthkaudio4-lh.akamaihd.net/i/radio4_1@355867/master.m3u8|RTHK.HK 97.6 FM Radio 4 Hong Kong|Classical
 http://stream.srg-ssr.ch/m/espace-2/aacp_96|RTS Espace 2 Switzerland|Classical
 http://live10.cdnmedia.tv/radionacionalClasicalive/radionacionalClasica.stream/chunklist.m3u8|RTVC Señal Clásica Colombia|Classical
 http://broadcaster-radio.unimore.it/playlist/rumore_classical.pls|Rumore Web Radio Simphonies & Minuets Italy|Classical
 http://sip-live.hds.adaptive.level3.net/hls-live/ruv-ras1/_definst_/live/stream1.m3u8|Ruv Rás 1 Iceland|Classical
 http://sip-live.hds.adaptive.level3.net/hls-live/ruv-ras3/_definst_/live/stream1.m3u8|Ruv Rondo Iceland|Classical
-http://www.sadclassicalmusic.com/sadclassicalmusic.m3u|Sad Classical Music USA|Classical
-http://www.sadpianomusic.com/sadpianomusic.m3u|Sad Piano Music (.com) USA|Classical
+http://178.32.62.172:8608/listen.pls?sid=1|SANDESH RADIO 2017 Stream|classical
+http://46.105.111.94:8044/listen.pls|Santuario S.G.|classical
 http://notendatenbank.net:8000/hnChor|SheetMusicDB.net Choir Music Austria|Classical
 http://notendatenbank.net:8000/hnInKleinenGruppen|SheetMusicDB.net Ensembles Austria|Classical
 http://notendatenbank.net:8000/hnWunschkonzert|SheetMusicDB.net Request Concert Austria|Classical
@@ -508,80 +489,66 @@ http://streaming.swisstxt.ch/m/drs2/mp3_128|SRF 2 Kultur Switzerland|Classical
 http://live.slovakradio.sk:8000/Klasika_256.mp3|SRo 7 Rádio Pyramída Slovakia|Classical
 http://http-live.sr.se/srklassiskt-mp3-192|SR P2 Klassiskt Sweden|Classical
 http://http-live.sr.se/p2musik-mp3-192|SR P2 Sprak och Musik Sweden|Classical
-http://www.steampunkradio.com/steampunkradio.pls|Steampunk Radio USA|Classical
+http://162.252.85.85:10290/listen.pls?sid=1|STGHR|classical
+http://us2.internet-radio.com:8210/listen.pls|Streaming Raagas|classical
+http://173.193.205.96:7341/listen.pls?sid=1|StreamMyStation.com KGHI|classical
+http://199.167.150.105:7435/listen.pls?sid=1|subielvolumen|classical
 http://212.26.146.50:8000/classic.mp3|Svoe Radio Classic Russian Federation|Classical
 http://swissradio.ch/streams/6034.m3u|Swissradio.ch Classical Switzerland|Classical
 http://mp3-live.swr.de/swr2_m.m3u|SWR2 Germany|Classical
-http://streaming.radionomy.com/ClassicalMusicStreamRadio|Totworld Radio  Classical Music Stream Instrumental USA|Classical
-http://streaming.radionomy.com/ClassiestClassicalRadio|Totworld Radio  Classiest Classical  Instrumental USA|Classical
-http://radio.ertopen.com/trito|Trito Programma Greece|Classical
+http://198.105.216.204:8206/listen.pls?sid=1|The Classical Channel|classical
+http://5.135.158.214:15188/listen.pls?sid=1|Torbay Hospital Radio|classical
 http://rfcmedia.streamguys1.com/classicalholiday.mp3|TuneIn Classical Holiday USA|Seasonal-Christmas
 http://rfcmedia.streamguys1.com/classical.mp3|TuneIn Sounds of the Symphony USA|Classical
 http://laut.fm/twentysound|twentysound Germany|Classical
-http://iradio.utalca.cl:8000/fm|Universidad de Talca Clásica 102.1 FM Talca Chile|Classical
 http://mozart.usm.cl:8000|Universidad Técnica Federico Santa María 99.7 FM Valparaíso Chile|Classical
-http://mozart.usm.cl:8000|UTSFM 99.7 FM & 1450 AM Chile|Classical
+http://174.36.206.197:8000/listen.pls?sid=1|Venice Classic Radio Italia|classical
+http://109.123.116.202:8008/listen.pls?sid=1|Venice Classic Radio Italia * Live|classical
+http://109.123.116.202:8016/listen.pls?sid=1|Venice Classic Radio Italia Mobile|classical
 http://109.123.116.202:8020|Venice Classic Radio Italy|Classical
-http://listen.radionomy.com/vivaldi|Vivaldi Radio USA|Classical
+http://38.100.128.106:8006/listen.pls?sid=1|VivaLaVoce from Classical WETA|classical
 http://icecast.vrtcdn.be/klara-high.mp3|VRT Klara Belgium|Classical
 http://icecast.vrtcdn.be/klaracontinuo-high.mp3|VRT Klara Continuo Belgium|Classical
 http://pba-ice.streamguys.org/wabe.m3u|WABE 90.1 FM Atlanta, GA USA|Classical
 http://pba-ice.streamguys.org/classical.m3u|WABE 90.1 HD2 Atlanta, GA USA|Classical
-http://5a0b08c113164.streamlock.net/live/waus/waus/playlist.m3u8|WAUS 90.7 FM Berrien Springs, MI USA|Classical
+http://64.71.79.181:5269/listen.pls?sid=1|WALLYradio            CLASSICAL|classical
 http://purdue.streamguys1.com/wbaa-classical|WBAA 101.3 FM West Lafayette, IN USA|Classical
 http://wbjc-sc.streamguys.org/listen.pls|WBJC 91.5 FM Baltimore, MD USA|Classical
-http://bluelake.ncats.net:8000|WBLV 90.3 FM Twin Lake MI USA|Classical
 http://12.bteradio.com:8300/WBNI.mp3|WBNI 94.1 FM Fort Wayne, IN USA|Classical
 http://shout.wcbufm.org:8005/listen.pls|WCBU 89.9 FM Peoria, IL USA|Classical
-http://shout.wcbufm.org:8009|WCBU HD2 89.9 FM Peoria, IL USA|Classical
 http://audio1.ideastream.org/wclv.mp3|WCLV 104.9 FM Lorain, OH USA|Classical
 http://peridot.streamguys.com:7340/classical|WCNH 94.7 FM Bown, NH USA|Classical
-http://theclassicalstation.org/audio/wcpe.pls|WCPE 89.7 FM Wake Forest, NC USA|Classical
 http://provisioning.streamtheworld.com/pls/BPRNEWS.pls|WCQS 88.1 FM Asheville, NC USA|Classical
 http://audio.wgbh.org:8004|WCRB 99.5 FM Lowell, MA USA|Classical
 http://wcri.streamguys1.com/live-mp3|WCRI 95.9 FM Block Island, RI USA|Classical
-http://www.wdav.org/wdav-112k.m3u|WDAV 89.9 FM Davidson, NC USA|Classical
 http://live.str3am.com:2520/live|WDPR 88.1 FM Dayton, OH USA|Classical
 http://wdr-wdr3-live.icecast.wdr.de/wdr/wdr3/live/mp3/256/stream.mp3|WDR 3 Germany|Classical
 http://playerservices.streamtheworld.com/pls/WEKUFM.pls|WEKU 88.9 FM Richmond, KY USA|Classical
 http://live.str3am.com:7820/|West Virginia Public Radio USA|Classical
-http://stream.weta.org/winstream|WETA 90.9 FM Washington, DC USA|Classical
-http://www.etsu.edu/wets/documents/live-3.m3u|WETS 89.5 HD3 Johnson City, TN CLASSICAL STREAM USA|Classical
 http://ice7.securenetsystems.net/WFCC|WFCC 107.5 FM Chatman, MA USA|Classical
 http://wpln.streamguys.org/wfclfm.mp3|WFCL 91.1 FM Nashville, TN USA|Classical
 http://nepr.iad.streamguys1.com/WFCR-HD|WFCR 88.5 HD2 Amherst, MA USA|Classical
 http://live.str3am.com:2640/wfdd2.mp3|WFDD 98.5 FM HD2 Winston-Salem, NC USA|Classical
 http://hannibal.ucs.indiana.edu:8000/wfiu2_hi.m3u|WFIU 103.7 HD2 Bloomington, IN USA|Classical
-http://wfmt-wowza.streamguys1.com/live/smil:wfmt.smil/playlist.m3u8|WFMT 98.7 FM Chicago, IL USA|Classical
 http://146.201.215.226:8000/915.m3u|WFSQ 91.5 FM Tallahassee, FL USA|Classical
-http://media.gtc.edu:8000/stream|WGTD 91.1 FM Kenosha, WI USA|Classical
 http://provisioning.streamtheworld.com/pls/WGTEFM.pls|WGTE 91.3 FM Toledo, OH USA|Classical
-http://cpr2.streamguys.net/wguc.pls|WGUC 90.9 FM Cincinnati, OH USA|Classical
 http://playerservices.streamtheworld.com/pls/WUAL_HD1AAC.pls|WHIL 91.3 FM Mobile, AL USA|Classical
 http://64.5.130.40/listen.pls|WHRO 90.3 FM Norfolk, VA USA|Classical
 http://whyy-hd.streamguys1.com/whyy-hd-mp3|WHYY 90.9 HD-2 Philadelphia, PA USA|Classical
 http://playerservices.streamtheworld.com/pls/WIAAFM.pls|WIAA 88.7 FM Interlochen, MI USA|Classical
 http://192.254.105.36:8080/broadwave.mp3|WIPR 91.3 FM San Juan, PR Puerto Rico|Classical
-http://mozart.wkar.msu.edu:80/wkar-fm-mp3|WKAR 90.5 FM East Lansing, MI USA|Classical
-http://wkar.org/stream/classical.pls|WKAR Classical East Lansing, MI USA|Classical
-http://wkgcstream2.gulfcoast.edu:8000/wkgchd2.mp3|WKGC 90.7 HD2 Panama City, FL USA|Classical
+http://streaming.wkar.msu.edu/wkar-classical|WKAR Classical East Lansing, MI USA|Classical
 http://wksu1.streamguys.com:8030/|WKSU 3 89.7 FM Kent, OH USA|Classical
+http://184.154.202.243:8106/listen.pls?sid=1|WKU Classical|classical
 http://playerservices.streamtheworld.com/pls/WLRHHD2.pls|WLRH-HD2 89.3 FM Huntsville, AL USA|Classical
 http://playerservices.streamtheworld.com/pls/WMEA_CLASSICAL.pls|WMEA 90.1 FM HD2 Portland, ME USA|Classical
-http://www.wmfe.org/wmfe.asx|WMFE 90.7 FM Orlando, FL USA|Classical
+http://64.202.98.51:7280/listen.pls|WMNR Fine Arts Radio|classical
 http://war.str3am.com:7320/|WMNR Fine Arts Radio USA|Classical
 http://vpr.net/vpr_files/stream_playlists/vprclassicalhigh.pls|WNCH 88.1 FM Norwich, VT USA|Classical
 http://provisioning.streamtheworld.com/pls/WNEDFM.pls|WNED 94.5 FM Buffalo, NY USA|Classical
-http://www.wniu.org/wniu.asx|WNIU 90.5 FM DeKalb, IL USA|Classical
-http://streaming3.osu.edu:8010|WOSU 101.1 FM Columbus, OH USA|Classical
-http://csfstream1.publicradio.org:80/|WPBI 90.7 FM West Palm Beach, FL USA|Classical
-http://wpr-ice.streamguys.net/wpr-music-hd2.m3u|WPR HD2 All Classical Music Network USA|Classical
-http://wpr-ice.streamguys.net/wpr-music-mp3-96.m3u|WPR HD2 News & Classical Music Network USA|Classical
 http://96.69.32.253:8006/hd1|WQCS88.9 FM Ft. Pierce, FL USA|Classical
 http://wqed.ic.llnwd.net/stream/wqed_wqed|WQED 89.3 Pittsburgh, PA USA|Classical
-http://www.wqxr.org/stream/wqxr/windows.asx|WQXR 105.9 FM New York, NY USA|Classical
-http://www.wqxr.org/stream/q2/mp3.pls|WQXR Q2 New York Times and classical music USA|Classical
-http://www.wrcjfm.org/asx_file1.asx|WRCJ 90.9 FM Detroit, MI USA|Classical
+http://pnj-01.stream101.com:9035/stream|WRCJ 90.9 FM Detroit, MI USA|Classical
 http://playerservices.streamtheworld.com/pls/WRRFMAAC.pls|WRR 101.1 FM Dallas, TX USA|Classical
 http://provisioning.streamtheworld.com/pls/WRTI_CLASSICAL.pls|WRTI 90.1 FM Philadelphia, PA USA|Classical
 http://playerservices.streamtheworld.com/pls/WSCLFM.pls|WSCL 89.5 FM Salisbury, MD USA|Classical
@@ -589,25 +556,18 @@ http://wshu.streamguys.org/wshu-classical.m3u|WSHU 91.1 FM Fairfield, CT USA|Cla
 http://wshu.streamguys.org/wshu-baroque.m3u|WSHU Sunday Baroque USA|Classical
 http://aispool.streamon.fm/ais/WSMC.aac|WSMC 90.5 FM Collegedale, TN USA|Classical
 http://live.str3am.com:2380/troy1|WTSU WRWA WTJB Troy University AL USA|Classical
-http://live.str3am.com:2380/troy2|WTSU WRWA WTJB Troy University HD2 USA|Classical
 http://ice41.securenetsystems.net/WUFT|WUFT 89.1 FM Gainesville, FL USA|Classical
 http://ice10.securenetsystems.net/WUFTHD2|WUFT 89.1 HD2 Gainesville, FL USA|Classical
 http://wuga-ice.streamguys1.com/live-mp3|WUGA 91.7/97.9 FM Athens, GA USA|Classical
 http://lpm.streamguys1.com/wuol-popup|WUOL 90.5 FM Louisville, KY USA|Classical
-http://wusfhd2.wusf.usf.edu:8064/listen.pls|WUSF 89.7 HD2 Tampa, FL USA|Classical
 http://wwfm.streamguys1.com/live|WWFM 89.1 FM Trenton, NJ USA|Classical
-http://wxxi.org/listen/fmmp3.m3u|WXXI 91.5 FM Rochester, NY USA|Classical
 http://playerservices.streamtheworld.com/pls/WYPR_HD3AAC.pls|WYPR 88.1 HD3 Baltimore, MD USA|Classical
 http://live.wysu.org:3180/hd1.m3u|WYSU 88.5 FM Youngstown, OH USA|Classical
 http://server1.usatelk.com:25224/;|XEUN 860 AM Mexico City, Mexico Mexico|Classical
 http://streaming.promomedios.com:8008/|XHMBM Milenio Bella Musica 105.1 FM Mexico|Classical
-http://172.obj.netromedia.net/xlnc/xlnc/playlist.m3u8|XLNC1 104.9FM Tijuana, San Diego, CA Mexico|Classical
-http://yleuni-f.akamaihd.net/i/yleliveradiohd_4@113881/master.m3u8|Yle.fi Klassinen Finland|Classical
+http://radio.promosat.com:8018/listen.pls?sid=1|XHMBM MILLENIUM BELLA MUSICA Grupo Promomedios Radio. Guadalajara, Jalisco, Mexico.|classical
+http://mediau.yle.fi/liveklassinen?MSWMExt=.asf|Yle.fi Klassinen Finland|Classical
 http://ycradio.stream.publicradio.org/choral.mp3|Your Classical Choral USA|Classical
-http://ycradio.stream.publicradio.org/inspire.mp3|Your Classical Inspire USA|Classical
-http://ycradio.stream.publicradio.org/lullabies.mp3|Your Classical Lubllabies USA|Classical
 http://ycradio.stream.publicradio.org/ycradio.mp3|Your Classical Radio South Florida USA|Classical
 http://ycradio.stream.publicradio.org/relax.mp3|Your Classical Relax USA|Classical
-http://ycradio.stream.publicradio.org/romance.mp3|Your Classical Romance USA|Classical
 http://radiostreaming.ert.gr/ert-trito|ΕΡΤ Τρίτο Πρόγραμμα 90,9 & 95,6 Greece|Classical
-http://stream0.radiostyle.ru:8000/doradio|До-радио Russian Federation|Classical

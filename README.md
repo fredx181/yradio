@@ -1,7 +1,7 @@
 # yradio
 Internet Radio Player  
 
-**Update:** v0.0.6, added notification icon, shows popup (on songtitle change) and right-click menu    
+**Update:** v0.0.7, major bugfix (big mistake made in the previous commit for v0.0.6) and many improvements.     
 
 Much inspired by PMRP from misko_2083, see:  
 http://murga-linux.com/puppy/viewtopic.php?p=963382#963382  
@@ -9,13 +9,13 @@ Took as a base GUI concept for this from: Victor Ananjevsky's (yad author) "find
 https://sourceforge.net/p/yad-dialog/wiki/Frontend%20for%20find%2Bgrep%20commands/?limit=50  
 
 Depends on **yad** (version 0.35 or higher), **xdotool**, and **mplayer** installed.  
-**Update:** v0.0.5 and 0.0.6 depends on yad version 0.37 or higher.   
+**Update:** v0.0.5 or higher depends on yad version 0.37 or higher.     
 
 Search option has access to large database from "RadioSure" (commercial M$ app) converted to use with this app.
 (need to click 'Update Index' first)    
 
 **Options:**
-- Load a Category or do a search
+- Load a Category or do a search   
 - Add (from Category list or search results) or remove to/from 'Favorites'      
 - Save search results to a new 'Category'    
 - Ability to rip the stream (requires "streamripper" installed)    

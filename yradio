@@ -35,29 +35,36 @@ trap 'on_exit' 0 1 2 15
 export LAUNCHDIR="$(dirname "$(readlink -f "$0")")"
 [[ -f /tmp/yrad ]] && exit
 [[ ! -f /tmp/yrad ]] && touch /tmp/yrad
+
+if [ -z $(which xmessage) ]; then
+MESSAGE=gxmessage
+else
+MESSAGE=xmessage
+fi
+
 if [ -z `which yad` ]; then
 	msg="  Package 'yad' is not installed, please install it. "
-	xmessage  "`echo -e $msg`"
+	$MESSAGE  "`echo -e $msg`"
 	rm -f /tmp/yrad 
 exit 0
 fi
 
 if [ -z `which mplayer` ]; then
 	msg="  Package 'mplayer' is not installed, please install it. "
-	xmessage  "`echo -e $msg`"
+	$MESSAGE  "`echo -e $msg`"
 		rm -f /tmp/yrad 
 exit 0
 fi
 
 if [ -z `which xdotool` ]; then
 	msg="  Package 'xdotool' is not installed, please install it. "
-	xmessage  "`echo -e $msg`" 
+	$MESSAGE  "`echo -e $msg`" 
 #exit 0
 fi
 
 if [ -z `which amixer` ]; then
 	msg="  Could not find amixer, setting volume will not be possible. \n Please install 'alsa-utils' to make it work "
-	xmessage  "`echo -e $msg`" 
+	$MESSAGE  "`echo -e $msg`" 
 fi
 
 VERSION=`yad --version | awk '{ print $1 }'`

@@ -809,6 +809,7 @@ yad --plug="$fkey" --tabnum=2 \
 --expand-column=0 $RADIOLIST <&3 &
 
 # Will load Favorites at start:
+touch "$LAUNCHDIR/playlist/playlist.Favorites"  # make it newest, always on top of Category lists
 load_list &
 
 yad --center --paned --key="$fkey" \

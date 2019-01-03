@@ -696,6 +696,9 @@ fi
 }
 export -f on_click
 
+# Will load Favorites at start:
+touch "$LAUNCHDIR/playlist/playlist.Favorites"  # make it newest, always on top of Category lists
+
 # create the notification icon
 yad --notification --no-markup                  \
     --listen                        \
@@ -809,7 +812,6 @@ yad --plug="$fkey" --tabnum=2 \
 --expand-column=0 $RADIOLIST <&3 &
 
 # Will load Favorites at start:
-touch "$LAUNCHDIR/playlist/playlist.Favorites"  # make it newest, always on top of Category lists
 load_list &
 
 yad --center --paned --key="$fkey" \

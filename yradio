@@ -297,7 +297,7 @@ done
 
 CHECK=$(grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | grep '[^[:print:]]')
 if [[ -n "${CHECK}" ]]; then
-grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | tr -cd '[:print:]\t\r\n' | sed 's#[^[:print:]]##g' | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tee $LAUNCHDIR/playlist/playlist.$SAVE
+grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | sed 's#[^[:print:]]##g' | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tee $LAUNCHDIR/playlist/playlist.$SAVE
 else
 grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tee $LAUNCHDIR/playlist/playlist.$SAVE
 fi
@@ -394,7 +394,7 @@ export OLDIFS="$IFS"
 IFS=$'\n'
 CHECK=$(cat $LAUNCHDIR/playlist/playlist.$CAT | grep '[^[:print:]]')
 if [[ -n "${CHECK}" ]]; then
-RADIOLIST=$(cat $LAUNCHDIR/playlist/playlist.$CAT | tr -cd '[:print:]\t\r\n' | sed 's#|-#|_#g;s#- ##g' | tr '|' '\n')
+RADIOLIST=$(cat $LAUNCHDIR/playlist/playlist.$CAT | sed 's#[^[:print:]]##g' | sed 's#|-#|_#g;s#- ##g' | tr '|' '\n')
 else
 RADIOLIST=$(cat $LAUNCHDIR/playlist/playlist.$CAT | sed 's#|-#|_#g;s#- ##g' | tr '|' '\n')
 fi
@@ -421,7 +421,7 @@ done
 
 CHECK=$(grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | grep '[^[:print:]]')
 if [[ -n "${CHECK}" ]]; then
-RADIOLIST=$(grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | tr -cd '[:print:]\t\r\n' | sed 's#[^[:print:]]##g' | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tr '|' '\n')
+RADIOLIST=$(grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | sed 's#[^[:print:]]##g' | sed 's#[^[:print:]]##g' | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tr '|' '\n')
 else
 RADIOLIST=$(grep -Pih "$NEWSRCH" $LAUNCHDIR/playlist/playlist.RadioSure | sed 's#|-#|_#g;s#- ##g' | sort -f -t '|' -k 2 -u | tr '|' '\n')
 fi
